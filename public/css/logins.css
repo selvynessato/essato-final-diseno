@@ -1,0 +1,181 @@
+/*main .fotoCamara{
+    background: url('/images/fondologin.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 840px;
+    
+}*/
+
+main {
+    min-height: 75vh; /* Establece la altura mínima del contenedor principal al 100% del alto de la ventana gráfica */
+    margin: 0;
+    padding: 0;
+}
+
+main.py-4 {
+    padding-top: 0 !important; /* Quita el padding superior */
+    padding-bottom: 0 !important; /* Quita el padding inferior */
+}
+
+
+main .fotoCamara img{
+    background-position: center;
+    width: 100%;
+    height: 65vh; /* Ajusta la altura al 100% del viewport */
+    margin-top: -22px; /* Ajusta el valor según sea necesario para quitar el espacio */
+}
+
+
+.row .mb-4{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 37px;
+    border-radius: 10px;
+}
+
+.col-md-2{
+    border: 2px solid #d1d1d1;
+    border-radius: 10px 0 0 10px;
+}
+
+.col-md-10{
+    background: #d1d1d1;
+}
+
+.form-control {
+    font-size: 13px !important; 
+    border-radius: 5px; 
+    background-color:#d1d1d1 !important;
+    border: 0px !important;
+}
+
+.form-control:focus {
+    border-color: #d1d1d1 !important; /* Color del borde cuando el input está enfocado */
+    box-shadow: none !important; /* Anula la sombra del input cuando está lleno */
+}
+
+.btn-custom {
+    background-color: #ff5386 !important; /* Cambia el color de fondo */
+    border-color: #ff5386 !important; /* Cambia el color del borde */
+    color: white !important; /* Cambia el color del texto */
+    width: 100% !important; /* Establece el ancho al 100% */
+}
+
+/*
+.row .mb-4 input{
+    margin-top: 5px;
+    width: 100%;
+ 
+}
+
+#usuarioEmail input[type="email"] {
+    margin-top: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+
+.col-md-2 .usuariologin {
+    width: 50px;
+    height: 37px;
+    
+}
+
+#usuarioPass img{
+    width: 50px;
+    height: 50px;
+}
+
+*/
+main .rayaRoja{
+    background: #ce1618;
+    width: 100%;
+    height: 10px;
+}
+
+main p{
+    color: #ffffff;
+}
+
+.container-sm {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0); /* Color de fondo transparente con opacidad de 0.5 */
+    padding: 20px; /* Ajusta el relleno interno según sea necesario */
+}
+
+.container-sm {
+    width: 50%; /* Ajusta el ancho del contenedor según sea necesario */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    background: #ff1b1b00;
+    padding: 20px; /* Ajusta el relleno interno según sea necesario */
+    
+}
+
+.container-sm .card{
+    background: linear-gradient(to bottom, #f02c2d, #bf3b79, #754ee6); 
+    border-radius: 50px; /* Agrega bordes redondeados */
+}
+
+.container-sm .card-header {
+    display: flex;
+    justify-content: center;
+}
+
+.container-sm .card-header img {
+    width: 50%;
+    height: 50%;
+}
+
+/* Estilos para el footer */
+/* Estilos para el footer */
+footer {
+    background: rgb(255, 255, 255); /* Color de fondo del footer */
+    padding: 20px 0; /* Añade espacio alrededor del texto */
+}
+
+footer img {
+    width: 25px;
+    height: 25px;
+    
+}
+
+footer p {
+    color: #000000;
+    font-weight: bold;
+    
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: nowrap; /* Para que los íconos no se envuelvan a una nueva línea */
+    justify-content: left; /* Centra los íconos horizontalmente */
+}
+
+.social-icon {
+    margin-right: 10px; /* Espacio entre los íconos */
+}
+
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 767.98px) {
+    .col-md-2 .usuariologin {
+        width: 50px;
+        height: 37px;
+        
+    }
+    
+    footer .col-md-6 {
+        margin-bottom: 10px; /* Ajusta el margen inferior para dispositivos móviles */
+    }
+
+    .social-icons {
+        display: flex;
+        flex-wrap: nowrap; /* Para que los íconos no se envuelvan a una nueva línea */
+        justify-content: center; /* Centra los íconos horizontalmente */
+    }
+}
