@@ -85,20 +85,21 @@
                                     @endif
                                 </div>
                             </div>
-                            <div class="row mb-4">
-                                <div id="rgratis" class="col-md-12">
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                                {{ __('Registrate para recuersos gratis...!') }}
-                                    </a>
-                                </div>
-                                <div class="col-md-12">
-                                    <img src="{{asset('/images/imagen-footer.svg')}}" class="img-fluid" alt="fotografia" style="width:100%; height:1px">                                   
-                                </div>
-                            </div>
+                            
                         </form>
                     </div>
                     <div class="card-footer">
-                        
+                        <div class="col-md-12" id="footer-imagen">
+                            
+                        </div>
+                        <div class="row mb-4">
+                            <div id="rgratis" class="col-md-12">
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Registrate para recuersos gratis') }}
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

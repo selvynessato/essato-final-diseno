@@ -128,6 +128,10 @@ main p{
     justify-content: center;
 }
 
+.card-header{
+
+}
+
 .container-sm .card-header img {
     width: 50%;
     height: 50%;
@@ -191,6 +195,20 @@ footer p {
     margin-right: 10px; /* Espacio entre los íconos */
 }
 
+.card-footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    color: var(--bs-card-cap-color);
+    background-color: var(--bs-card-cap-bg);
+    border-top: var(--bs-card-border-width) solid #ffffff !important; /* Cambia el color de la línea superior a blanco */
+  }
+
+#rgratis .btn-link {  
+    font-size: 10px;
+    color: #ffffff;
+}
 
 /* Estilos adicionales para dispositivos móviles */
 @media (max-width: 767.98px) {
