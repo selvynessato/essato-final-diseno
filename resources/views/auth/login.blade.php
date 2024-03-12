@@ -27,7 +27,7 @@
                                 <div class="col-md-10">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="USUARIO">
                                         </div>
                                         <div class="col-md-12">
                                             @error('email')
@@ -47,7 +47,7 @@
                                 <div class="col-md-10">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="********">
                                         </div>
                                         <div class="col-md-12">
                                             @error('password')
@@ -60,27 +60,45 @@
                                 </div>
                             </div>
 
-                            <div class="row mb-4" >
-                                <div class="col-md-12 text-center"> <!-- Utiliza col-md-12 para que el botón ocupe las 12 columnas y text-center para alinear el contenido al centro -->
-                                    <button type="submit" class="btn btn-custo">
+                            <div class="row mb-4">
+                                <div  id="botoningreso" class="col-md-12 d-flex align-items-start justify-content-center" > <!-- Agrega clases para alinear el contenido -->
+                                    <button type="submit" class="btn btn-custom">
                                         {{ __('Login') }}
                                     </button>
-                                </div>
+                                </div>                              
                             </div>
-
-
-                            <div class="row mb-2">
-                                <div class="col-md-6 offset-md-4">
+                            
+                            <div class="row mb-4">
+                                <div id="recordar" class="col-md-6">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
                                         <label class="form-check-label" for="remember">
                                             {{ __('Recordar') }}
                                         </label>
                                     </div>
                                 </div>
+                                <div id="olvidarcontrasena" class="col-md-6">
+                                    @if (Route::has('password.request'))
+                                        <a class="btn btn-link" href="{{ route('password.request') }}">
+                                            {{ __('Olvidate tu contraseña?') }}
+                                        </a>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div id="rgratis" class="col-md-12">
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                                {{ __('Registrate para recuersos gratis...!') }}
+                                    </a>
+                                </div>
+                                <div class="col-md-12">
+                                    <img src="{{asset('/images/imagen-footer.svg')}}" class="img-fluid" alt="fotografia" style="width:100%; height:1px">                                   
+                                </div>
                             </div>
                         </form>
+                    </div>
+                    <div class="card-footer">
+                        
                     </div>
                 </div>
             </div>
@@ -110,8 +128,7 @@
                 </div>
             </div>
             <!-- Espacio entre las columnas -->
-            <div class="col-md-2 d-none d-md-block"></div> <!-- Oculta en dispositivos móviles -->
-            <!-- Columna para el texto del pie de página -->
+            <div class="col-md-2 d-none d-md-block" style="border:none;"></div> 
             <div class="col-md-6">
                 <p class="text-center text-md-end">&copy; Copyringht Essato Marketing y Publicidad - 2024</p>
             </div>
