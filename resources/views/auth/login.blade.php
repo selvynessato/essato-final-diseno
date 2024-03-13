@@ -12,7 +12,7 @@
     <div class="container-sm mb-30">
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div class="card">
+                <div id="card-completa"class="card">
                     <div class="card-header">
                         <img src="{{asset('/images/login-icono-inicial.svg')}}" class="img-fluid" alt="fotografia">                       
                     </div>
@@ -94,12 +94,11 @@
                         </div>
                         <div class="row mb-4">
                             <div id="rgratis" class="col-md-12">
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Registrate para recuersos gratis') }}
+                                <a class="btn btn-link" href="{{ route('register') }}">
+                                        {{ __('Registrate para recursos gratis') }}
                                 </a>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -115,16 +114,24 @@
             <div class="col-md-4 mb-3 mb-md-0">
                 <div class="social-icons">
                     <div class="social-icon">
-                        <img src="{{asset('/images/facebook.png')}}" class="img-fluid" alt="facebook">
+                        <a href="https://www.facebook.com/essatomarketing" target="_blank">
+                            <img src="{{asset('/images/facebook.png')}}" class="img-fluid" alt="facebook">
+                        </a>
                     </div>
                     <div class="social-icon">
-                        <img src="{{asset('/images/instagram.png')}}" class="img-fluid" alt="instagram">
+                        <a href="https://www.instagram.com/essatomarketing/" target="_blank">
+                            <img src="{{asset('/images/instagram.png')}}" class="img-fluid" alt="instagram">
+                        </a>
                     </div>
                     <div class="social-icon">
-                        <img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" alt="tik-tok">
+                        <a href="https://www.tiktok.com/@essato_marketing" target="_blank">
+                            <img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" alt="tik-tok">
+                        </a>
                     </div>
                     <div class="social-icon">
-                        <img src="{{asset('/images/youtube.png')}}" class="img-fluid" alt="youtube">
+                        <a href="https://www.youtube.com/@essato_marketing" target="_blank">
+                            <img src="{{asset('/images/youtube.png')}}" class="img-fluid" alt="youtube">
+                        </a>
                     </div>
                 </div>
             </div>

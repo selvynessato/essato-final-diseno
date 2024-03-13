@@ -26,6 +26,10 @@ main .fotoCamara img{
     margin-top: -22px; /* Ajusta el valor según sea necesario para quitar el espacio */
 }
 
+#card-completa {
+    margin-top: -75px; /* Margen negativo para subir la card */
+}
+
 
 .row .mb-4{
     margin-left: auto;
@@ -119,7 +123,6 @@ main p{
 .container-sm .card{
     /*background: linear-gradient(to bottom, #f02c2d, #bf3b79, #754ee6); */
     background: linear-gradient(#f02c2d, #bf3b79,#754ee6);
-
     border-radius: 50px; /* Agrega bordes redondeados */
 }
 
@@ -129,12 +132,18 @@ main p{
 }
 
 .card-header{
-
+    background-color: #ffffff00 !important;
+    border-bottom: 0 !important;
 }
 
 .container-sm .card-header img {
     width: 50%;
     height: 50%;
+    padding-top: 20px;
+}
+
+.card-body{
+    padding-bottom: 0 !important;
 }
 
 
@@ -210,7 +219,7 @@ footer p {
     color: #ffffff;
 }
 
-/* Estilos adicionales para dispositivos móviles */
+
 @media (max-width: 767.98px) {
     .col-md-2 .usuariologin {
         width: 50px;
@@ -227,4 +236,8 @@ footer p {
         flex-wrap: nowrap; /* Para que los íconos no se envuelvan a una nueva línea */
         justify-content: center; /* Centra los íconos horizontalmente */
     }
+    
 }
+
+
+
