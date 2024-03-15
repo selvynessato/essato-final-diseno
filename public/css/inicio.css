@@ -26,10 +26,10 @@ header{
 
 
 main{
-    background-color: red;
+    background: red;    
 }
 
-.primera-parte, .segunda-parte{
+.primera-parte{
     width: 80%;
     margin: 0 auto;
 }
@@ -77,20 +77,19 @@ main{
     animation-fill-mode: both;
 }
 
-.segunda-parte .col-6{
-    border: 1px solid blue;
+.segunda-parte{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
-.segunda-parte .parrafo-espaciado{
-    line-height: 1.5;
+
+.segunda-parte .essato-segunda-parte{
+    padding: 8%;
+    font-size: 22px;
+    text-align: justify;
+    color: #ffffff;
 }
-
-
-.segunda-parte #segunda-parte-imagen {
-    background: url('../images/mainpaginauno/chica.jpeg');
-    height: 100%;
-}
-
 
 
 /*footer*/
