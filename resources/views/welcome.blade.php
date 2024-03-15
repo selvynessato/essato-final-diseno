@@ -65,17 +65,43 @@
             </div>      
 
             <div class="primera-video">
-                <iframe width="100%" height="400" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="100%" height="450" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         
-            <div data-aos="fade-right"> 
-                <img src="{{asset('/images/facebook.png')}}" alt="Logo" class="d-inline-block align-text-top">
+        </div>
+        <div class="segunda-parte">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="parrafo-espaciado">
+                            Exploramos nuevas tecnologías para ayudarte a avanzar, ya sea porque necesites aumentar tu facturación, mejorar el posicionamiento de tu marca o definir los mejores procesos para llegar a tus objetivos.
+                        </p>
+                    </div>
+                    <div id="segunda-parte-imagen"class="col-6">
+                        <button type="button" class="btn btn-outline-light">Clientes</button>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        
+        <div class="tercera-parte">
+
+        </div>
+
+        <div class="cuarta-parte">
+
+        </div>
+        <div class="quinta-parte">
+        <div data-aos="fade-right"> 
+            <img src="{{asset('/images/facebook.png')}}" alt="Logo" class="d-inline-block align-text-top">
             </div>
 
             <div data-aos="fade-left">
                 <img src="{{asset('/images/tik-tok.png')}}" alt="Logo"  class="d-inline-block align-text-top">
             </div>
         </div>
+
+
     </main>
 
 <footer>
