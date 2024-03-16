@@ -18,11 +18,11 @@
 
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                <img src="{{asset('/images/navbar/logo-essato-blanco.png')}}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+                <img src="{{asset('/images/navbar/logo-essato-blanco.png')}}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,6 @@
             <div class="primera-video">
                 <iframe width="100%" height="500" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-        
         </div>
         <div class="segunda-parte">
             <div class="container-fluid">
@@ -85,10 +84,21 @@
                     </div>
                 </div>
             </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="leyenda-bajo-img">
+                            <p>
+                                Lleva tu negocio al éxito ya que nuestra meta será simplificar el trayecto, haciéndolo práctico y eficiente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       
         <div class="tercera-parte">
-
+            
         </div>
 
         <div class="cuarta-parte">
@@ -96,16 +106,103 @@
         </div>
 
         <div class="quinta-parte">
-                <div data-aos="fade-right"> 
-                    <img src="{{asset('/images/facebook.png')}}" alt="Logo" class="d-inline-block align-text-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-start">
+                        <div data-aos="fade-right">
+                            <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
+                            <h3>
+                                Gestion de redes sociales
+                            </h3>
+                        </div>
+                        <div class="col align-self-center">
+
+                        </div>
+                        <div class="col align-self-end">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col align-self-start">
+
+                        </div>
+                        
+                        <div class="col align-self-center">
+                            <div data-aos="fade-right">
+                                <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
+                                <h3>
+                                    Marketing estrategico
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col align-self-end">
+                            
+                        </div>
                 </div>
 
-                <div data-aos="fade-left">
-                    <img src="{{asset('/images/tik-tok.png')}}" alt="Logo"  class="d-inline-block align-text-top">
+                <div class="row">
+                        <div class="col align-self-start">
+
+                        </div>
+                        
+                        <div class="col align-self-center">
+                            
+                        </div>
+                        <div class="col align-self-end">
+                            <div data-aos="fade-down">
+                                <img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
+                                <h3>
+                                    Desarrollo web
+                                </h3>
+                            </div>
+                        </div>
                 </div>
+
+                <div class="row">
+                        <div class="col align-self-start">
+
+                        </div>
+                        
+                        <div class="col align-self-center">
+                            <div data-aos="fade-left">
+                                <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
+                                <h3>
+                                    Branding
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col align-self-end">
+                            
+                        </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col align-self-start">
+                        <div data-aos="fade-left">
+                            <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
+                            <h3>Asesoría financiera</h3>
+                        </div>
+                    </div>
+                    <div class="col align-self-center"></div>
+                    <div class="col align-self-end text-center">
+                        <div data-aos="zoom-out-left">
+                            <button type="button" class="btn btn-outline-light btn-lg fw-bold border-3">
+                                Portafolio
+                            </button>
+                            <hr>
+                        </div>                           
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sexta-parte">
+
+        </div>
+        <div class="septima-parte">
+
         </div>
     </main>
-
 <footer>
     <div class="container">
         <div class="row">
