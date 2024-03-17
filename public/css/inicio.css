@@ -100,7 +100,25 @@ main{
 }
 
 .tercera-parte{
-    background: #DDDDDD;
+    
+}
+
+.tercera-parte{
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/fondo.svg');
+    background-size: cover; 
+    background-position: center; 
+}
+
+.tercera-parte .owl-carousel {
+    padding-top: 8%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.tercera-parte .card{
+    height: 400px;
 }
 
 

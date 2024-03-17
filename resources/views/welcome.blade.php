@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
 
 </head>
 <body>
@@ -98,12 +100,107 @@
         </div>
       
         <div class="tercera-parte">
-            
+            <div class="owl-carousel owl-theme">
+                <div class="item">                 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                Gestion de redes sociales
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
+                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
+                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
+                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
+                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">                 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                Marketing estrategico
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
+                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
+                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
+                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
+                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">                 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                Desarrollo web
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
+                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
+                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
+                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
+                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">                 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                Branding
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
+                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
+                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
+                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
+                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">                 
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                Asesoría financiera
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
+                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
+                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
+                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
+                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="cuarta-parte">
-
-        </div>
+            <div class="container-fluid">
+                    <div class="row align-items-start">
+                        <div class="col-md-6 col-12">
+                            <h1>
+                                Trabajamos desde la estrategia hasta la ejecución
+                            </h1>
+                            <p class="essato-segunda-parte">
+                                Aplicamos nuestro enfoque "Piensa más allá" para ayudar a nuestros clientes a descubrir oportunidades concretas y lanzar productos y servicios líderes en el mercado.                              
+                            </p>	
+                        </div>
+                        <div class="col-md-6 col-12 position-relative">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         <div class="quinta-parte">
             <div class="container">
@@ -197,7 +294,7 @@
             </div>
         </div>
         <div class="sexta-parte">
-
+            
         </div>
         <div class="septima-parte">
 
@@ -242,6 +339,32 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                autoplay:true, 
+                autoplayTimeout:3000, 
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+        });
+    </script>
+
 <script>
     AOS.init();
 </script>
