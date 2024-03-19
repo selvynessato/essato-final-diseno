@@ -121,6 +121,44 @@ main{
     height: 400px;
 }
 
+#cuarta-parte .col-md-6.col-12 {
+    background: #000000; 
+    height: 700px;
+}
+
+.cuarta-parte{
+    margin: 0 auto;
+}
+
+.cuarta-parte .titulo{
+    color: #000000;
+    font-weight: bold;
+    font-size: 60px;
+    padding: 8%;
+    padding-bottom: 1%;
+    text-align: left;
+}
+
+.cuarta-parte .essato-segunda-parte{
+    padding: 8%;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.cuarta-parte #cuarta-parte-gris{
+    background: #F0F0F0 !important;
+}
+
+.quinta-parte{
+    margin-top: 10px;
+}
+
+.sexta-parte .sexta-parte-gris{
+    background: #F0F0F0 !important;
+}
+
+
+
 
 /*footer*/
 footer {
@@ -149,3 +187,5 @@ footer p {
 .social-icon {
     margin-right: 10px; /* Espacio entre los íconos */
 }
+
+

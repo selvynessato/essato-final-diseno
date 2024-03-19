@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Essato</title>
 
     <!-- Fonts -->
@@ -184,23 +184,23 @@
             </div>
         </div>
 
-        <div class="cuarta-parte">
+        <div id="cuarta-parte" class="cuarta-parte">
             <div class="container-fluid">
-                    <div class="row align-items-start">
-                        <div class="col-md-6 col-12">
-                            <h1>
-                                Trabajamos desde la estrategia hasta la ejecución
-                            </h1>
-                            <p class="essato-segunda-parte">
-                                Aplicamos nuestro enfoque "Piensa más allá" para ayudar a nuestros clientes a descubrir oportunidades concretas y lanzar productos y servicios líderes en el mercado.                              
-                            </p>	
-                        </div>
-                        <div class="col-md-6 col-12 position-relative">
-                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
+                <div class="row align-items-start">
+                    <div id="cuarta-parte-gris" class="col-md-6 col-12 position-relative">
+                        <h1 class="titulo">
+                            Trabajamos desde la estrategia hasta la ejecución
+                        </h1>
+                        <p class="essato-segunda-parte">
+                            Aplicamos nuestro enfoque "Piensa más allá" para ayudar a nuestros clientes a descubrir oportunidades concretas y lanzar productos y servicios líderes en el mercado.                              
+                        </p>	
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <iframe width="100%" height="700" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
+        </div>
 
         <div class="quinta-parte">
             <div class="container">
@@ -278,10 +278,14 @@
                     <div class="col align-self-start">
                         <div data-aos="fade-left">
                             <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
-                            <h3>Asesoría financiera</h3>
+                            <h3>
+                                Asesoría financiera
+                            </h3>
                         </div>
                     </div>
-                    <div class="col align-self-center"></div>
+                    <div class="col align-self-center">
+
+                    </div>
                     <div class="col align-self-end text-center">
                         <div data-aos="zoom-out-left">
                             <button type="button" class="btn btn-outline-light btn-lg fw-bold border-3">
@@ -294,11 +298,34 @@
             </div>
         </div>
         <div class="sexta-parte">
-            
+            <div class="container-fluid">
+                    <div class="row align-items-start">
+                        <div id="sexta-parte-gris" class="col-md-4 col-12 position-relative">
+                            <iframe width="100%" height="700" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-8 col-12">
+                            
+                        </div>
+                    </div>
+            </div>
         </div>
-        <div class="septima-parte">
 
+        <div class="septima-parte">
+            <div class="card text-center">
+                <div class="card-header">
+                    Encabezado
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Cuerpo</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                <div class="card-footer text-muted">
+                    <h5 class="card-title">Pie</h5>
+                </div>
+            </div>
         </div>
+        
     </main>
 <footer>
     <div class="container">
