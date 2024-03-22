@@ -26,7 +26,7 @@ header{
 
 
 main{
-    background: #7a7a7a;    
+    /*background: #7a7a7a;    */
 }
 
 .primera-parte{
@@ -136,6 +136,7 @@ main{
     font-size: 60px;
     padding: 8%;
     padding-bottom: 1%;
+    
     text-align: left;
 }
 
@@ -169,6 +170,15 @@ main{
     text-align: center;
 }
 
+.septima-parte .card:hover{
+    border-color: #686868;
+}
+
+.septima-parte .card:hover .card-body .card-title{
+    font-size: 33px;
+    transition: 200ms all;
+}
+
 .card .card-header{
     border: none;
 }
@@ -190,7 +200,7 @@ main{
 .truncated{
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* Cambia este valor al número deseado de líneas */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
