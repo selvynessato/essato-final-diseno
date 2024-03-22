@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                <img src="{{asset('/images/navbar/logo-essato-blanco.png')}}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top"> 
+                <img src="{{asset('/images/navbar/logo-essato-blanco.png')}}" alt="Logo" width="32" height="32" class="d-inline-block align-text-top"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -301,7 +301,7 @@
             <div class="container-fluid">
                     <div class="row align-items-start">
                         <div id="sexta-parte-gris" class="col-md-4 col-12 position-relative">
-                            <iframe width="100%" height="700" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div class="col-md-8 col-12">
                             
@@ -311,17 +311,56 @@
         </div>
 
         <div class="septima-parte">
-            <div class="card text-center">
-                <div class="card-header">
-                    Encabezado
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Cuerpo</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="card-footer text-muted">
-                    <h5 class="card-title">Pie</h5>
+            <div class="container-fluid">
+                <h1 class="titulo"> Blog </h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <img src="{{asset('/images/blog/django.png')}}" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cuerpo</h5>
+                                <p class="card-text text-justify truncated">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,     numquam earum inventore distinctio fuga modi corporis repellat unde. Harum perferendis inventore nihil molestiae omnis cumque officiis aut sed voluptatibus quo.
+                                </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <h5 class="card-title">Pie</h5>
+                                <a href="#" class="btn btn-info btn-sm">Leer Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                    <div class="card text-center">
+                            <div class="card-header">
+                                <img src="{{asset('/images/blog/redes.png')}}" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cuerpo</h5>
+                                <p class="card-text text-justify truncated">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quam maxime temporibus cupiditate vel odit vero, vitae quo iure. Molestiae incidunt accusantium dicta est quam recusandae, explicabo quis nobis voluptates?
+                                </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <h5 class="card-title">Pie</h5>
+                                <a href="#" class="btn btn-info btn-sm">Leer Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                    <div class="card text-center">
+                            <div class="card-header">
+                                <img src="{{asset('/images/blog/framework.png')}}" class="card-img-top" alt="...">  
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Cuerpo</h5>
+                                <p class="card-text text-justify truncated">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, inventore animi, blanditiis ipsum in magnam dolorum consequuntur culpa, voluptas velit molestiae ea sapiente odio voluptatibus cupiditate rem nobis quidem non.</p>
+                            </div>
+                            <div class="card-footer text-muted">
+                                <h5 class="card-title">Pie</h5>
+                                <a href="#" class="btn btn-info btn-sm">Leer Mas</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -375,7 +414,7 @@
                 margin:10,
                 nav:true,
                 autoplay:true, 
-                autoplayTimeout:3000, 
+                autoplayTimeout: 1500, 
                 autoplayHoverPause:true,
                 responsive:{
                     0:{
