@@ -17,7 +17,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
-
 </head>
 <body>
     <header class="fixed-top">
@@ -48,6 +47,23 @@
                             <a href="#" class="nav-link">
                                 <img src="{{asset('/images/navbar/escuela.png')}}" alt="logo cliente" width="32" height="32">
                             </a>
+                        </li>           
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="{{asset('/images/navbar/menu.png')}}" alt="logo cliente" width="32" height="32">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                                <li><a class="dropdown-item" href="#">Portafolio</a></li>
+                                <li><a class="dropdown-item" href="#">Clientes</a></li>
+                                <li><a class="dropdown-item" href="#">Servicios</a></li>
+                                <li><a class="dropdown-item" href="#">ODS</a></li>
+                                <li><a class="dropdown-item" href="#">Empleos</a></li>
+                                <li><a class="dropdown-item" href="#">Pasantías</a></li>
+                                <li><a class="dropdown-item" href="#">Asociados</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                            </ul>
                         </li>
                         @endif
                     @endauth
@@ -60,29 +76,50 @@
 
     <main>
         <div class="primera-parte">
-            <div class="texto-inicio">     
-                <h1>ESSATO</h1>
-                <h2 id="subtitulo">Somos más que una agencia de marketing,</h2>
-                <h2>Somos una agencia de progreso y avance para tu negocio.</h2>
-            </div>      
-
+            <div class="container">
+                <div class="row justify-content-md-left">
+                    <div class="col-md-auto">
+                        <div class="texto-inicio">     
+                            <h1 id="essato-titulo">ESSATO</h1>
+                        </div>   
+                    </div>
+                </div>
+                <div class="row justify-content-md-left">
+                    <div class="col">
+                        <h2 class="subtitulo">Somos más que una agencia de marketing,</h2>
+                        <h2 class="subtitulo">Somos una agencia de progreso y avance para tu negocio.</h2>
+                    </div>
+                        <div class="col-md-auto">
+                        </div>
+                    <div class="col col-lg-2">
+                        <a href="#servicios" class="btn btn-outline-light btn-lg fw-bold border-3">
+                            Servicios
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="primera-video">
                 <iframe width="100%" height="500" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
+
         <div class="segunda-parte">
             <div class="container-fluid">
                 <div class="row align-items-start">
                     <div class="col-md-6 col-12">
-                        <p class="essato-segunda-parte">
-                            Exploramos nuevas tecnologías para ayudarte a avanzar, ya sea porque necesites aumentar tu facturación, mejorar el posicionamiento de tu marca o definir los mejores procesos para llegar a tus objetivos.
+                        <div class="segunda-parte-container"></div>
+                        <p id="segunda-parte-titulouno">Exploramos</p>
+                        <p id="segunda-parte-titulodos">Nuevas tecnologias</p>
+                        <p id="segunda-parte-titulotres">para ayudarte a avansar </p>
+                        <p id="essato-segunda-parte">
+                         Ya sea porque necesites aumentar tu facturación, mejorar el posicionamiento de tu marca o definir los mejores procesos para llegar a tus objetivos.
                         </p>	
                     </div>
                     <div class="col-md-6 col-12 position-relative">
-                        <img src="{{asset('/images/mainpaginauno/chica.jpeg')}}" alt="logo chica" class="img-fluid">
-                        <button type="button" class="btn btn-outline-light btn-lg fw-bold border-3 position-absolute top-50 start-50 translate-middle">
+                        <img src="{{asset('/images/inicio/chica.jpeg')}}" alt="logo chica" class="img-fluid">
+                        <a href="#clientes" class="btn btn-outline-light btn-lg fw-bold border-3 position-absolute top-50 start-50 translate-middle">
                             Clientes
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -91,7 +128,10 @@
                     <div class="col-12">
                         <div id="leyenda-bajo-img">
                             <p>
-                                Lleva tu negocio al éxito ya que nuestra meta será simplificar el trayecto, haciéndolo práctico y eficiente.
+                                Lleva tu negocio al éxito ya que nuestra meta será 
+                            </p>
+                            <p>
+                                simplificar el trayecto, haciéndolo práctico y eficiente.
                             </p>
                         </div>
                     </div>
