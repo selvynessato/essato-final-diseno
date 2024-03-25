@@ -109,10 +109,10 @@
                     <div class="col-md-6 col-12">
                         <div class="segunda-parte-container"></div>
                         <p id="segunda-parte-titulouno">Exploramos</p>
-                        <p id="segunda-parte-titulodos">Nuevas tecnologias</p>
-                        <p id="segunda-parte-titulotres">para ayudarte a avansar </p>
+                        <p id="segunda-parte-titulodos">Nuevas tecnologías</p>
+                        <p id="segunda-parte-titulotres">para ayudarte a avanzar </p>
                         <p id="essato-segunda-parte">
-                         Ya sea porque necesites aumentar tu facturación, mejorar el posicionamiento de tu marca o definir los mejores procesos para llegar a tus objetivos.
+                            Ya sea porque necesites aumentar tu facturación, mejorar el posicionamiento de tu marca o definir los mejores procesos para llegar a tus objetivos.
                         </p>	
                     </div>
                     <div class="col-md-6 col-12 position-relative">
@@ -124,36 +124,43 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div id="leyenda-bajo-img">
-                            <p>
-                                Lleva tu negocio al éxito ya que nuestra meta será 
-                            </p>
-                            <p>
-                                simplificar el trayecto, haciéndolo práctico y eficiente.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-md-6 col-12">
+                    <p id="leyenda-bajo-img">
+                        Lleva tu negocio al éxito ya que nuestra meta será simplificcar el trayecto, haciéndolo práctico y eficiente.
+                    </p>	
+                </div>          
             </div>
         </div>
       
         <div class="tercera-parte">
+            <div id="tercera-container" class="container">
+                <div class="row justify-content-md-left">
+                    <div class="col">
+                        <h1 class="tercera-parte-titulo">
+                            Explorando tu negocio y hagamoslo crecer
+                        </h1>
+                    </div>
+                        <div class="col-md-auto">
+                        </div>
+                    <div class="col col-lg-2">
+                        <a href="#servicios" class="btn btn-outline-danger btn-lg fw-bold border-3">
+                            Servicios
+                        </a>
+                    </div>
+                </div>
+            </div>
             <div class="owl-carousel owl-theme">
                 <div class="item">                 
                     <div class="card">
                         <div class="card-header">
                             <h3>
-                                Gestion de redes sociales
+                                Marketing
                             </h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
-                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
-                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
-                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
-                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                            <p class="card-text">
+                                Que las estrategias no sean un problema para ejecutar tu negocio y hacerlo crecer
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -161,15 +168,13 @@
                     <div class="card">
                         <div class="card-header">
                             <h3>
-                                Marketing estrategico
+                                Redes Sociales
                             </h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
-                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
-                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
-                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
-                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                            <p class="card-text">
+                                Que las estrategias no sean un problema para ejecutar tu negocio y hacerlo crecer
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -181,11 +186,9 @@
                             </h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
-                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
-                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
-                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
-                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetuer
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -197,11 +200,9 @@
                             </h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
-                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
-                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
-                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
-                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetuer
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -213,11 +214,9 @@
                             </h3>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer</p>
-                            <p class="card-text">Adipiscing elit, sed diam nonummy nibh</p>
-                            <p class="card-text">euismod tincidunt ut laoreet dolore magna</p>
-                            <p class="card-text">aliquam erat volutpat. ut wisi enim ad</p>
-                            <p class="card-text">minim veniam, quis nostrud exerci tation</p>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetuer
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -407,7 +406,40 @@
         
     </main>
 <footer>
-    <div class="container">
+    <div class="footer-parte">
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <div id="footer-parte-gris" class="col-md-8 col-12 align-self-stretch">
+                    <h1>CONTACTANOS</h1>
+                </div>
+                <div id="footer-parte-negro" class="col-md-4 col-12 position-relative align-self-stretch">
+                    <ul>
+                        <li class="listado-footer"><a href="">Nosotros</a></li>
+                        <li class="listado-footer"><a href="">Portafolio</a></li>
+                        <li class="listado-footer"><a href="">Clientes</a></li>
+                        <li class="listado-footer"><a href="">Servicios</a></li>
+                        <li class="listado-footer"><a href="">ODS</a></li>
+                        <li class="listado-footer"><a href="">Empleos</a></li>
+                        <li class="listado-footer"><a href="">Pasantías</a></li>
+                        <li class="listado-footer"><a href="">Asociados</a></li>
+                    </ul>
+                    <ul>
+                        <li id="dato-personal-footer" class="datos-personal-footer">Quetzaltenango, Guatemala.</li>
+                        <li class="datos-personal-footer">3 avenida 8-25 zona 1</li>        
+                        <li class="datos-personal-footer">(+502) 77610106 / (+502) 41994781</li>
+                    </ul>               
+                    <ul>
+                        <li class="politicas-footer">Politicas de privacidad</li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="URL_YOUTUBE"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube"></a> Behacen/essato</li>
+                        <li><a href="URL_LINKEDIN"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="linkedin"></a> Linkedin/essato</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div id="container-footer" class="container">
         <div class="row">
             <div class="col-md-4 mb-3 mb-md-0">
                 <div class="social-icons">

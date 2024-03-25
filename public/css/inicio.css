@@ -145,34 +145,62 @@ main{
 }
 
 .col-md-6.col-12.position-relative img {
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 15%;
+    height: 40%;
 }
 
 .segunda-parte #leyenda-bajo-img {
-    margin: 0;
+    font-size: 20px;
+    margin:0;
     padding: 0;
+    margin-bottom: 50px;
 }
 
 .tercera-parte{
     width: 100%;
-    height: 600px;
     background: #F0F0F0;
     background-size: cover; 
     background-position: center; 
 }
 
 .tercera-parte .owl-carousel {
-    padding-top: 8%;
+    padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
 }
 
+.tercera-parte .item{
+    padding-top: 10px;
+    background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
+}
+
 .tercera-parte .card{
+    padding-top: 5px;
     border: 2px solid red;
-    border-top: 8px  solid #bf3b79;    
     height: 300px;
 }
+
+.tercera-parte #tercera-container{
+    padding-top: 20px;
+}
+
+.tercera-parte h1{
+    color: red;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.tercera-parte a{
+   margin-top: 50px; 
+}
+
+.tercera-parte .card-header{
+    padding-top: 40px;
+}  
+.tercera-parte .card-header h3{
+    font-weight: bold;
+}  
+
 
 #cuarta-parte .col-md-6.col-12 {
     background: #000000; 
@@ -263,21 +291,60 @@ main{
 
 /*footer*/
 footer {
-    background: rgb(255, 255, 255); /* Color de fondo del footer */
-    padding: 20px 0; /* Añade espacio alrededor del texto */
+    width: 100%;
 }
 
 footer img {
     width: 25px;
     height: 25px;
-    
 }
 
 footer p {
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
-    
 }
+
+#footer-parte-negro {
+    padding-bottom: 2%;
+}
+
+#footer-parte-gris {
+    background-color: #F0F0F0;
+}
+
+#footer-parte-gris h1 {
+    font-size: 80px;
+}
+
+.footer-parte #footer-parte-negro{
+    padding-top: 5%;
+    border: 1px solid #f02c2d;
+}
+
+footer .listado-footer {
+    font-size: 16px;
+}
+
+.footer-parte ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.datos-personal-footer,
+.politicas-footer {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+#dato-personal-footer{
+    padding-top: 40px;
+}
+
+ul .datos-personal-footer:first-child {
+    font-weight: bold;
+    font-size: 22px;
+}
+
 
 .social-icons {
     display: flex;
