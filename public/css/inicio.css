@@ -101,8 +101,8 @@ main{
     position: absolute;
     width: 25%;
     height: 55%;
-    border: 2px solid red; /* Establecer bordes rojos */
-    margin-left: 5%; /* Agregar relleno para separar el contenido del borde */
+    border: 2px solid red; 
+    margin-left: 5%; 
     z-index: -1;
 }
 
@@ -211,13 +211,23 @@ main{
     margin: 0 auto;
 }
 
+.cuarta-parte #cuarta-parte-container{
+   padding-top: 8%;
+}
+
+.cuarta-parte .col.align-self-end{
+    width: 30%;
+    height: 15px;
+    background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
+}
+
 .cuarta-parte .titulo{
     color: #000000;
     font-weight: bold;
     font-size: 60px;
     padding: 8%;
+    padding-top: 0px;
     padding-bottom: 1%;
-    
     text-align: left;
 }
 
@@ -286,12 +296,10 @@ main{
     text-overflow: ellipsis;
 }
 
-
-
-
 /*footer*/
 footer {
     width: 100%;
+    background: #F0F0F0;
 }
 
 footer img {
@@ -300,16 +308,20 @@ footer img {
 }
 
 footer p {
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
+}
+
+#footer-parte-gris h1{
+    padding-top: 30px;
 }
 
 #footer-parte-negro {
     padding-bottom: 2%;
 }
 
-#footer-parte-gris {
-    background-color: #F0F0F0;
+#footer-parte-negro {
+    background-color: #000000;
 }
 
 #footer-parte-gris h1 {
@@ -318,7 +330,7 @@ footer p {
 
 .footer-parte #footer-parte-negro{
     padding-top: 5%;
-    border: 1px solid #f02c2d;
+    /*border: 1px solid #f02c2d;*/
 }
 
 footer .listado-footer {
@@ -331,9 +343,18 @@ footer .listado-footer {
 }
 
 .datos-personal-footer,
-.politicas-footer {
+.politicas-footer{
     color: #FFFFFF;
     font-size: 16px;
+}
+
+.politicas-footer{
+    padding-bottom: 20px;
+}
+
+.red-social-footer {
+    color: #FFFFFF;
+    font-size: 12px;
 }
 
 #dato-personal-footer{
@@ -348,12 +369,10 @@ ul .datos-personal-footer:first-child {
 
 .social-icons {
     display: flex;
-    flex-wrap: nowrap; /* Para que los íconos no se envuelvan a una nueva línea */
-    justify-content: left; /* Centra los íconos horizontalmente */
+    flex-wrap: nowrap; 
+    justify-content: left; 
 }
 
 .social-icon {
     margin-right: 10px; /* Espacio entre los íconos */
 }
-
-

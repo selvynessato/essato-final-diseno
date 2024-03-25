@@ -126,7 +126,7 @@
             <div class="container-fluid">
                 <div class="col-md-6 col-12">
                     <p id="leyenda-bajo-img">
-                        Lleva tu negocio al éxito ya que nuestra meta será simplificcar el trayecto, haciéndolo práctico y eficiente.
+                        Lleva tu negocio al éxito ya que nuestra meta será simplificar el trayecto, haciéndolo práctico y eficiente.
                     </p>	
                 </div>          
             </div>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                Que las estrategias no sean un problema para ejecutar tu negocio y hacerlo crecer
+                                llevemos a tu cliente potencial justo donde quieres que esté: a las puertas de tu negocio.  
                             </p>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                Que las estrategias no sean un problema para ejecutar tu negocio y hacerlo crecer
+                                Creemos conexiones sólidas con tu audiencia y elevemo la percepción de tu marca.
                             </p>
                         </div>
                     </div>
@@ -187,7 +187,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetuer
+                                Diseñemos un espacio digital que cautiva a tus visitantes y los convierte en clientes fieles.
                             </p>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetuer
+                                Construyamos una imagen sólida definiendo el valor de tu marca.
                             </p>
                         </div>
                     </div>
@@ -215,8 +215,11 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                                Lorem ipsum dolor sit amet, consectetuer
+                                Ordenemos tus números, gestionando ingresos, salidas y gastos para garantizar la estabilidad y el crecimiento continuo de tu negocio.
                             </p>
+                        </div>
+                        <div class="card-footer">
+
                         </div>
                     </div>
                 </div>
@@ -227,6 +230,19 @@
             <div class="container-fluid">
                 <div class="row align-items-start">
                     <div id="cuarta-parte-gris" class="col-md-6 col-12 position-relative">
+                        <div id="cuarta-parte-container" class="container">
+                            <div class="row">
+                                <div class="col align-self-start">
+
+                                </div>
+                                <div class="col align-self-center">
+
+                                </div>
+                                <div class="col align-self-end">
+                                    
+                                </div>
+                            </div>
+                        </div>
                         <h1 class="titulo">
                             Trabajamos desde la estrategia hasta la ejecución
                         </h1>
@@ -245,48 +261,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-right">
+                        <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                             <h3>
                                 Gestion de redes sociales
                             </h3>
                         </div>
-                        <div class="col align-self-center">
-
-                        </div>
-                        <div class="col align-self-end">
-                            
-                        </div>
+                        <div class="col align-self-center"></div>
+                        <div class="col align-self-end"></div>
                     </div>
                 </div>
                 <div class="row">
-                        <div class="col align-self-start">
-
-                        </div>
-                        
+                    <div class="col align-self-start"></div>
                         <div class="col align-self-center">
-                            <div data-aos="fade-right">
+                            <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                                 <h3>
                                     Marketing estrategico
                                 </h3>
                             </div>
                         </div>
-                        <div class="col align-self-end">
-                            
-                        </div>
+                    <div class="col align-self-end"></div>
                 </div>
 
                 <div class="row">
-                        <div class="col align-self-start">
-
-                        </div>
-                        
-                        <div class="col align-self-center">
-                            
-                        </div>
+                    <div class="col align-self-start"></div>
+                       <div class="col align-self-center"></div>
                         <div class="col align-self-end">
-                            <div data-aos="fade-down">
+                            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
                                 <img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                                 <h3>
                                     Desarrollo web
@@ -301,7 +303,7 @@
                         </div>
                         
                         <div class="col align-self-center">
-                            <div data-aos="fade-left">
+                            <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                                 <h3>
                                     Branding
@@ -315,7 +317,7 @@
                 
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-left">
+                        <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                             <h3>
                                 Asesoría financiera
@@ -336,6 +338,7 @@
                 </div>
             </div>
         </div>
+
         <div class="sexta-parte">
             <div class="container-fluid">
                     <div class="row align-items-start">
@@ -433,8 +436,8 @@
                     </ul>
 
                     <ul>
-                        <li><a href="URL_YOUTUBE"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube"></a> Behacen/essato</li>
-                        <li><a href="URL_LINKEDIN"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="linkedin"></a> Linkedin/essato</li>
+                        <li class="red-social-footer"><a href="https://www.behance.net/Damaochoa"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube"></a> Behance/essato</li>
+                        <li class="red-social-footer"><a href="https://www.linkedin.com/company/essato/?viewAsMember=true"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="linkedin"></a> Linkedin/essato</li>
                     </ul>
                 </div>
             </div>
