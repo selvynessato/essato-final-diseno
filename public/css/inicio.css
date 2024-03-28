@@ -19,8 +19,17 @@ header{
     /*padding: 0px;*/
 }
 
-header .dropdown-item:hover {
+
+header .dropdown-menu {
     background-color: #747474;
+}
+
+header .navbar-nav .nav-item .dropdown-menu li a {
+    color: #ffffff;
+}
+
+header .dropdown-item:hover {
+    background-color: #b6d9ee;
 }
 
 header .dropdown-item {
