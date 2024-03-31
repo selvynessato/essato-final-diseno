@@ -274,7 +274,7 @@
                 <div class="row">
                     <div class="col align-self-start"></div>
                         <div class="col align-self-center">
-                            <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                            <div data-aos="fade-right" data-aos-offset="550" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                                 <h3>
                                     Marketing estrategico
@@ -288,7 +288,7 @@
                     <div class="col align-self-start"></div>
                        <div class="col align-self-center"></div>
                         <div class="col align-self-end">
-                            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
+                            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
                                 <img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                                 <h3>
                                     Desarrollo web
@@ -303,7 +303,7 @@
                         </div>
                         
                         <div class="col align-self-center">
-                            <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                            <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                                 <h3>
                                     Branding
@@ -317,7 +317,7 @@
                 
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                        <div data-aos="fade-left" data-aos-offset="550" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                             <h3>
                                 Asesoría financiera
