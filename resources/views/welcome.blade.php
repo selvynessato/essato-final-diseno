@@ -261,7 +261,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                        <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                             <h3>
                                 Gestion de redes sociales
@@ -274,7 +274,7 @@
                 <div class="row">
                     <div class="col align-self-start"></div>
                         <div class="col align-self-center">
-                            <div data-aos="fade-right" data-aos-offset="550" data-aos-easing="ease-in-sine">
+                            <div data-aos="fade-right" data-aos-offset="450" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                                 <h3>
                                     Marketing estrategico
@@ -303,7 +303,7 @@
                         </div>
                         
                         <div class="col align-self-center">
-                            <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                            <div data-aos="fade-left" data-aos-offset="450" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                                 <h3>
                                     Branding
@@ -317,7 +317,7 @@
                 
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-left" data-aos-offset="550" data-aos-easing="ease-in-sine">
+                        <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
                             <h3>
                                 Asesoría financiera
@@ -413,7 +413,77 @@
         <div class="container-fluid">
             <div class="row align-items-start">
                 <div id="footer-parte-gris" class="col-md-8 col-12 align-self-stretch">
-                    <h1>CONTACTANOS</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-4">
+                                <h1>CONTACTANOS</h1>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-5"></div>
+                            <div class="col-1"></div>
+                        </div>
+                    </div>
+                    <div class="container">             
+                        <div class="row">
+                            <div class="col-1">
+                            </div>
+                            <div class="col-4">
+                                <form>
+                                    <div class="mb-2">
+                                        <label for="nombre" class="form-label">Nombre y apellido</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Mi nombre es" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="telefono" class="form-label">Número de teléfono</label>
+                                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Mi numero es" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="trabajo" class="form-label">Trabajo en</label>
+                                        <input type="text" class="form-control" id="trabajo" name="trabajo" placeholder="Mi empresa se llama" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="contacto" class="form-label">Contáctanos en</label>
+                                        <input type="email" class="form-control" id="contacto" name="contacto" placeholder="micorreo@dominio.com" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="pais" class="form-label">País</label>
+                                        <select class="form-select" id="pais" name="pais" required>
+                                            <option value="" disabled selected>Selecciona tu país</option>
+                                            <!-- Agrega aquí las opciones para cada país -->
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-5">
+                                <form>
+                                    <div class="mb-2">
+                                        <label for="departamento" class="form-label">Departamento/Provincia</label>
+                                        <select class="form-select" id="departamento" name="departamento" required>
+                                            <option value="" disabled selected>Selecciona tu departamento o provincia</option>
+                                            <!-- Agrega aquí las opciones para cada departamento o provincia -->
+                                        </select>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="comoEncontraste" class="form-label">¿Cómo nos encontraste?</label>
+                                        <input type="text" class="form-control" id="comoEncontraste" name="comoEncontraste" placeholder="Cuéntanos cómo nos encontraste" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="asunto" class="form-label">Asunto</label>
+                                        <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Mi asunto es" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="mensaje" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="6" placeholder="Empieza a escribir aqui" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                            <div class="col-1">
+                            </div>
+                        </div>
+                    </div>                  
                 </div>
                 <div id="footer-parte-negro" class="col-md-4 col-12 position-relative align-self-stretch">
                     <ul>

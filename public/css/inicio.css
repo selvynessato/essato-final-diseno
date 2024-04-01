@@ -334,7 +334,12 @@ footer p {
 }
 
 #footer-parte-gris h1 {
-    font-size: 80px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#footer-parte-gris .col-4, .col-5 .form-label{
+    font-weight: bold;
 }
 
 .footer-parte #footer-parte-negro{
