@@ -450,7 +450,9 @@
                                         <label for="pais" class="form-label">País</label>
                                         <select class="form-select" id="pais" name="pais" required>
                                             <option value="" disabled selected>Selecciona tu país</option>
-                                            <!-- Agrega aquí las opciones para cada país -->
+                                            @foreach ($paises as $listado)
+                                                <option value="{{ $listado->id_pais }}">{{ $listado->nombre_pais }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                 </form>
@@ -463,6 +465,9 @@
                                         <select class="form-select" id="departamento" name="departamento" required>
                                             <option value="" disabled selected>Selecciona tu departamento o provincia</option>
                                             <!-- Agrega aquí las opciones para cada departamento o provincia -->
+                                            @foreach ($departamentos as $departamento)
+                                                <option value="{{ $departamento->id_departamento }}">{{ $departamento->nombre_departamento }}</option>
+                                            @endforeach
                                         </select>
                                     </div>
                                     <div class="mb-2">
@@ -553,6 +558,8 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/carrousel.js') }}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="{{ asset('js/paisdepto.js') }}"></script>
 <script>
     AOS.init();
 </script>
