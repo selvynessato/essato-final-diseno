@@ -254,6 +254,47 @@ main{
     margin-top: 10px;
 }
 
+.quinta-parte .tituloservicios{
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.sexta-parte{
+    margin-top: 50px;
+}
+
+#sexta-parte-negro{
+    padding: 5%;
+    padding-left: 10%;
+    padding-right: 22%;
+}
+
+.sexta-parte .titulo{
+    font-size: 50px;
+    color: #DDDDDD;
+}
+
+.sexta-parte .titulo{
+    font-size: 50px;
+    color: #DDDDDD;
+}
+
+.sexta-parte .sexta-parte-texto{
+    text-align: justify;
+    font-size: 16px;
+    color: #DDDDDD;
+}
+
+.sexta-parte .sexta-fondo-rojo{
+    background: #F02C2D;
+}
+
+.sexta-parte .sexta-fondo-morado{
+    background: #754EE6;
+}
+
+
 .septima-parte .container-fluid{
     width: 80%;
     margin: 0 auto;

@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                <img src="{{asset('/images/navbar/logo-essato-blanco.png')}}" alt="Logo" width="32" height="32" class="d-inline-block align-text-top"> 
+                <img src="{{asset('/images/navbar/logo-essato-blanco.svg')}}" alt="Logo" width="32" height="32" class="d-inline-block align-text-top"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
                         
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="{{asset('/images/navbar/menu.png')}}" alt="logo cliente" width="32" height="32">
+                                <img src="{{asset('/images/navbar/menu.svg')}}" alt="logo cliente" width="32" height="32">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Nosotros</a></li>
@@ -260,24 +260,24 @@
         <div class="quinta-parte">
             <div class="container">
                 <div class="row">
-                    <div class="col align-self-start">
-                        <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
-                            <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
-                            <h3>
-                                Gestion de redes sociales
-                            </h3>
+                        <div class="col align-self-start">
+                            <div data-aos="fade-right" data-aos-easing="ease-in-sine">
+                                <img src="{{asset('/images/marketing.png')}}" class="img-fluid" width="500" height="500" alt="marketing">
+                                <h3 class="tituloservicios">
+                                    MARKETING
+                                </h3>
+                            </div>
                         </div>
                         <div class="col align-self-center"></div>
                         <div class="col align-self-end"></div>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col align-self-start"></div>
                         <div class="col align-self-center">
-                            <div data-aos="fade-right" data-aos-offset="450" data-aos-easing="ease-in-sine">
-                                <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
-                                <h3>
-                                    Marketing estrategico
+                            <div data-aos="fade-right" data-aos-easing="ease-in-sine">
+                                <img src="{{asset('/images/social_media.png')}}" class="img-fluid" width="400" height="400" alt="social media">
+                                <h3 class="tituloservicios">
+                                    SOCIAL MEDIA
                                 </h3>
                             </div>
                         </div>
@@ -285,42 +285,39 @@
                 </div>
 
                 <div class="row">
-                    <div class="col align-self-start"></div>
-                       <div class="col align-self-center"></div>
-                        <div class="col align-self-end">
-                            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
-                                <img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
-                                <h3>
-                                    Desarrollo web
-                                </h3>
-                            </div>
+                    <div class="col align-self-start">
+                        <div data-aos="zoom-out-left"></div>   
+                    </div>
+                    <div class="col align-self-center"></div>
+                    <div class="col align-self-end">
+                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
+                    |   <img src="{{asset('/images/desarrollo_web.png')}}" class="img-fluid" width="400" height="400" alt="desarrollo web">
+                            <h3 class="tituloservicios">
+                                DESARROLLO WEB
+                            </h3>
                         </div>
+                    </div>
                 </div>
 
                 <div class="row">
-                        <div class="col align-self-start">
-
+                    <div class="col align-self-start"></div>
+                    <div class="col align-self-center">
+                        <div data-aos="fade-left" data-aos-easing="ease-in-sine">
+                            <img src="{{asset('/images/branding.png')}}" class="img-fluid" width="400" height="400" alt="branding">
+                            <h3 class="tituloservicios">
+                                BRANDING
+                            </h3>
                         </div>
-                        
-                        <div class="col align-self-center">
-                            <div data-aos="fade-left" data-aos-offset="450" data-aos-easing="ease-in-sine">
-                                <img src="{{asset('/images/facebook.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
-                                <h3>
-                                    Branding
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="col align-self-end">
-                            
-                        </div>
+                    </div>
+                    <div class="col align-self-end"></div>
                 </div>
                 
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
-                            <img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube">
-                            <h3>
-                                Asesoría financiera
+                        <div data-aos="fade-left" data-aos-easing="ease-in-sine">
+                            <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" width="400" height="400" alt="asesoria financiera">
+                            <h3 class="tituloservicios">
+                                ASESORÍA FINANCIERA
                             </h3>
                         </div>
                     </div>
@@ -332,7 +329,7 @@
                             <button type="button" class="btn btn-outline-light btn-lg fw-bold border-3">
                                 Portafolio
                             </button>
-                            <hr>
+                            <br>
                         </div>                           
                     </div>
                 </div>
@@ -345,8 +342,14 @@
                         <div id="sexta-parte-gris" class="col-md-4 col-12 position-relative">
                             <iframe width="100%" height="600" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <div class="col-md-8 col-12">
-                            
+                        <div id="sexta-parte-negro"class="col-md-8 col-12">
+                            <h1 class="titulo">Construyamos una marca increíble para tu negocio</h1>
+                            <br>
+                            <p class="sexta-parte-texto">Aprovecha nuestra experiencia especializada, lo que te permitirá <span class="sexta-fondo-rojo">ahorrar tiempo y recursos</span> al externalizar las actividades de marketing.</p>
+                            <br>
+                            <p class="sexta-parte-texto">Además, tienes acceso a herramientas avanzadas y recibe estrategias personalizadas que mejoran la <span class="sexta-fondo-rojo">visibilidad de tu marca</span> en línea y optimizan el <span class="sexta-fondo-morado">retorno de la inversión</span> (ROI) mediante un enfoque orientado a resultados.
+                            </p>
+
                         </div>
                     </div>
             </div>
@@ -464,7 +467,6 @@
                                         <label for="departamento" class="form-label">Departamento/Provincia</label>
                                         <select class="form-select" id="departamento" name="departamento" required>
                                             <option value="" disabled selected>Selecciona tu departamento o provincia</option>
-                                            <!-- Agrega aquí las opciones para cada departamento o provincia -->
                                             @foreach ($departamentos as $departamento)
                                                 <option value="{{ $departamento->id_departamento }}">{{ $departamento->nombre_departamento }}</option>
                                             @endforeach
