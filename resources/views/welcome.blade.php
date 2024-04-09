@@ -17,13 +17,14 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
+
 </head>
 <body>
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                <img src="{{asset('/images/navbar/logo-essato-blanco.svg')}}" alt="Logo" width="32" height="32" class="d-inline-block align-text-top"> 
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    <img src="{{asset('/images/navbar/logo-essato-blanco.svg')}}" alt="Logo" width="32" height="32" class="d-inline-block align-text-top"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -62,7 +63,7 @@
                                 <li><a class="dropdown-item" href="#">Empleos</a></li>
                                 <li><a class="dropdown-item" href="#">Pasantías</a></li>
                                 <li><a class="dropdown-item" href="#">Asociados</a></li>
-                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/blog') }}">Blog</a></li>
                             </ul>
                         </li>
                         @endif
@@ -357,7 +358,9 @@
 
         <div class="septima-parte">
             <div class="container-fluid">
-                <h1 class="titulo"> Blog </h1>
+                <a href="{{ route('blog.index') }}" class="nav-link">
+                    <h1 class="titulo"> Blog </h1>
+                </a>
                 <div class="row justify-content-center">
                     <div class="col-md-4 col-12">
                         <div class="card text-center">
@@ -439,7 +442,7 @@
                                     </div>
                                     <div class="mb-2">
                                         <label for="telefono" class="form-label">Número de teléfono</label>
-                                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Mi numero es" required>
+                                        <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Mi numero es" required>
                                     </div>
                                     <div class="mb-2">
                                         <label for="trabajo" class="form-label">Trabajo en</label>
@@ -453,8 +456,8 @@
                                         <label for="pais" class="form-label">País</label>
                                         <select class="form-select" id="pais" name="pais" required>
                                             <option value="" disabled selected>Selecciona tu país</option>
-                                            @foreach ($paises as $listado)
-                                                <option value="{{ $listado->id_pais }}">{{ $listado->nombre_pais }}</option>
+                                            @foreach ($paises as $pais)
+                                                <option value="{{ $pais->id_pais }}">{{ $pais->nombre_pais }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -560,8 +563,39 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/carrousel.js') }}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="{{ asset('js/paisdepto.js') }}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#pais').on('change', function() {
+            var paisId = $(this).val();
+            if (paisId) {
+                $.ajax({
+                    url: '/departamentos/' + paisId,
+                    type: 'GET',
+                    success: function(data) {
+                        console.log('Respuesta de la solicitud AJAX:', data);
+                        if (Array.isArray(data)) {
+                            // Limpiar opciones actuales del selector de departamentos
+                            $('#departamento').empty();
+                            
+                            // Agregar nuevas opciones al selector de departamentos
+                            $.each(data, function(index, departamento) {
+                                $('#departamento').append('<option value="' + departamento.id_departamento + '">' + departamento.nombre_departamento + '</option>');
+                            });
+                        } else {
+                            console.error('La respuesta de la solicitud AJAX no es un arreglo válido:', data);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error en la solicitud AJAX:', error);
+                    }
+                });
+            } else {
+                $('#departamento').empty();
+            }
+        });
+    });
+</script>
 <script>
     AOS.init();
 </script>
