@@ -12,11 +12,7 @@ class PaisController extends Controller
     public function listarPaises()
     {
         $paises = Pais::all();
-
-        return view('welcome', [
-            'paises' => $paises,
-            'departamentos' => [] // Inicializamos el arreglo de departamentos para evitar errores
-        ]);
+        return view('welcome', ['paises' => $paises]);
     } 
  
 

@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\DB;
 use App\Models\blog; 
-use App\Models\pais; 
+use App\Models\pais;
+
+
 
 class BlogController extends Controller
 {
@@ -16,13 +17,16 @@ class BlogController extends Controller
         return view('blog.blog', ['blogs' => $blogs]);
     }
 
-    public function listarPaises()
+    public function welcome()
     {
-        $paises = Pais::all();
+        $blogsAleatorios = Blog::inRandomOrder()->limit(3)->get();
+        return view('welcome', ['blogsAleatorios' => $blogsAleatorios]);
+    }
+  
+    public function detalleblog(Blog $blog)
+    {
+        return view('blog.detalle', ['blog' => $blog]);
+    }
 
-        return view('welcome', [
-            'paises' => $paises,
-            'departamentos' => [] // Inicializamos el arreglo de departamentos para evitar errores
-        ]);
-    } 
+
 }

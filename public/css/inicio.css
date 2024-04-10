@@ -213,7 +213,7 @@ main{
 
 #cuarta-parte .col-md-6.col-12 {
     background: #000000; 
-    height: 700px;
+    height: 600px;
 }
 
 .cuarta-parte{
@@ -312,11 +312,10 @@ main{
 }
 
 .septima-parte .card:hover{
-    border-color: #686868;
+    border: solid 2px #686868;
 }
 
 .septima-parte .card:hover .card-body .card-title{
-    font-size: 33px;
     transition: 200ms all;
 }
 

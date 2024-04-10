@@ -21,60 +21,8 @@
 </head>
 <body>
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{asset('/images/navbar/logo-essato-blanco.svg')}}" alt="Logo" width="32" height="32" class="d-inline-block align-text-top"> 
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    @if (Route::has('login'))
-                    @auth
-                        <li class="nav-item">
-                            <a href="{{ url('/home') }}" class="nav-link">Inicio</a>
-                        </li>
-                    @else
-                        <li class="nav-item">
-                            <a href="{{ route('login') }}" class="nav-link">
-                                <img src="{{asset('/images/navbar/cliente.png')}}" alt="logo cliente" width="32" height="32">
-                            </a>
-                        </li>
-                        @if (Route::has('register'))
-                        <li class="nav-item">
-                            <!--a href="{{ route('register') }}" class="nav-link">Register</a-->
-                            <a href="#" class="nav-link">
-                                <img src="{{asset('/images/navbar/escuela.png')}}" alt="logo cliente" width="32" height="32">
-                            </a>
-                        </li>           
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="{{asset('/images/navbar/menu.svg')}}" alt="logo cliente" width="32" height="32">
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                                <li><a class="dropdown-item" href="#">Portafolio</a></li>
-                                <li><a class="dropdown-item" href="#">Clientes</a></li>
-                                <li><a class="dropdown-item" href="#">Servicios</a></li>
-                                <li><a class="dropdown-item" href="#">ODS</a></li>
-                                <li><a class="dropdown-item" href="#">Empleos</a></li>
-                                <li><a class="dropdown-item" href="#">Pasantías</a></li>
-                                <li><a class="dropdown-item" href="#">Asociados</a></li>
-                                <li><a class="dropdown-item" href="{{ url('/blog') }}">Blog</a></li>
-                            </ul>
-                        </li>
-                        @endif
-                    @endauth
-                    @endif
-                </ul>
-                </div>
-            </div>
-        </nav>
+        @include('componentes.header')
     </header>
-
     <main>
         <div class="primera-parte">
             <div class="container">
@@ -252,7 +200,7 @@
                         </p>	
                     </div>
                     <div class="col-md-6 col-12">
-                        <iframe width="100%" height="700" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -339,20 +287,19 @@
 
         <div class="sexta-parte">
             <div class="container-fluid">
-                    <div class="row align-items-start">
-                        <div id="sexta-parte-gris" class="col-md-4 col-12 position-relative">
-                            <iframe width="100%" height="600" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <div id="sexta-parte-negro"class="col-md-8 col-12">
-                            <h1 class="titulo">Construyamos una marca increíble para tu negocio</h1>
-                            <br>
-                            <p class="sexta-parte-texto">Aprovecha nuestra experiencia especializada, lo que te permitirá <span class="sexta-fondo-rojo">ahorrar tiempo y recursos</span> al externalizar las actividades de marketing.</p>
-                            <br>
-                            <p class="sexta-parte-texto">Además, tienes acceso a herramientas avanzadas y recibe estrategias personalizadas que mejoran la <span class="sexta-fondo-rojo">visibilidad de tu marca</span> en línea y optimizan el <span class="sexta-fondo-morado">retorno de la inversión</span> (ROI) mediante un enfoque orientado a resultados.
-                            </p>
-
-                        </div>
+                <div class="row align-items-start">
+                    <div id="sexta-parte-gris" class="col-md-4 col-12 position-relative">
+                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
+                    <div id="sexta-parte-negro"class="col-md-8 col-12">
+                        <h1 class="titulo">Construyamos una marca increíble para tu negocio</h1>
+                        <br>
+                        <p class="sexta-parte-texto">Aprovecha nuestra experiencia especializada, lo que te permitirá <span class="sexta-fondo-rojo">ahorrar tiempo y recursos</span> al externalizar las actividades de marketing.</p>
+                        <br>
+                        <p class="sexta-parte-texto">Además, tienes acceso a herramientas avanzadas y recibe estrategias personalizadas que mejoran la <span class="sexta-fondo-rojo">visibilidad de tu marca</span> en línea y optimizan el <span class="sexta-fondo-morado">retorno de la inversión</span> (ROI) mediante un enfoque orientado a resultados.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -362,57 +309,25 @@
                     <h1 class="titulo"> Blog </h1>
                 </a>
                 <div class="row justify-content-center">
-                    <div class="col-md-4 col-12">
-                        <div class="card text-center">
-                            <div class="card-header">
-                                <img src="{{asset('/images/blog/django.png')}}" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Cuerpo</h5>
-                                <p class="card-text text-justify truncated">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,     numquam earum inventore distinctio fuga modi corporis repellat unde. Harum perferendis inventore nihil molestiae omnis cumque officiis aut sed voluptatibus quo.
-                                </p>
-                            </div>
-                            <div class="card-footer text-muted">
-                                <h5 class="card-title">Pie</h5>
-                                <a href="#" class="btn btn-info btn-sm">Leer Mas</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12">
-                    <div class="card text-center">
-                            <div class="card-header">
-                                <img src="{{asset('/images/blog/redes.png')}}" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Cuerpo</h5>
-                                <p class="card-text text-justify truncated">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quam maxime temporibus cupiditate vel odit vero, vitae quo iure. Molestiae incidunt accusantium dicta est quam recusandae, explicabo quis nobis voluptates?
-                                </p>
-                            </div>
-                            <div class="card-footer text-muted">
-                                <h5 class="card-title">Pie</h5>
-                                <a href="#" class="btn btn-info btn-sm">Leer Mas</a>
+                    @foreach($blogsAleatorios as $blog)
+                        <div class="col-md-4 col-12">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <img src="{{asset($blog->img_blog)}}" class="card-img-top" alt="Blog imagen">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{!! $blog->nombre_blog !!}</h5>
+                                    <p class="card-text text-justify truncated">{!! $blog->descripcion_blog !!}</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <a href="{{ route('blog.detalle', $blog->slug_blog) }}" class="btn btn-info btn-sm">Leer Más</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-12">
-                    <div class="card text-center">
-                            <div class="card-header">
-                                <img src="{{asset('/images/blog/framework.png')}}" class="card-img-top" alt="...">  
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Cuerpo</h5>
-                                <p class="card-text text-justify truncated">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, inventore animi, blanditiis ipsum in magnam dolorum consequuntur culpa, voluptas velit molestiae ea sapiente odio voluptatibus cupiditate rem nobis quidem non.</p>
-                            </div>
-                            <div class="card-footer text-muted">
-                                <h5 class="card-title">Pie</h5>
-                                <a href="#" class="btn btn-info btn-sm">Leer Mas</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
-        </div>
-        
+        </div>       
     </main>
 <footer>
     <div class="footer-parte">
@@ -456,9 +371,7 @@
                                         <label for="pais" class="form-label">País</label>
                                         <select class="form-select" id="pais" name="pais" required>
                                             <option value="" disabled selected>Selecciona tu país</option>
-                                            @foreach ($paises as $pais)
-                                                <option value="{{ $pais->id_pais }}">{{ $pais->nombre_pais }}</option>
-                                            @endforeach
+                                            
                                         </select>
                                     </div>
                                 </form>
@@ -470,9 +383,7 @@
                                         <label for="departamento" class="form-label">Departamento/Provincia</label>
                                         <select class="form-select" id="departamento" name="departamento" required>
                                             <option value="" disabled selected>Selecciona tu departamento o provincia</option>
-                                            @foreach ($departamentos as $departamento)
-                                                <option value="{{ $departamento->id_departamento }}">{{ $departamento->nombre_departamento }}</option>
-                                            @endforeach
+                                            
                                         </select>
                                     </div>
                                     <div class="mb-2">
@@ -564,38 +475,6 @@
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/carrousel.js') }}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#pais').on('change', function() {
-            var paisId = $(this).val();
-            if (paisId) {
-                $.ajax({
-                    url: '/departamentos/' + paisId,
-                    type: 'GET',
-                    success: function(data) {
-                        console.log('Respuesta de la solicitud AJAX:', data);
-                        if (Array.isArray(data)) {
-                            // Limpiar opciones actuales del selector de departamentos
-                            $('#departamento').empty();
-                            
-                            // Agregar nuevas opciones al selector de departamentos
-                            $.each(data, function(index, departamento) {
-                                $('#departamento').append('<option value="' + departamento.id_departamento + '">' + departamento.nombre_departamento + '</option>');
-                            });
-                        } else {
-                            console.error('La respuesta de la solicitud AJAX no es un arreglo válido:', data);
-                        }
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error en la solicitud AJAX:', error);
-                    }
-                });
-            } else {
-                $('#departamento').empty();
-            }
-        });
-    });
-</script>
 <script>
     AOS.init();
 </script>

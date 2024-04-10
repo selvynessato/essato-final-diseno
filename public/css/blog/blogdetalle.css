@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.primera-parte{
+    padding-bottom: 50px;
+}
+
+.imagen-fondo img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.segunda-parte .segunda-subtitulo
+{
+    text-align: justify;
+}
+
+

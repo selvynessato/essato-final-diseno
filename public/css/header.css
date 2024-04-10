@@ -1,0 +1,26 @@
+header{
+    background-color: #000000;
+    /*padding: 0px;*/
+}
+
+
+header .dropdown-menu {
+    background-color: #747474;
+}
+
+header .navbar-nav .nav-item .dropdown-menu li a {
+    color: #ffffff;
+}
+
+header .dropdown-item:hover {
+    background-color: #b6d9ee;
+}
+
+header .dropdown-item {
+    font-weight: bold;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 0 !important;
+    background-color: #000000 !important;
+  }

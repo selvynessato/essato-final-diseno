@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listado de Blogs</title>
+    <title>Essato | Blogs</title>
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/blog.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/header.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/blog/blog.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -17,58 +18,7 @@
 </head>
 <body>
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                <img src="{{asset('/images/navbar/logo-essato-blanco.svg')}}" alt="Logo" width="32" height="32" class="d-inline-block align-text-top"> 
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    @if (Route::has('login'))
-                    @auth
-                        <li class="nav-item">
-                            <a href="{{ url('/home') }}" class="nav-link">Inicio</a>
-                        </li>
-                    @else
-                        <li class="nav-item">
-                            <a href="{{ route('login') }}" class="nav-link">
-                                <img src="{{asset('/images/navbar/cliente.png')}}" alt="logo cliente" width="32" height="32">
-                            </a>
-                        </li>
-                        @if (Route::has('register'))
-                        <li class="nav-item">
-                            <!--a href="{{ route('register') }}" class="nav-link">Register</a-->
-                            <a href="#" class="nav-link">
-                                <img src="{{asset('/images/navbar/escuela.png')}}" alt="logo cliente" width="32" height="32">
-                            </a>
-                        </li>           
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="{{asset('/images/navbar/menu.svg')}}" alt="logo cliente" width="32" height="32">
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                                <li><a class="dropdown-item" href="#">Portafolio</a></li>
-                                <li><a class="dropdown-item" href="#">Clientes</a></li>
-                                <li><a class="dropdown-item" href="#">Servicios</a></li>
-                                <li><a class="dropdown-item" href="#">ODS</a></li>
-                                <li><a class="dropdown-item" href="#">Empleos</a></li>
-                                <li><a class="dropdown-item" href="#">Pasantías</a></li>
-                                <li><a class="dropdown-item" href="#">Asociados</a></li>
-                                <li><a class="dropdown-item" href="#">Blog</a></li>
-                            </ul>
-                        </li>
-                        @endif
-                    @endauth
-                    @endif
-                </ul>
-                </div>
-            </div>
-        </nav>
+        @include('componentes.header')
     </header>
 
 <main>
@@ -115,7 +65,7 @@
     <div class="septima-parte">
         <div class="container-fluid">             
             <div class="row justify-content-center">
-                @foreach ($blogs as $blog)
+                @foreach ($blogs as $blog)    
                 <div class="col-md-4 col-12">
                     <div class="card text-center">
                         <div class="card-header">
@@ -123,14 +73,16 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">
-                                {{ $blog->nombre_blog }}
+                                {!! $blog->nombre_blog !!}
                             </h5>
                             <p class="card-text text-justify truncated">
-                                {{ $blog->contenido_blog }}
+                                {!! $blog->descripcion_blog !!}
                             </p>
                         </div>
-                        <div class="card-footer text-muted">
-                            <a href="#" class="btn btn-info btn-sm">Leer Mas</a>
+                        <div class="card-footer text-muted">  
+                            <a href="{{ route('blog.detalle', $blog->slug_blog) }}" class="btn btn-info btn-sm">
+                                Leer Más
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +91,6 @@
         </div>
     </div>       
 </main>
-
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -28,6 +28,10 @@ Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 Route::get('/', [PaisController::class, 'listarPaises']);
 Route::get('/departamentos/{id}', [PaisController::class, 'listarDepartamento'])->name('departamentos');
 
+Route::get('/', [BlogController::class, 'welcome'])->name('welcome');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{blog:slug_blog}', [BlogController::class, 'detalleblog'])->name('blog.detalle');
+
+
 
 
