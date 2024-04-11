@@ -71,15 +71,18 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> <!-- Cierre del contenedor externo -->
             <div class="container-fluid">
-                <div class="col-md-6 col-12">
-                    <p id="leyenda-bajo-img">
-                        Lleva tu negocio al éxito ya que nuestra meta será simplificar el trayecto, haciéndolo práctico y eficiente.
-                    </p>	
-                </div>          
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <p id="leyenda-bajo-img">
+                            Lleva tu negocio al éxito ya que nuestra meta será simplificar el trayecto, haciéndolo práctico y eficiente.
+                        </p>	
+                    </div>          
+                </div>
             </div>
         </div>
+
       
         <div class="tercera-parte">
             <div id="tercera-container" class="container">
@@ -210,7 +213,7 @@
             <div class="container">
                 <div class="row">
                         <div class="col align-self-start">
-                            <div data-aos="fade-right" data-aos-easing="ease-in-sine">
+                            <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/marketing.png')}}" class="img-fluid" width="500" height="500" alt="marketing">
                                 <h3 class="tituloservicios">
                                     MARKETING
@@ -223,7 +226,7 @@
                 <div class="row">
                     <div class="col align-self-start"></div>
                         <div class="col align-self-center">
-                            <div data-aos="fade-right" data-aos-easing="ease-in-sine">
+                            <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/social_media.png')}}" class="img-fluid" width="400" height="400" alt="social media">
                                 <h3 class="tituloservicios">
                                     SOCIAL MEDIA
@@ -251,7 +254,7 @@
                 <div class="row">
                     <div class="col align-self-start"></div>
                     <div class="col align-self-center">
-                        <div data-aos="fade-left" data-aos-easing="ease-in-sine">
+                        <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/branding.png')}}" class="img-fluid" width="400" height="400" alt="branding">
                             <h3 class="tituloservicios">
                                 BRANDING
@@ -263,7 +266,7 @@
                 
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-left" data-aos-easing="ease-in-sine">
+                        <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" width="400" height="400" alt="asesoria financiera">
                             <h3 class="tituloservicios">
                                 ASESORÍA FINANCIERA
@@ -468,15 +471,39 @@
     </div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/carrousel.js') }}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     AOS.init();
 </script>
+<script>
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            autoplay:true, 
+            autoplayTimeout:3000, 
+            autoplayHoverPause:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
