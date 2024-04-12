@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\RecursoController;
 use App\Http\Controllers\HomeController;
 
 
@@ -21,7 +22,13 @@ use App\Http\Controllers\HomeController;
 */
 
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Auth::routes();
+
+// Rutas autenticadas
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+});
 
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
 
@@ -32,6 +39,7 @@ Route::get('/', [BlogController::class, 'welcome'])->name('welcome');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{blog:slug_blog}', [BlogController::class, 'detalleblog'])->name('blog.detalle');
 
+Route::get('/recursos', [RecursoController::class, 'index'])->name('recurso.index');
 
 
 

@@ -14,9 +14,7 @@
     object-position: center;
 }
 
-.segunda-parte .segunda-subtitulo
+.segunda-subtitulo section, p, ul, li, article
 {
     text-align: justify;
 }
-
-

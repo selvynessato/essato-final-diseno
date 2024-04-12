@@ -15,6 +15,12 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <!-- Enlace para cerrar sesión -->
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-danger">{{ __('Logout') }}</button>
+                    </form>
                 </div>
             </div>
         </div>

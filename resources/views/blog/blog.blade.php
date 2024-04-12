@@ -65,9 +65,9 @@
 
     <div class="septima-parte">
         <div class="container-fluid">             
-            <div class="row justify-content-center">
+            <div class="row justify-content-left">
                 @foreach ($blogs as $blog)    
-                <div class="col-md-4 col-12">
+                <div class="col-md-4 col-12" id="tarjeta-espacio" >
                     <div class="card text-center">
                         <div class="card-header">
                             <img src="{{ asset($blog->img_blog) }}" class="card-img-top" alt="...">
