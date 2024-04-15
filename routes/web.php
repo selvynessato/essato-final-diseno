@@ -39,7 +39,6 @@ Route::get('/', [BlogController::class, 'welcome'])->name('welcome');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{blog:slug_blog}', [BlogController::class, 'detalleblog'])->name('blog.detalle');
 
-Route::get('/recursos', [RecursoController::class, 'index'])->name('recurso.index');
-
-
-
+Route::get('/recurso', [RecursoController::class, 'index'])->name('recurso.index');
+Route::get('/recurso/{recurso:slug_recurso}', [RecursoController::class, 'detallerecurso'])->name('recurso.detalle');
+Route::get('/{nombre_archivo}', [RecursoController::class, 'descargarRecurso'])->name('recurso.descargar');

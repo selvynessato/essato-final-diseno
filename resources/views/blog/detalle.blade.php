@@ -24,7 +24,6 @@
     <header class="fixed-top">
         @include('componentes.header')
     </header>
-
     <main>
         <div class="primera-parte">
             <div class="container-fluid d-flex flex-column justify-content-end imagen-fondo">

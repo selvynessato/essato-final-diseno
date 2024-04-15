@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Essato | Blogs</title>
+    <title>Essato | Articulos</title>
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/blog/blog.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/recurso/recurso.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -23,7 +23,74 @@
 </header>
 
 <main>
-    
+    <div class="primera-parte">
+            <div class="container d-flex flex-column justify-content-end h-100">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <div class="texto-inicio">     
+                            <h1 class="primera-essato-titulo">Explora nuestra biblioteca</h1>
+                            <h1 class="primera-essato-titulo">de Recursos Gratuitos y premium</h1>
+                        </div>   
+                        <div class="texto-inicio">     
+                            <h1 class="primera-essato-subtitulo">
+                                Aprovecha al máximo tu tiempo con nuestras herramientas gratuitas
+                            </h1>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="segunda-parte">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <div class="segunda-texto-inicio">     
+                            <h1 class="segunda-essato-titulo">Categoria</h1>
+                        </div>   
+                    </div>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col text-center">
+                        <button type="button" class="btn btn-light custom-btn">Marketing</button>
+                        <button type="button" class="btn btn-light custom-btn">Social Medio</button>
+                        <button type="button" class="btn btn-light custom-btn">Desarrollo Web</button>
+                        <button type="button" class="btn btn-light custom-btn">Branding</button>
+                        <button type="button" class="btn btn-light custom-btn">Asesoria Financiera</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="septima-parte">
+            <div class="container-fluid">             
+                <div class="row justify-content-left">
+                    @foreach ($recursos as $recurso)    
+                    <div class="col-md-4 col-12" id="tarjeta-espacio" >
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <img src="{{ asset($recurso->img_recurso) }}" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    {!! $recurso->nombre_recurso !!}
+                                </h5>
+                                <p class="card-text text-justify truncated">
+                                    {!! $recurso->descripcion_recurso !!}
+                                </p>
+                            </div>
+                            <div class="card-footer text-muted">  
+                                <a href="{{ route('recurso.detalle', $recurso->slug_recurso) }}" class="btn btn-info btn-sm">
+                                    Leer Más
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>           
 </main>
 <footer style="background:black;">
     @include('componentes.footer')
