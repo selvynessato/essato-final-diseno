@@ -427,42 +427,30 @@
                     </ul>               
                     <ul>
                         <li class="politicas-footer">Politicas de privacidad</li>
-                    </ul>
-
+                    </ul>                 
                     <ul>
-                        <li class="red-social-footer"><a href="https://www.behance.net/Damaochoa"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="youtube"></a> Behance/essato</li>
-                        <li class="red-social-footer"><a href="https://www.linkedin.com/company/essato/?viewAsMember=true"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" width="200" height="200" alt="linkedin"></a> Linkedin/essato</li>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <li class="red-social-footer"><a href="https://www.facebook.com/essatomarketing" target="_blank"><img src="{{asset('/images/facebook.png')}}" class="img-fluid" alt="facebook"></a></li>
+                                    <li class="red-social-footer"><a href="https://www.instagram.com/essatomarketing/" target="_blank"><img src="{{asset('/images/instagram.png')}}" class="img-fluid" alt="instagram"></a></li>
+                                </div>
+                                <div class="col-sm">
+                                    <li class="red-social-footer"><a href="https://www.tiktok.com/@essato_marketing" target="_blank"><img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" alt="tiktok"></a></li>
+                                    <li class="red-social-footer"><a href="https://www.youtube.com/@essato_marketing" target="_blank"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" alt="youtube"></a></li>
+                                </div>
+                                <div class="col-sm">
+                                    <li class="red-social-footer"><a href="https://www.behance.net/Damaochoa" target="_blank"><img src="{{asset('/images/behance.png')}}" class="img-fluid" alt="behance"></a></li>
+                                    <li class="red-social-footer"><a href="https://www.linkedin.com/company/essato/?viewAsMember=true" target="_blank"><img src="{{asset('/images/linkedin.png')}}" class="img-fluid" alt="linkedin"></a></li>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
         </div>
     <div id="container-footer" class="container">
         <div class="row">
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="social-icons">
-                    <div class="social-icon">
-                        <a href="https://www.facebook.com/essatomarketing" target="_blank">
-                            <img src="{{asset('/images/facebook.png')}}" class="img-fluid" alt="facebook">
-                        </a>
-                    </div>
-                    <div class="social-icon">
-                        <a href="https://www.instagram.com/essatomarketing/" target="_blank">
-                            <img src="{{asset('/images/instagram.png')}}" class="img-fluid" alt="instagram">
-                        </a>
-                    </div>
-                    <div class="social-icon">
-                        <a href="https://www.tiktok.com/@essato_marketing" target="_blank">
-                            <img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" alt="tik-tok">
-                        </a>
-                    </div>
-                    <div class="social-icon">
-                        <a href="https://www.youtube.com/@essato_marketing" target="_blank">
-                            <img src="{{asset('/images/youtube.png')}}" class="img-fluid" alt="youtube">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Espacio entre las columnas -->
             <div class="col-md-2 d-none d-md-block" style="border:none;"></div> 
             <div class="col-md-6">
                 <p class="text-center text-md-end">&copy; Copyringht Essato Marketing y Publicidad - 2024</p>

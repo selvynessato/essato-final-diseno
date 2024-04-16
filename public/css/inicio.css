@@ -420,11 +420,14 @@ ul .datos-personal-footer:first-child {
     font-size: 22px;
 }
 
-
 .social-icons {
     display: flex;
     flex-wrap: nowrap; 
     justify-content: left; 
+}
+
+.red-social-footer{
+    padding-top: 5px;
 }
 
 .social-icon {

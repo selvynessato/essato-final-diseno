@@ -25,53 +25,35 @@
         @include('componentes.header')
     </header>
     <main>
-        <div class="primera-parte">
-            <div class="container-fluid d-flex flex-column justify-content-end imagen-fondo">
-                <img src="{{ asset($recurso->img_recurso) }}" class="img-fluid" alt="imagen de fondo">
-            </div>
-        </div>
-
         <div class="segunda-parte">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3"></div>
-                    <div class="col-sm-6">
+            <div class="container-fluid">
+                <div class="row align-items-start">
+                    <div class="col-md-6 col-12 ">
+                        <img src="{{ asset($recurso->img_recurso) }}" id ="imagen-recurso"class="img-fluid" alt="imagen de fondo">                      
+                    </div>
+
+                    <div class="col-md-6 col-12">
                         <p class="segunda-titulo-blog">
                             <h1>{!! $recurso->nombre_recurso !!}</h1>
                         </p>
                         <p class="segunda-subtitulo">
                             {!! $recurso->contenido_recurso !!}
                         </p>
-                        <p>
-                            <a href="{{ route('recurso.descargar', $recurso->recurso_recurso) }}" class="btn btn-danger btn-sm">
-                                Descargar Recurso
-                            </a>
-                        </p>
-                    </div>
-                    <div class="col-sm-3"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sexta-parte">
-            <div class="container-fluid">
-                <div class="row align-items-start">
-                    <div class="col-md-6 col-12">
-                        <img src="{{ asset($recurso->img_recurso) }}" class="img-fluid" alt="imagen de fondo">
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <h1 class="titulo">Construyamos una marca increíble para tu negocio</h1>
-                        <br>
-                        <p class="sexta-parte-texto">Aprovecha nuestra experiencia especializada, lo que te permitirá <span class="sexta-fondo-rojo">ahorrar tiempo y recursos</span> al externalizar las actividades de marketing.</p>
-                        <br>
-                        <p class="sexta-parte-texto">Además, tienes acceso a herramientas avanzadas y recibe estrategias personalizadas que mejoran la <span class="sexta-fondo-rojo">visibilidad de tu marca</span> en línea y optimizan el <span class="sexta-fondo-morado">retorno de la inversión</span> (ROI) mediante un enfoque orientado a resultados.
-                        </p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col align-self-start"></div>
+                                <div class="col align-self-center p-2">
+                                    <a href="{{ route('recurso.descargar', $recurso->recurso_recurso) }}" class="btn btn-danger btn-sm">
+                                        Descargar Recurso
+                                    </a>
+                                </div>
+                                <div class="col align-self-end"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </main>
     <footer style="background:black;">
         @include('componentes.footer')
