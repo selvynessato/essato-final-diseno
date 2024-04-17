@@ -28,7 +28,7 @@
         <div class="segunda-parte">
             <div class="container-fluid">
                 <div class="row align-items-start">
-                    <div class="col-md-6 col-12 ">
+                    <div class="col-md-6 col-12 ss">
                         <img src="{{ asset($recurso->img_recurso) }}" id ="imagen-recurso"class="img-fluid" alt="imagen de fondo">                      
                     </div>
 

@@ -7,6 +7,7 @@ use App\Http\Controllers\PaisController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\RecursoController;
+use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\HomeController;
 
 
@@ -25,20 +26,19 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Auth::routes();
 
-// Rutas autenticadas
-Route::middleware(['auth'])->group(function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
-});
-
-Route::get('/', [WelcomeController::class, 'index'])->name('welcome');
-
-Route::get('/', [PaisController::class, 'listarPaises']);
-Route::get('/departamentos/{id}', [PaisController::class, 'listarDepartamento'])->name('departamentos');
-
 Route::get('/', [BlogController::class, 'welcome'])->name('welcome');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{blog:slug_blog}', [BlogController::class, 'detalleblog'])->name('blog.detalle');
 
-Route::get('/recurso', [RecursoController::class, 'index'])->name('recurso.index');
-Route::get('/recurso/{recurso:slug_recurso}', [RecursoController::class, 'detallerecurso'])->name('recurso.detalle');
-Route::get('/{nombre_archivo}', [RecursoController::class, 'descargarRecurso'])->name('recurso.descargar');
+Route::get('/paises', [PaisController::class, 'indexPais'])->name('paises.index');
+Route::post('/obtener-departamentos', [DepartamentoController::class, 'obtenerDepartamentos'])->name('obtener-departamentos');
+Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.store');
+
+
+// Rutas autenticadas
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/recurso', [RecursoController::class, 'index'])->name('recurso.index');
+    Route::get('/recurso/{recurso:slug_recurso}', [RecursoController::class, 'detallerecurso'])->name('recurso.detalle');
+    Route::get('/{nombre_archivo}', [RecursoController::class, 'descargarRecurso'])->name('recurso.descargar');
+});

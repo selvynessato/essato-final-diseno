@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="ESSATO Marketing y Publicidad: Agencia especializada en aumentar tu facturación y llegar a tus objetivos. Ofrecemos servicios de marketing, redes sociales, desarrollo web, branding y asesoría financiera con estrategias personalizadas para mejorar la visibilidad de tu marca y el retorno de inversión de tu negocio. ¡Haz crecer tu marca con nosotros!">
+    <meta name="keywords" content="agencia, marketing, aumentar tu facturación, llegar a tus objetivos, crecimiento, servicios, redes sociales, desarrollo web, branding, asesoría financiera, estrategias personalizadas, visibilidad de marca, retorno de inversión, negocio, marca">
+
     <title>Essato</title>
 
     <!-- Fonts -->
@@ -20,6 +23,12 @@
 
 </head>
 <body>
+    @php
+        $encontraressatos = app(\App\Http\Controllers\EncontraressatoController::class)->indexEncontrar();
+        $paises = app(\App\Http\Controllers\PaisController::class)->indexPais();
+        $departamentos = app(\App\Http\Controllers\DepartamentoController::class)->indexDepartamento();
+    @endphp
+
     <header class="fixed-top">
         @include('componentes.header')
     </header>
@@ -308,7 +317,7 @@
 
         <div class="septima-parte">
             <div class="container-fluid">
-                <a href="{{ route('blog.index') }}" class="nav-link">
+                <a href="{{ url('/blog') }}" class="nav-link">
                     <h1 class="titulo"> Blog </h1>
                 </a>
                 <div class="row justify-content-center">
@@ -352,7 +361,7 @@
                         <div class="row">
                             <div class="col-1">
                             </div>
-                            <div class="col-4">
+                            <!--div class="col-4">
                                 <form>
                                     <div class="mb-2">
                                         <label for="nombre" class="form-label">Nombre y apellido</label>
@@ -374,7 +383,9 @@
                                         <label for="pais" class="form-label">País</label>
                                         <select class="form-select" id="pais" name="pais" required>
                                             <option value="" disabled selected>Selecciona tu país</option>
-                                            
+                                                @foreach ($paises as $pais)
+                                                    <option value="{{ $pais->id_pais }}">{{ $pais->nombre_pais }}</option>
+                                                @endforeach
                                         </select>
                                     </div>
                                 </form>
@@ -386,12 +397,19 @@
                                         <label for="departamento" class="form-label">Departamento/Provincia</label>
                                         <select class="form-select" id="departamento" name="departamento" required>
                                             <option value="" disabled selected>Selecciona tu departamento o provincia</option>
-                                            
+                                                @foreach ($departamentos as $departamento)
+                                                    <option value="{{ $departamento->id_departamento }}">{{ $departamento->nombre_departamento }}</option>
+                                                @endforeach
                                         </select>
                                     </div>
                                     <div class="mb-2">
                                         <label for="comoEncontraste" class="form-label">¿Cómo nos encontraste?</label>
-                                        <input type="text" class="form-control" id="comoEncontraste" name="comoEncontraste" placeholder="Cuéntanos cómo nos encontraste" required>
+                                        <select class="form-select" id="departamento" name="departamento" required>
+                                            <option value="" disabled selected>Cuentanos</option>
+                                                @foreach ($encontraressatos as $encontraressato)
+                                                    <option value="{{ $encontraressato->id_encontraressato }}">{{ $encontraressato->nombre_encontraressato }}</option>
+                                                @endforeach
+                                        </select>
                                     </div>
                                     <div class="mb-2">
                                         <label for="asunto" class="form-label">Asunto</label>
@@ -403,7 +421,80 @@
                                     </div>
                                     <button type="submit" class="btn btn-primary">Enviar</button>
                                 </form>
-                            </div>
+                            </div-->
+                            <!-- resources/views/contacto/create.blade.php -->
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Enviar Mensaje de Contacto</div>
+                <div class="card-body">
+                    @if(session('success'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+                    <form method="POST" action="{{ route('contacto.store') }}">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre y apellido</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre_contacto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="correo" name="correo_contacto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Número de teléfono</label>
+                            <input type="tel" class="form-control" id="telefono" name="telefono_contacto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="trabajo" class="form-label">Trabajo en</label>
+                            <input type="text" class="form-control" id="trabajo" name="trabajoen_contacto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" name="asunto_contacto" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pais" class="form-label">País</label>
+                            <select class="form-control" id="pais" name="pais_contacto" required>
+                                <option value="" disabled selected>Selecciona tu país</option>
+                                @foreach ($paises as $pais)
+                                    <option value="{{ $pais->id_pais }}">{{ $pais->nombre_pais }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="departamento" class="form-label">Departamento/Provincia</label>
+                            <select class="form-control" id="departamento" name="departamento_contacto" required>
+                                <option value="" disabled selected>Selecciona tu departamento o provincia</option>
+                                @foreach ($departamentos as $departamento)
+                                    <option value="{{ $departamento->id_departamento }}">{{ $departamento->nombre_departamento }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comoEncontraste" class="form-label">¿Cómo nos encontraste?</label>
+                            <select class="form-control" id="comoEncontraste" name="comoEncontraste_contacto" required>
+                                <option value="" disabled selected>Selecciona cómo nos encontraste</option>
+                                @foreach ($encontraressatos as $encontraressato)
+                                    <option value="{{ $encontraressato->id_encontraressato }}">{{ $encontraressato->nombre_encontraressato }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje_contacto" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
                             <div class="col-1">
                             </div>
                         </div>
@@ -432,16 +523,16 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm">
-                                    <li class="red-social-footer"><a href="https://www.facebook.com/essatomarketing" target="_blank"><img src="{{asset('/images/facebook.png')}}" class="img-fluid" alt="facebook"></a></li>
-                                    <li class="red-social-footer"><a href="https://www.instagram.com/essatomarketing/" target="_blank"><img src="{{asset('/images/instagram.png')}}" class="img-fluid" alt="instagram"></a></li>
+                                    <li class="red-social-footer"><a href="https://www.facebook.com/essatomarketing" target="_blank"><img src="{{asset('/images/facebook.png')}}" class="img-fluid" alt="facebook"> Facebook</a></li>
+                                    <li class="red-social-footer"><a href="https://www.instagram.com/essatomarketing/" target="_blank"><img src="{{asset('/images/instagram.png')}}" class="img-fluid" alt="instagram"> Instagram</a></li>
                                 </div>
                                 <div class="col-sm">
-                                    <li class="red-social-footer"><a href="https://www.tiktok.com/@essato_marketing" target="_blank"><img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" alt="tiktok"></a></li>
-                                    <li class="red-social-footer"><a href="https://www.youtube.com/@essato_marketing" target="_blank"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" alt="youtube"></a></li>
+                                    <li class="red-social-footer"><a href="https://www.tiktok.com/@essato_marketing" target="_blank"><img src="{{asset('/images/tik-tok.png')}}" class="img-fluid" alt="tiktok"> Tik tok</a></li>
+                                    <li class="red-social-footer"><a href="https://www.youtube.com/@essato_marketing" target="_blank"><img src="{{asset('/images/youtube.png')}}" class="img-fluid" alt="youtube"> Youtube</a></li>
                                 </div>
                                 <div class="col-sm">
-                                    <li class="red-social-footer"><a href="https://www.behance.net/Damaochoa" target="_blank"><img src="{{asset('/images/behance.png')}}" class="img-fluid" alt="behance"></a></li>
-                                    <li class="red-social-footer"><a href="https://www.linkedin.com/company/essato/?viewAsMember=true" target="_blank"><img src="{{asset('/images/linkedin.png')}}" class="img-fluid" alt="linkedin"></a></li>
+                                    <li class="red-social-footer"><a href="https://www.behance.net/Damaochoa" target="_blank"><img src="{{asset('/images/behance.png')}}" class="img-fluid" alt="behance"> Behance</a></li>
+                                    <li class="red-social-footer"><a href="https://www.linkedin.com/company/essato/?viewAsMember=true" target="_blank"><img src="{{asset('/images/linkedin.png')}}" class="img-fluid" alt="linkedin"> Linkedin</a></li>
                                 </div>
                             </div>
                         </div>
