@@ -27,6 +27,7 @@
         $encontraressatos = app(\App\Http\Controllers\EncontraressatoController::class)->indexEncontrar();
         $paises = app(\App\Http\Controllers\PaisController::class)->indexPais();
         $departamentos = app(\App\Http\Controllers\DepartamentoController::class)->indexDepartamento();
+        $blogsAleatorios = \App\Models\Blog::inRandomOrder()->limit(3)->get();
     @endphp
 
     <header class="fixed-top">
@@ -422,78 +423,69 @@
                                     <button type="submit" class="btn btn-primary">Enviar</button>
                                 </form>
                             </div-->
-                            <!-- resources/views/contacto/create.blade.php -->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Enviar Mensaje de Contacto</div>
-                <div class="card-body">
-                    @if(session('success'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-                    <form method="POST" action="{{ route('contacto.store') }}">
-                        @csrf
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre y apellido</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre_contacto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="correo" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="correo" name="correo_contacto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="telefono" class="form-label">Número de teléfono</label>
-                            <input type="tel" class="form-control" id="telefono" name="telefono_contacto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="trabajo" class="form-label">Trabajo en</label>
-                            <input type="text" class="form-control" id="trabajo" name="trabajoen_contacto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="asunto" class="form-label">Asunto</label>
-                            <input type="text" class="form-control" id="asunto" name="asunto_contacto" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="pais" class="form-label">País</label>
-                            <select class="form-control" id="pais" name="pais_contacto" required>
-                                <option value="" disabled selected>Selecciona tu país</option>
-                                @foreach ($paises as $pais)
-                                    <option value="{{ $pais->id_pais }}">{{ $pais->nombre_pais }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="departamento" class="form-label">Departamento/Provincia</label>
-                            <select class="form-control" id="departamento" name="departamento_contacto" required>
-                                <option value="" disabled selected>Selecciona tu departamento o provincia</option>
-                                @foreach ($departamentos as $departamento)
-                                    <option value="{{ $departamento->id_departamento }}">{{ $departamento->nombre_departamento }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="comoEncontraste" class="form-label">¿Cómo nos encontraste?</label>
-                            <select class="form-control" id="comoEncontraste" name="comoEncontraste_contacto" required>
-                                <option value="" disabled selected>Selecciona cómo nos encontraste</option>
-                                @foreach ($encontraressatos as $encontraressato)
-                                    <option value="{{ $encontraressato->id_encontraressato }}">{{ $encontraressato->nombre_encontraressato }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="mensaje" name="mensaje_contacto" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                            <div class="col-4">
+                                <form method="POST" action="{{ route('contacto.store') }}">
+                                    @csrf
+                                    <div class="mb-2">
+                                        <label for="nombre" class="form-label">Nombre y apellido</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Mi nombre es" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="telefono" class="form-label">Número de teléfono</label>
+                                        <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Mi numero es" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="trabajo" class="form-label">Trabajo en</label>
+                                        <input type="text" class="form-control" id="trabajo" name="trabajo" placeholder="Mi empresa se llama" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="contacto" class="form-label">Contáctanos en</label>
+                                        <input type="email" class="form-control" id="contacto" name="contacto" placeholder="micorreo@dominio.com" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="pais" class="form-label">País</label>
+                                        <select class="form-select" id="pais" name="pais" required>
+                                            <option value="" disabled selected>Selecciona tu país</option>
+                                            @foreach ($paises as $pais)
+                                                <option value="{{ $pais->id_pais }}">{{ $pais->nombre_pais }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-5">
+                                <form method="POST" action="{{ route('contacto.store') }}">
+                                    @csrf
+                                    <div class="mb-2">
+                                        <label for="departamento" class="form-label">Departamento/Provincia</label>
+                                        <select class="form-select" id="departamento" name="departamento" required>
+                                            <option value="" disabled selected>Selecciona tu departamento o provincia</option>
+                                            @foreach ($departamentos as $departamento)
+                                                <option value="{{ $departamento->id_departamento }}">{{ $departamento->nombre_departamento }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="comoEncontraste" class="form-label">¿Cómo nos encontraste?</label>
+                                        <select class="form-select" id="comoEncontraste" name="comoEncontraste" required>
+                                            <option value="" disabled selected>Cuéntanos</option>
+                                            @foreach ($encontraressatos as $encontraressato)
+                                                <option value="{{ $encontraressato->id_encontraressato }}">{{ $encontraressato->nombre_encontraressato }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="asunto" class="form-label">Asunto</label>
+                                        <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Mi asunto es" required>
+                                    </div>
+                                    <div class="mb-2">
+                                        <label for="mensaje" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" name="mensaje" rows="6" placeholder="Empieza a escribir aquí" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
 
                             <div class="col-1">
                             </div>

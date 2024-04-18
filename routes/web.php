@@ -33,6 +33,8 @@ Route::get('/blog/{blog:slug_blog}', [BlogController::class, 'detalleblog'])->na
 Route::get('/paises', [PaisController::class, 'indexPais'])->name('paises.index');
 Route::post('/obtener-departamentos', [DepartamentoController::class, 'obtenerDepartamentos'])->name('obtener-departamentos');
 Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.store');
+Route::get('/contacto/create', [ContactoController::class, 'create'])->name('contacto.create');
+
 
 
 // Rutas autenticadas
