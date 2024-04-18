@@ -49,7 +49,7 @@ class ContactoController extends Controller
 
     $contacto->save();
 
-    return redirect()->route('contacto.create')->with('success', '¡El mensaje ha sido enviado correctamente!');
+    return redirect()->route('contacto.create')->with('success', '¡El mensaje ha sido enviado correctamente!, pronto nos comunicaremos contigo');
 }
 
 }

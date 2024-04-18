@@ -12,7 +12,7 @@
     <div class="container-sm mb-30">
         <div class="row justify-content-center">
             <div class="col-md-4">
-                <div id="card-completa"class="card">
+                <div id="card-completa" class="card">
                     <div class="card-header">
                         <img src="{{asset('/images/login-icono-inicial.svg')}}" class="img-fluid" alt="fotografia">                       
                     </div>

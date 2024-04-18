@@ -1,35 +1,16 @@
-/*main .fotoCamara{
-    background: url('/images/fondologin.jpg');
-    background-size: 100%;
-    background-position: center;
+.primera-parte-register {
+    background-image: url('/images/fondologin.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 840px;
-    
-}*/
-
-main {
-    min-height: 75vh; /* Establece la altura mínima del contenedor principal al 100% del alto de la ventana gráfica */
-    margin: 0;
-    padding: 0;
-}
-
-main.py-4 {
-    padding-top: 0 !important; /* Quita el padding superior */
-    padding-bottom: 0 !important; /* Quita el padding inferior */
-}
-
-
-main .fotoCamara img{
     background-position: center;
-    width: 100%;
-    height: 65vh; /* Ajusta la altura al 100% del viewport */
-    margin-top: -22px; /* Ajusta el valor según sea necesario para quitar el espacio */
+    padding-bottom: 50px;
+    width: 100%;  
+    height: 60vh;
 }
 
-#card-completa {
-    margin-top: -75px; /* Margen negativo para subir la card */
+.col-md-4{
+    padding-top: -20px;
 }
-
 
 .row .mb-4{
     margin-left: auto;

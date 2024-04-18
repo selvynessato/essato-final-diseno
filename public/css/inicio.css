@@ -378,8 +378,14 @@ footer p {
     font-weight: bold;
 }
 
-#footer-parte-gris .col-4, .col-5 .form-label{
+#footer-parte-gris .col-4, .col-5, .col-12 .form-label{
     font-weight: bold;
+}
+
+#cardcolor
+{
+    border: none;
+    background: #F0F0F0;
 }
 
 .footer-parte #footer-parte-negro{
