@@ -223,7 +223,7 @@
             <div class="container">
                 <div class="row">
                         <div class="col align-self-start">
-                            <div data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                            <div data-aos="fade-right" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/marketing.png')}}" class="img-fluid" width="500" height="500" alt="marketing">
                                 <h3 class="tituloservicios">
                                     MARKETING
@@ -236,7 +236,7 @@
                 <div class="row">
                     <div class="col align-self-start"></div>
                         <div class="col align-self-center">
-                            <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                            <div data-aos="fade-right" data-aos-easing="ease-in-sine">
                                 <img src="{{asset('/images/social_media.png')}}" class="img-fluid" width="400" height="400" alt="social media">
                                 <h3 class="tituloservicios">
                                     SOCIAL MEDIA
@@ -264,7 +264,7 @@
                 <div class="row">
                     <div class="col align-self-start"></div>
                     <div class="col align-self-center">
-                        <div data-aos="fade-left" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                        <div data-aos="fade-left" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/branding.png')}}" class="img-fluid" width="400" height="400" alt="branding">
                             <h3 class="tituloservicios">
                                 BRANDING
@@ -276,7 +276,7 @@
                 
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                        <div data-aos="fade-left" data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" width="400" height="400" alt="asesoria financiera">
                             <h3 class="tituloservicios">
                                 ASESORÍA FINANCIERA
@@ -319,7 +319,7 @@
         <div class="septima-parte">
             <div class="container-fluid">
                 <a href="{{ url('/blog') }}" class="nav-link">
-                    <h1 class="titulo"> Blog </h1>
+                    <h1 class="titulo"> Blog</h1>
                 </a>
                 <div class="row justify-content-center">
                     @foreach($blogsAleatorios as $blog)
@@ -499,29 +499,6 @@
 <script src="{{ asset('js/carrousel.js') }}"></script>
 <script>
     AOS.init();
-</script>
-<script>
-    $(document).ready(function() {
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            autoplay:true, 
-            autoplayTimeout:3000, 
-            autoplayHoverPause:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }
-        });
-    });
 </script>
 </body>
 </html>

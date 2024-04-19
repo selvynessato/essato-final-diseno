@@ -35,7 +35,9 @@ Route::post('/obtener-departamentos', [DepartamentoController::class, 'obtenerDe
 Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 Route::get('/contacto/create', [ContactoController::class, 'create'])->name('contacto.create');
 
-
+Route::get('/recursos-redes-sociales', function () {
+    return view('todo.recursosRedes');
+});
 
 // Rutas autenticadas
 Route::middleware(['auth'])->group(function () {
