@@ -60,7 +60,7 @@
 }
 
 .septima-parte .card:hover{
-    border: solid 2px #f89a9a;
+    box-shadow: 2px 2px 3px 2px #f89a9a
 }
 
 .card .card-header{

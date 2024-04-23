@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Pagination\Paginator;
 use App\Models\blog; 
 use App\Models\pais;
+
 
 
 
@@ -13,7 +15,9 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $blogs = Blog::all();          
+        Paginator::useBootstrapFour();
+
+        $blogs = Blog::paginate(9); 
         return view('blog.blog', ['blogs' => $blogs]);
     }
 
@@ -27,6 +31,4 @@ class BlogController extends Controller
     {
         return view('blog.detalle', ['blog' => $blog]);
     }
-
-
 }

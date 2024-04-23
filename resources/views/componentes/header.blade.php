@@ -11,7 +11,7 @@
                     @if (Route::has('login'))
                     @auth
                         <li class="nav-item">
-                            <a href="{{ url('/home') }}" class="nav-link">Inicio</a>
+                            <a href="{{ url('/home') }}" class="nav-link">Panel de administracion</a>
                         </li>
                     @else
                         <li class="nav-item">

@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Pagination\Paginator;
 use App\Models\recurso; 
 
 class RecursoController extends Controller
 {
     public function index()
     {
-        $recursos = Recurso::all();          
+        Paginator::useBootstrapFour();
+
+        $recursos = Recurso::paginate(9);          
         return view('recursos.recurso', ['recursos' => $recursos]);
     }
 

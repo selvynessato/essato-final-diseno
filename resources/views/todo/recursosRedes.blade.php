@@ -21,7 +21,7 @@
                 <p>
                     Obtén acceso exclusivo a una colección de herramientas, guías y plantillas que te ayudarán a alcanzar tus metas.
                 </p>
-                <a href="{{ url('/recurso') }}" class="btn btn-lg btn-danger mi-boton-registro" role="button">
+                <a href="{{ url('/register') }}" class="btn btn-lg btn-danger mi-boton-registro" role="button">
                     <h1>Registrate</h1>
                 </a>
             </div>

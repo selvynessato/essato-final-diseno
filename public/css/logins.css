@@ -163,7 +163,6 @@ main p{
 
 
 .col-md-6 .btn-link {
-    font-size: 12px;
     color: #ffffff;
     font-size: 9px;
 }
@@ -215,7 +214,7 @@ footer p {
   }
 
 #rgratis .btn-link {  
-    font-size: 10px;
+    font-size: 14px;
     color: #ffffff;
 }
 

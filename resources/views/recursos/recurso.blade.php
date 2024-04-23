@@ -89,6 +89,9 @@
                     </div>
                     @endforeach
                 </div>
+                <div class="d-flex justify-content-end">
+                    {{ $recursos->links() }}    
+                </div>
             </div>
         </div>           
 </main>
