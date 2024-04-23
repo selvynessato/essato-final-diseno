@@ -9,9 +9,5 @@ use App\Models\Departamento;
 
 class PaisController extends Controller
 {
-    public function indexPais()
-    {
-        $paises = Pais::all();
-        return $paises;
-    }   
+    
 }

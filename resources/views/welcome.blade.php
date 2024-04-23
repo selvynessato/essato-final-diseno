@@ -6,7 +6,7 @@
     <meta name="description" content="ESSATO Marketing y Publicidad: Agencia especializada en aumentar tu facturación y llegar a tus objetivos. Ofrecemos servicios de marketing, redes sociales, desarrollo web, branding y asesoría financiera con estrategias personalizadas para mejorar la visibilidad de tu marca y el retorno de inversión de tu negocio. ¡Haz crecer tu marca con nosotros!">
     <meta name="keywords" content="agencia, marketing, aumentar tu facturación, llegar a tus objetivos, crecimiento, servicios, redes sociales, desarrollo web, branding, asesoría financiera, estrategias personalizadas, visibilidad de marca, retorno de inversión, negocio, marca">
 
-    <title>Essato</title>
+    <title>Essato | Inicio</title>
 
     <!-- Fonts -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
@@ -20,16 +20,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="{{ asset('css/owl.carousel.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/owl.theme.default.min.css') }}" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </head>
 <body>
-    @php
-        $encontraressatos = app(\App\Http\Controllers\EncontraressatoController::class)->indexEncontrar();
-        $paises = app(\App\Http\Controllers\PaisController::class)->indexPais();
-        $departamentos = app(\App\Http\Controllers\DepartamentoController::class)->indexDepartamento();
-        $blogsAleatorios = \App\Models\Blog::inRandomOrder()->limit(3)->get();
-    @endphp
-
     <header class="fixed-top">
         @include('componentes.header')
     </header>
@@ -366,9 +361,7 @@
                                 <div  id ="cardcolor" sclass="card">
                                     <div class="card-body">
                                         @if(session('success'))
-                                            <div class="alert alert-success" role="alert">
-                                        {{ session('success') }}
-                                            </div>
+                                            <script src="{{ asset('js/mensaje.js') }}"></script>
                                         @endif
                                         <form method="POST" action="{{ route('contacto.store') }}">
                                             @csrf
@@ -392,12 +385,12 @@
                                                     </div>
                                                     <div class="mb-2">
                                                     <label for="pais" class="form-label">País</label>
-                                                    <select class="form-select" id="pais" name="pais_contacto" required>
+                                                    <select class="form-select" id="pais" name="pais_contacto" required onchange="cargarDepartamentos()">
                                                         <option value="" disabled selected>Selecciona tu país</option>
                                                         @foreach ($paises as $pais)
                                                             <option value="{{ $pais->id_pais }}">{{ $pais->nombre_pais }}</option>
                                                         @endforeach
-                                                    </select>
+                                                </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-1">
@@ -406,10 +399,8 @@
                                                 <div class="mb-2">
                                                     <label for="departamento" class="form-label">Departamento/Provincia</label>
                                                     <select class="form-select" id="departamento" name="departamento_contacto" required>
-                                                    <option value="" disabled selected>Selecciona tu departamento o provincia</option>
-                                                        @foreach ($departamentos as $departamento)
-                                                            <option value="{{ $departamento->id_departamento }}">{{ $departamento->nombre_departamento }}</option>
-                                                        @endforeach
+                                                        <option value="" disabled selected>Selecciona tu departamento o provincia</option>
+                                                        <!-- Opciones de departamentos -->
                                                     </select>
                                                 </div>
                                             <div class="mb-2">
@@ -490,15 +481,14 @@
         </div>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Mantén solo esta referencia -->
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/carrousel.js') }}"></script>
-<script>
-    AOS.init();
-</script>
+<script>AOS.init();</script>
+<script src="{{ asset('js/paisdepto.js') }}"></script>
 </body>
 </html>

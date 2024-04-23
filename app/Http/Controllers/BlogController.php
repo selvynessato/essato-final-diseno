@@ -21,11 +21,7 @@ class BlogController extends Controller
         return view('blog.blog', ['blogs' => $blogs]);
     }
 
-    public function welcome()
-    {
-        $blogsAleatorios = Blog::inRandomOrder()->limit(3)->get();
-        return view('welcome', ['blogsAleatorios' => $blogsAleatorios]);
-    }
+    
   
     public function detalleblog(Blog $blog)
     {

@@ -8,6 +8,7 @@ use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\RecursoController;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\HomeController;
 
 
@@ -21,20 +22,18 @@ use App\Http\Controllers\HomeController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Auth::routes();
 
-Route::get('/', [BlogController::class, 'welcome'])->name('welcome');
+// Rutas no autenticadas
+Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
+
+Route::post('/obtener-departamentos', [WelcomeController::class, 'obtenerDepartamentosPorPais'])->name('obtener-departamentos');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{blog:slug_blog}', [BlogController::class, 'detalleblog'])->name('blog.detalle');
-
-Route::get('/paises', [PaisController::class, 'indexPais'])->name('paises.index');
-Route::post('/obtener-departamentos', [DepartamentoController::class, 'obtenerDepartamentos'])->name('obtener-departamentos');
+Route::get('/obtener-departamentos', [WelcomeController::class, 'indexDepartamento'])->name('obtener-departamentos');
 Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 Route::get('/contacto/create', [ContactoController::class, 'create'])->name('contacto.create');
-
 Route::get('/recursos-redes-sociales', function () {
     return view('todo.recursosRedes');
 });
