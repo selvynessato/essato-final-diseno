@@ -217,77 +217,109 @@
         <div class="quinta-parte">
             <div class="container">
                 <div class="row">
-                        <div class="col align-self-start">
-                            <div data-aos="fade-right" data-aos-easing="ease-in-sine">
-                                <img src="{{asset('/images/marketing.png')}}" class="img-fluid" width="500" height="500" alt="marketing">
-                                <h3 class="tituloservicios">
-                                    MARKETING
-                                </h3>
-                            </div>
+                    <div class="col align-self-start">
+                        <div data-aos="fade-right"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine">
+                            <img src="{{asset('/images/marketing.png')}}" class="img-fluid" alt="marketing">
+                            <h3 class="tituloservicios">
+                                MARKETING
+                            </h3>
                         </div>
-                        <div class="col align-self-center"></div>
-                        <div class="col align-self-end"></div>
+                    </div>
+                    <div class="col align-self-center">
+                    
+                    </div>
+                    <div class="col align-self-end">
+                    
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col align-self-start"></div>
-                        <div class="col align-self-center">
-                            <div data-aos="fade-right" data-aos-easing="ease-in-sine">
-                                <img src="{{asset('/images/social_media.png')}}" class="img-fluid" width="400" height="400" alt="social media">
-                                <h3 class="tituloservicios">
-                                    SOCIAL MEDIA
-                                </h3>
-                            </div>
-                        </div>
-                    <div class="col align-self-end"></div>
-                </div>
+            </div>
 
+
+            <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="zoom-out-left"></div>   
+                        
                     </div>
-                    <div class="col align-self-center"></div>
+                    <div class="col align-self-center">
+                        <div data-aos="fade-right"
+                            data-aos-offset="600"
+                            data-aos-easing="ease-in-sine">
+                            <img src="{{asset('/images/social_media.png')}}" class="img-fluid" alt="social_media">
+                            <h3 class="tituloservicios">
+                                SOCIAL MEDIA
+                            </h3>
+                        </div>                  
+                    </div>
                     <div class="col align-self-end">
-                    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1300">
-                    |   <img src="{{asset('/images/desarrollo_web.png')}}" class="img-fluid" width="400" height="400" alt="desarrollo web">
+                    
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-start">
+                        
+                    </div>
+                    <div class="col align-self-center">
+                
+                    </div>
+                    <div class="col align-self-end">
+                        <div data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1700">
+                            <img src="{{asset('/images/desarrollo_web.png')}}" class="img-fluid" alt="desarrollo_web">
                             <h3 class="tituloservicios">
                                 DESARROLLO WEB
-                            </h3>
+                            </h3>                    
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col align-self-start"></div>
-                    <div class="col align-self-center">
-                        <div data-aos="fade-left" data-aos-easing="ease-in-sine">
-                            <img src="{{asset('/images/branding.png')}}" class="img-fluid" width="400" height="400" alt="branding">
-                            <h3 class="tituloservicios">
-                                BRANDING
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="col align-self-end"></div>
-                </div>
-                
+
+            <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-left" data-aos-easing="ease-in-sine">
-                            <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" width="400" height="400" alt="asesoria financiera">
+                        
+                    </div>
+                    <div class="col align-self-center">
+                        <div data-aos="fade-left"
+                            data-aos-offset="600"
+                            data-aos-easing="ease-in-sine">
+                            <img src="{{asset('/images/branding.png')}}" class="img-fluid" alt="branding">
+                            <h3 class="tituloservicios">
+                                BRANDING
+                            </h3>                        
+                        </div>                                 
+                    </div>
+                    <div class="col align-self-end">
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-start">
+                        <div data-aos="fade-left"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine">
+                            <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" alt="asesoria_financiera">
                             <h3 class="tituloservicios">
                                 ASESORÍA FINANCIERA
                             </h3>
-                        </div>
+                        </div>                                                                          
                     </div>
                     <div class="col align-self-center">
 
                     </div>
-                    <div class="col align-self-end text-center">
-                        <div data-aos="zoom-out-left">
-                            <button type="button" class="btn btn-outline-light btn-lg fw-bold border-3">
-                                Portafolio
-                            </button>
-                            <br>
-                        </div>                           
+                    <div class="col align-self-end">
+                        
                     </div>
                 </div>
             </div>
