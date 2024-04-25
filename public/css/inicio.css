@@ -96,7 +96,7 @@ main{
     animation-timeline:  --video;
     animation-name: show;
 
-    animation-range: entry 25% cover 50%;
+    animation-range: entry 25% cover 70%;
     animation-fill-mode: both;
 }
 
