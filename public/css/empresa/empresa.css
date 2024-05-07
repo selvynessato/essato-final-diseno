@@ -1,0 +1,37 @@
+.primera-parte{
+    width: 100%;
+    margin: 0 auto;
+    background: #000000;
+}
+
+#essato-titulo{
+    color: red;
+}
+
+.texto-inicio h1:first-child{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 100px;
+}
+
+.texto-inicio h2{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.primera-parte .subtitulo{
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.primera-video iframe{
+    margin-top: 25px;
+}
+
+.owl-carousel .owl-item img {
+    width: 100%;
+    height: 350px;
+}
+
+

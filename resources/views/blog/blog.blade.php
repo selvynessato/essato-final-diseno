@@ -52,19 +52,24 @@
             </div>
             <div class="row justify-content-md-center">
                 <div class="col text-center">
-                    <button type="button" class="btn btn-light custom-btn">Marketing</button>
-                    <button type="button" class="btn btn-light custom-btn">Social Medio</button>
-                    <button type="button" class="btn btn-light custom-btn">Desarrollo Web</button>
-                    <button type="button" class="btn btn-light custom-btn">Branding</button>
-                    <button type="button" class="btn btn-light custom-btn">Asesoria Financiera</button>
+                    <form action="{{ route('filtrar-blogs') }}" method="GET">
+                        @csrf
+                        @foreach($categorias as $categoria)
+                            <button type="submit" name="id_categoria" value="{{ $categoria->id_categoria }}" class="btn btn-light custom-btn">{{ $categoria->nombre_categoria }}</button>
+                        @endforeach
+                    </form>
                 </div>
             </div>
             <hr>
         </div>
     </div>
 
+
     <div class="septima-parte">
         <div class="container-fluid">             
+            <div class="d-flex justify-content-end">
+                {{ $blogs->links() }}    
+            </div>
             <div class="row justify-content-left">
                 @foreach ($blogs as $blog)    
                 <div class="col-md-4 col-12" id="tarjeta-espacio" >
@@ -93,7 +98,8 @@
                 {{ $blogs->links() }}    
             </div>
         </div>
-    </div>       
+    </div>
+
 </main>
 <footer style="background:black;">
     @include('componentes.footer')

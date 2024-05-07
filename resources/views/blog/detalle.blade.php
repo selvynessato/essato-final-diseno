@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Essato | Blog Detalle</title>
 
+    <meta property="og:title" content="{!! $blog->nombre_blog !!}">
+    <meta property="og:description" content="{!! $blog->descripcion_blog !!}">
+    <meta property="og:image" content="{{ asset($blog->img_blog) }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+
     <!-- Fonts -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">

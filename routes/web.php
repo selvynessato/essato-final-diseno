@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\DepartamentoController;
+use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\RecursoController;
 use App\Http\Controllers\ContactoController;
@@ -29,14 +30,17 @@ Auth::routes();
 Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
 
 Route::post('/obtener-departamentos', [WelcomeController::class, 'obtenerDepartamentosPorPais'])->name('obtener-departamentos');
+Route::get('/empresa', [EmpresaController::class, 'index'])->name('empresa.index');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{blog:slug_blog}', [BlogController::class, 'detalleblog'])->name('blog.detalle');
+Route::get('/filtrar-blogs', [BlogController::class, 'filtrarBlogs'])->name('filtrar-blogs');
 Route::get('/obtener-departamentos', [WelcomeController::class, 'indexDepartamento'])->name('obtener-departamentos');
 Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 Route::get('/contacto/create', [ContactoController::class, 'create'])->name('contacto.create');
 Route::get('/recursos-redes-sociales', function () {
     return view('todo.recursosRedes');
 });
+
 
 // Rutas autenticadas
 Route::middleware(['auth'])->group(function () {

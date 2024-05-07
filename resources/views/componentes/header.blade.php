@@ -34,7 +34,7 @@
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Nosotros</a></li>
                                 <li><a class="dropdown-item" href="#">Portafolio</a></li>
-                                <li><a class="dropdown-item" href="#">Clientes</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/empresa') }}">Clientes</a></li>
                                 <li><a class="dropdown-item" href="#">Servicios</a></li>
                                 <li><a class="dropdown-item" href="#">ODS</a></li>
                                 <li><a class="dropdown-item" href="#">Empleos</a></li>
