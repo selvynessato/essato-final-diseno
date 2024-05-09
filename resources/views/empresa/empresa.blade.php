@@ -38,6 +38,7 @@
                 </div>
             </div>
         </div>
+
         <div class="segunda-parte">
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -60,8 +61,62 @@
                 </div>
             </div>
         </div>
-    </main>
 
+        <div class="tercera-parte">
+            <h3 id="essato-titulo-dos">Ellos han experimentado el crecimiento de su negocio</h3>
+        </div>
+
+        <div class="cuarta-parte">
+            <div class="container-fluid">               
+                <div class="row">
+                    <div class="col-sm-4 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-1.png')}}" class="" alt="Cliente">
+                    </div>
+                    <div class="col-sm-4 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-2.png')}}" class="" alt="Cliente">
+                    </div>
+                    <div class="col-sm-4 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-3.png')}}" class="" alt="Cliente">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-4.png')}}" class="" alt="Cliente">
+                    </div>
+                    <div class="col-sm-4 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-5.png')}}" class="" alt="Cliente">
+                    </div>
+                    <div class="col-sm-4 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-6.png')}}" class="" alt="Cliente">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-1.png')}}" class="" alt="Cliente">
+                    </div>
+                    <div class="col-sm-4 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-2.png')}}" class="" alt="Cliente">
+                    </div>
+                    <div class="col-sm-4 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/cliente-3.png')}}" class="" alt="Cliente">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quinta-parte">
+            <div class="container">
+                <div class="row justify-content-md-left">
+                    <div class="col-md-auto">
+                        <div class="texto-inicio-empresa">     
+                            <h1 id="essato-titulo-empresa">Empresas</h1>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
     <footer style="background:black;">
         @include('componentes.footer')
     </footer>
@@ -69,7 +124,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Mantén solo esta referencia -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/carrousel-cliente.js') }}"></script>
 </body>
