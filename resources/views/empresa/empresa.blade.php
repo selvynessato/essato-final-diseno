@@ -107,14 +107,24 @@
         <div class="quinta-parte">
             <div class="container">
                 <div class="row justify-content-md-left">
-                    <div class="col-md-auto">
+                    <div class="col-md-12 col-12">
                         <div class="texto-inicio-empresa">     
                             <h1 id="essato-titulo-empresa">Empresas</h1>
-                        </div>   
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 position-relative">
+                        @foreach($empresas as $empresa)
+                            <div class="col-md-6 col-12">
+                                <img src="{{asset($empresa->img_empresa)}}" class="img-fluid" alt="...">
+                            </div>
+                        @endforeach
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
+
+
+
 
     </main>
     <footer style="background:black;">
