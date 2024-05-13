@@ -468,7 +468,7 @@
                     <ul>
                         <li class="listado-footer"><a href="">Nosotros</a></li>
                         <li class="listado-footer"><a href="">Portafolio</a></li>
-                        <li class="listado-footer"><a href="">Clientes</a></li>
+                        <li class="listado-footer"><a href="{{ url('/empresa') }}">Clientes</a></li>
                         <li class="listado-footer"><a href="">Servicios</a></li>
                         <li class="listado-footer"><a href="">ODS</a></li>
                         <li class="listado-footer"><a href="">Empleos</a></li>

@@ -106,25 +106,26 @@
 
         <div class="quinta-parte">
             <div class="container">
-                <div class="row justify-content-md-left">
-                    <div class="col-md-12 col-12">
+                <div class="row justify-content-star">
+                    <div class="col-md-12">
                         <div class="texto-inicio-empresa">     
                             <h1 id="essato-titulo-empresa">Empresas</h1>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 position-relative">
-                        @foreach($empresas as $empresa)
-                            <div class="col-md-6 col-12">
-                                <img src="{{asset($empresa->img_empresa)}}" class="img-fluid" alt="...">
+                    @foreach($empresas as $empresa)
+                        @if($empresa->tipoEmpresa->id_tipoEmpresa == 2)
+                            <div class="col-md-2 col-12 text-right mb-2 imagen-redonda">
+                                <img src="{{ asset($empresa->img_empresa) }}" class="img-fluid imagen-empresas" alt="Empresa">
                             </div>
-                        @endforeach
-                    </div>
+                        @endif
+                    @endforeach
                 </div>
             </div> 
         </div>
 
+        <div class="sexta-parte">
 
-
+        </div>
 
     </main>
     <footer style="background:black;">
