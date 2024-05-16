@@ -165,6 +165,47 @@
             </div> 
         </div>
 
+        <div class="octava-parte">
+            <div class="container">
+                <img src="{{ asset('/images/empresa-images-multiples/portafolio.png') }}" class="img-fluid imagen-cliente-portafolio" alt="portafolio">        
+            </div>
+        </div>
+
+        <div class="novena-parte">
+            <div class="container" id="caja-color">
+                <div class="col-md-12 col-12 text-center">
+                    <h1 class="display-2">ODS en Essato</h1>
+                    <h3>Visita las organizaciones con las que hemos trabajado</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="decima-parte">
+            <div class="container-fluid">
+                <a href="{{ url('/blog') }}" class="nav-link">
+                    <h1 class="titulo"> Blog</h1>
+                </a>
+                <div class="row justify-content-center">
+                    @foreach($blogsAleatorios as $blog)
+                        <div class="col-md-4 col-12">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <img src="{{asset($blog->img_blog)}}" class="card-img-top" alt="Blog imagen">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{!! $blog->nombre_blog !!}</h5>
+                                    <p class="card-text text-justify truncated">{!! $blog->descripcion_blog !!}</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <a href="{{ route('blog.detalle', $blog->slug_blog) }}" class="btn btn-info btn-sm">Leer Más</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>       
+
 
     </main>
     <footer style="background:black;">
