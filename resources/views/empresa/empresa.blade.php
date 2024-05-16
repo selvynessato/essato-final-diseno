@@ -124,8 +124,47 @@
         </div>
 
         <div class="sexta-parte">
-
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row align-items-start">
+                        <div class="col-md-6 col-12 text-justify">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem commodi sit eum fuga omnis harum beatae, pariatur, odio quisquam aspernatur assumenda provident ullam accusamus totam sint, nam vero. Laborum, modi?
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-12 text-center">
+                            <a href="https://wa.link/a4qy4l" class="btn btn-outline-danger boton-whatsapp" role="button" target="_blank">Contáctanos whatsapp</a>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
         </div>
+
+        <div class="septima-parte">
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row align-items-start">
+                        <div class="col-md-6 col-12 text-justify">
+                            <div class="texto-inicio-empresa">     
+                                <h1 id="essato-titulo-empresa">Alianzas</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 text-center">
+                            <div class="row">
+                                @foreach($empresas as $empresa)
+                                    @if($empresa->tipoEmpresa->id_tipoEmpresa == 3)
+                                        <div class="col-md-4 col-12 mb-2 imagen-redonda">
+                                            <img src="{{ asset($empresa->img_empresa) }}" class="img-fluid imagen-empresas" alt="Empresa">
+                                        </div>
+                                    @endif
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+
 
     </main>
     <footer style="background:black;">

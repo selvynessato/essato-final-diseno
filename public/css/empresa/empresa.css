@@ -84,14 +84,31 @@
     font-size: 80px;
 }
 
-.quinta-parte .imagen-empresas{
+.quinta-parte{
+    margin-bottom: 40px;
+}
+
+.quinta-parte .imagen-empresas, .septima-parte .imagen-empresas {
     width: 100%;
-    height: 200px;
+    height: 150px;
     filter: grayscale(100%);
 }
 
-.quinta-parte .imagen-empresas:hover{
+
+.quinta-parte .imagen-empresas:hover, .septima-parte .imagen-empresas:hover {
     width: 100%;
-    height: 200px;
+    height: 150px;
     filter: grayscale(0%);
+}
+
+
+.sexta-parte .boton-whatsapp{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;   
 }
