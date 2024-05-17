@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\EmpresaController;
+use App\Http\Controllers\ODSController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\RecursoController;
 use App\Http\Controllers\ContactoController;
@@ -31,6 +32,7 @@ Route::get('/', [WelcomeController::class, 'welcome'])->name('welcome');
 
 Route::post('/obtener-departamentos', [WelcomeController::class, 'obtenerDepartamentosPorPais'])->name('obtener-departamentos');
 Route::get('/empresa', [EmpresaController::class, 'index'])->name('empresa.index');
+Route::get('/ods', [ODSController::class, 'index'])->name('ods.index');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{blog:slug_blog}', [BlogController::class, 'detalleblog'])->name('blog.detalle');
 Route::get('/filtrar-blogs', [BlogController::class, 'filtrarBlogs'])->name('filtrar-blogs');

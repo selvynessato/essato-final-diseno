@@ -390,7 +390,7 @@
                             <div class="col-1">
                             </div>
                             <div class="col-md-10">
-                                <div  id ="cardcolor" sclass="card">
+                                <div  id ="cardcolor" class="card">
                                     <div class="card-body">
                                         @if(session('success'))
                                             <script src="{{ asset('js/mensaje.js') }}"></script>
@@ -470,7 +470,7 @@
                         <li class="listado-footer"><a href="">Portafolio</a></li>
                         <li class="listado-footer"><a href="{{ url('/empresa') }}">Clientes</a></li>
                         <li class="listado-footer"><a href="">Servicios</a></li>
-                        <li class="listado-footer"><a href="">ODS</a></li>
+                        <li class="listado-footer"><a href="{{ url('/ods') }}">ODS</a></li>
                         <li class="listado-footer"><a href="">Empleos</a></li>
                         <li class="listado-footer"><a href="">Pasantías</a></li>
                         <li class="listado-footer"><a href="">Asociados</a></li>
@@ -504,6 +504,7 @@
                 </div>
             </div>
         </div>
+    </div>                            
     <div id="container-footer" class="container">
         <div class="row">
             <div class="col-md-2 d-none d-md-block" style="border:none;"></div> 

@@ -8,9 +8,9 @@
                 <ul>
                     <li class="listadofooter"><a href="">Nosotros</a></li>
                     <li class="listadofooter"><a href="">Portafolio</a></li>
-                    <li class="listadofooter"><a href="">Clientes</a></li>
+                    <li class="listadofooter"><a href="{{ url('/empresa') }}">Clientes</a></li>
                     <li class="listadofooter"><a href="">Servicios</a></li>
-                    <li class="listadofooter"><a href="">ODS</a></li>
+                    <li class="listadofooter"><a href="{{ url('/ods') }}">ODS</a></li>
                     <li class="listadofooter"><a href="">Empleos</a></li>
                     <li class="listadofooter"><a href="">Pasantías</a></li>
                     <li class="listadofooter"><a href="">Asociados</a></li>

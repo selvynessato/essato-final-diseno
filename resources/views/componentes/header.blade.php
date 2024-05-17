@@ -36,7 +36,7 @@
                                 <li><a class="dropdown-item" href="#">Portafolio</a></li>
                                 <li><a class="dropdown-item" href="{{ url('/empresa') }}">Clientes</a></li>
                                 <li><a class="dropdown-item" href="#">Servicios</a></li>
-                                <li><a class="dropdown-item" href="#">ODS</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/ods') }}">ODS</a></li>
                                 <li><a class="dropdown-item" href="#">Empleos</a></li>
                                 <li><a class="dropdown-item" href="#">Pasantías</a></li>
                                 <li><a class="dropdown-item" href="#">Asociados</a></li>

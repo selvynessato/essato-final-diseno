@@ -1,0 +1,197 @@
+.primera-parte{
+    background: #000000;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.primera-parte #primera-parte-blanca{
+    background: #ffffff;   
+}
+
+.primera-parte h2{
+    color: #BF0014;
+}
+
+#essato-titulo{
+    color: red;
+}
+
+
+.texto-inicio h2{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.primera-parte .subtitulo{
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.primera-video iframe{
+    margin-top: 25px;
+}
+
+
+.segunda-parte{
+    width: 100%;
+    background-size: cover; 
+    background-position: center; 
+}
+
+.segunda-parte .item{
+    padding-top: 10px;
+    background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
+    margin-bottom: 20px; 
+}
+
+.segunda-parte .card{
+    padding-top: 5px;
+    border: 2px solid red;
+    height: 300px;
+}
+
+.segunda-parte #tercera-container{
+    padding-top: 20px;
+}
+
+.segunda-parte h1{
+    color: red;
+    font-weight: bold;
+}
+
+.segunda-parte a{
+   margin-top: 50px; 
+}
+
+.segunda-parte .card-header{
+    padding-top: 40px;
+}  
+.segunda-parte .card-header h3{
+    font-weight: bold;
+}
+
+.segunda-parte .imagen-ods{
+    width: 100%;
+    height: auto;
+}
+
+.segunda-parte .padding-equal{
+    padding-top: 10%; 
+    padding-bottom: 10%; 
+}
+
+
+
+/*tercera parte*/
+
+.tercera-parte{
+    height: 70px;
+    padding-top: 14px;
+}
+
+#essato-titulo-dos {
+    text-align: center;
+    font-weight: bold;
+}
+
+.cuarta-parte{
+    
+}
+
+.cuarta-parte .row > div {
+    padding: 0;
+}
+
+.fondo-rosado{
+    background: #BF3B79;
+}
+
+.fondo-morado{
+    background: #754EE6;
+}
+
+.cuarta-parte{
+    margin-bottom: 40px;
+}
+
+.cuarta-parte img {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.cuarta-parte img:hover {
+    transform: scale(1.1);
+}
+
+.display-1{
+    color: #BF0014;
+    
+}
+
+.texto-inicio-empresa h1:first-child{
+    color: #BF0014;
+    font-weight: bold;
+ }
+
+.quinta-parte{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.quinta-parte .imagen-empresas, .septima-parte .imagen-empresas {
+    width: 100%;
+    
+    filter: grayscale(100%);
+}
+
+
+.quinta-parte .imagen-empresas:hover, .septima-parte .imagen-empresas:hover {
+    width: 100%;
+    
+    filter: grayscale(0%);
+}
+
+
+.sexta-parte .boton-whatsapp{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;   
+}
+
+.octava-parte{
+    margin-bottom: 40px;
+}
+.octava-parte .imagen-cliente-portafolio{
+    width: 100%;
+    height: 500px;
+}
+
+.novena-parte{
+    margin-bottom: 40px;
+}
+
+.novena-parte #caja-color{
+    width: 100%;
+    height: 200px;
+    background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);    
+}
+
+.novena-parte h1{
+    padding-top: 30px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.novena-parte h3{
+    color: #ffffff;
+}
+
