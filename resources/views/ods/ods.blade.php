@@ -144,36 +144,60 @@
         <div class="cuarta-parte">
             <div class="container-fluid">               
                 <div class="row">
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-1.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-1.png')}}" class="" alt="Cliente-ods">
                     </div>
-                    <div class="col-sm-4 fondo-morado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-2.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-ods/ods-2.png')}}" class="" alt="Cliente-ods">
                     </div>
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-3.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-3.png')}}" class="" alt="Cliente-ods">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 fondo-morado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-4.png')}}" class="" alt="Cliente">
-                    </div>
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-5.png')}}" class="" alt="Cliente">
-                    </div>
-                    <div class="col-sm-4 fondo-morado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-6.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-ods/ods-4.png')}}" class="" alt="Cliente-ods">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-1.png')}}" class="" alt="Cliente">
+                    
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-5.png')}}" class="" alt="Cliente-ods">
                     </div>
-                    <div class="col-sm-4 fondo-morado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-2.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-ods/ods-6.png')}}" class="" alt="Cliente-ods">
                     </div>
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-3.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-7.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-ods/ods-8.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-9.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-10.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-11.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-12.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-13.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-14.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-15.png')}}" class="" alt="Cliente-ods">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-ods/ods-16.png')}}" class="" alt="Cliente-ods">
                     </div>
                 </div>
             </div>

@@ -59,6 +59,18 @@
                 <div class="item">
                     <img src="{{asset('/images/empresa-carousel/cliente-6.png')}}" class="img-fluid" alt="Cliente">
                 </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-7.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-8.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-9.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-10.png')}}" class="img-fluid" alt="Cliente">
+                </div>
             </div>
         </div>
 
@@ -69,36 +81,60 @@
         <div class="cuarta-parte">
             <div class="container-fluid">               
                 <div class="row">
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-1.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-1.png')}}" class="" alt="Arte">
                     </div>
-                    <div class="col-sm-4 fondo-morado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-2.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/arte-2.png')}}" class="" alt="Arte">
                     </div>
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-3.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-3.png')}}" class="" alt="Arte">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 fondo-morado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-4.png')}}" class="" alt="Cliente">
-                    </div>
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-5.png')}}" class="" alt="Cliente">
-                    </div>
-                    <div class="col-sm-4 fondo-morado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-6.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/arte-4.png')}}" class="" alt="Arte">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-1.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-5.png')}}" class="" alt="Arte">
                     </div>
-                    <div class="col-sm-4 fondo-morado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-2.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/arte-6.png')}}" class="" alt="Arte">
                     </div>
-                    <div class="col-sm-4 fondo-rosado">
-                        <img src="{{asset('/images/empresa-carousel/cliente-3.png')}}" class="" alt="Cliente">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-7.png')}}" class="" alt="Arte">
+                    </div>
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/arte-8.png')}}" class="" alt="Arte">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-9.png')}}" class="" alt="Arte">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-10.png')}}" class="" alt="Arte">
+                    </div>
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/arte-11.png')}}" class="" alt="Arte">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-12.png')}}" class="" alt="Arte">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-13.png')}}" class="" alt="Arte">
+                    </div>
+                    <div class="col-sm-3 fondo-morado">
+                        <img src="{{asset('/images/empresa-carousel/arte-14.png')}}" class="" alt="Arte">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-15.png')}}" class="" alt="Arte">
+                    </div>
+                    <div class="col-sm-3 fondo-rosado">
+                        <img src="{{asset('/images/empresa-carousel/arte-16.png')}}" class="" alt="Arte">
                     </div>
                 </div>
             </div>
@@ -129,7 +165,7 @@
                     <div class="row align-items-start">
                         <div class="col-md-6 col-12 text-justify">
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem commodi sit eum fuga omnis harum beatae, pariatur, odio quisquam aspernatur assumenda provident ullam accusamus totam sint, nam vero. Laborum, modi?
+                            Nuestra razón de ser <span class="cursiva-negrita">“Llevar de la mano al cliente tanto como sea posible, por ello planificamos, medimos y cuantificamos tus objetivos de manera que tengas resultados efectivos y funcionales.“</span>
                             </p>
                         </div>
                         <div class="col-md-6 col-12 text-center">

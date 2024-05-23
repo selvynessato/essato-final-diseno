@@ -55,17 +55,18 @@
     padding: 0;
 }
 
-.fondo-rosado{
+/*.fondo-rosado{
     background: #BF3B79;
 }
 
 .fondo-morado{
     background: #754EE6;
-}
+}*/
 
 .cuarta-parte{
     margin-bottom: 40px;
 }
+
 
 .cuarta-parte img {
     margin: 0;
@@ -76,7 +77,7 @@
 }
 
 .cuarta-parte img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1)
 }
 
 #essato-titulo-empresa{
@@ -106,6 +107,10 @@
     filter: grayscale(0%);
 }
 
+.sexta-parte .cursiva-negrita{
+    font-weight: bold;
+    font-style: italic;
+}
 
 .sexta-parte .boton-whatsapp{
     width: 100%;
