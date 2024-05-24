@@ -39,13 +39,7 @@
                                     <h1 class="display-1">ODS</h1>
                                     <h2> ¿Que objetivos de desarrollo estamos alcanzando y apoyando?</h2>
                                         <p>
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius magni voluptates porro, quos similique quibusdam ab fugit pariatur? Labore ullam modi est cumque quasi facilis possimus, non quidem suscipit quod!
-                                        </p>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit quo corrupti incidunt eveniet veniam sapiente commodi, mollitia, possimus enim odit, voluptas tenetur in odio perferendis molestias quam modi? Incidunt!
-                                        </p>
-                                        <p>
-                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis aperiam modi in dolorum fugit harum nostrum rem, labore tempora aspernatur, veritatis nihil culpa ad laudantium minus placeat nobis porro. Sed.
+                                            La empresa Essato en sus operaciones se centra un 33.33% en contribuir hacia el desarrollo sostenible  y la economía global; esto significa que se busca crear soluciones que respondan a las realidades diarias de las personas por ello nos encontramos trabajando y apoyando los objetivos de desarrollo sostenible en sus siglas (ODS) siendo los siguientes: 
                                         </p>
                                 </div>
                             </div>
@@ -74,12 +68,12 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3>
-                                        Marketing
+                                        Crecimiento economico
                                     </h3>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">
-                                        llevemos a tu cliente potencial justo donde quieres que esté: a las puertas de tu negocio.  
+                                        Fomentar un crecimiento económico y sostenible, con empleo pleno y productivo para todos.
                                     </p>
                                 </div>
                             </div>
@@ -88,12 +82,12 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3>
-                                        Marketing
+                                        Equidad de genero
                                     </h3>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">
-                                        llevemos a tu cliente potencial justo donde quieres que esté: a las puertas de tu negocio.  
+                                        Promover la igualdad de género, empoderando a todas las mujeres y niñas en todos los ámbitos de la vida.
                                     </p>
                                 </div>
                             </div>
@@ -107,20 +101,20 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3>
-                                        Marketing
+                                        Educación de calidad
                                     </h3>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">
-                                        llevemos a tu cliente potencial justo donde quieres que esté: a las puertas de tu negocio.  
+                                        Garantizar una educación inclusiva, equitativa y de calidad, promoviendo oportunidades de aprendizaje para todos.
                                     </p>
                                 </div>
                             </div>
-                        </div>    
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
-
 
         <div class="quinta-parte">
             <div class="container">
