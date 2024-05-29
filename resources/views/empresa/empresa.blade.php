@@ -163,12 +163,15 @@
             <div class="container">
                 <div class="container-fluid">
                     <div class="row align-items-start">
-                        <div class="col-md-6 col-12 text-justify">
+                        <div class="col-md-8 col-12 text-justify">
                             <p>
-                            Nuestra razón de ser <span class="cursiva-negrita">“Llevar de la mano al cliente tanto como sea posible, por ello planificamos, medimos y cuantificamos tus objetivos de manera que tengas resultados efectivos y funcionales.“</span>
+                                Nuestra razón de ser: 
+                            </p>
+                            <p>
+                            <span class="cursiva-negrita">“Llevar de la mano al cliente tanto como sea posible, por ello planificamos, medimos y cuantificamos tus objetivos de manera que tengas resultados efectivos y funcionales.“</span>
                             </p>
                         </div>
-                        <div class="col-md-6 col-12 text-center">
+                        <div class="col-md-4 col-12 text-center">
                             <a href="https://wa.link/a4qy4l" class="btn btn-outline-danger boton-whatsapp" role="button" target="_blank">Contáctanos whatsapp</a>
                         </div>
                     </div>
@@ -241,8 +244,6 @@
                 </div>
             </div>
         </div>       
-
-
     </main>
     <footer style="background:black;">
         @include('componentes.footer')

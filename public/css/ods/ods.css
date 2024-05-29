@@ -152,7 +152,6 @@
 
 .quinta-parte .imagen-empresas:hover, .septima-parte .imagen-empresas:hover {
     width: 100%;
-    
     filter: grayscale(0%);
 }
 
@@ -167,6 +166,12 @@
     font-size: 2rem;
     font-weight: bold;   
 }
+
+
+.septima-parte{
+    margin-bottom: 80px;
+}
+
 
 .octava-parte{
     margin-bottom: 40px;

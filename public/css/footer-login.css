@@ -1,0 +1,54 @@
+.col-sm-3{
+    /*border: solid 1px red;*/
+    padding-top: 10px;
+}
+
+.custom-container{
+    max-width: 80%; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#imagenicono {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.footer-parte ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.datos-personal-footer,
+.politicas-footer{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.listadofooter a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#dato-personal-footer{
+    color: #ffffff;
+}
+
+ul .datos-personal-footer:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.img-fluid {
+    width: 25px;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.social-icon a {
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}

@@ -47,6 +47,7 @@ Route::get('/recursos-redes-sociales', function () {
 // Rutas autenticadas
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/departamento', [DepartamentoController::class, 'departamento'])->name('departamento');
     Route::get('/recurso', [RecursoController::class, 'index'])->name('recurso.index');
     Route::get('/recurso/{recurso:slug_recurso}', [RecursoController::class, 'detallerecurso'])->name('recurso.detalle');
     Route::get('/{nombre_archivo}', [RecursoController::class, 'descargarRecurso'])->name('recurso.descargar');
