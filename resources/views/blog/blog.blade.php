@@ -21,7 +21,6 @@
     <header class="fixed-top">
         @include('componentes.header')
     </header>
-
 <main>
     <div class="primera-parte">
         <div class="container d-flex flex-column justify-content-end h-100">
@@ -95,11 +94,10 @@
                 @endforeach
             </div>
             <div class="d-flex justify-content-end">
-                {{ $blogs->links() }}    
+                {{ $blogs->links('pagination::bootstrap-4') }}    
             </div>
         </div>
     </div>
-
 </main>
 <footer style="background:black;">
     @include('componentes.footer')

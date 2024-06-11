@@ -15,7 +15,9 @@ class DepartamentoController extends Controller
     {
         Paginator::useBootstrapFour();
 
-        $departamentos = Departamento::paginate(10);
-        return view('DepartamentoMunicipio/departamento')->with("departamentos",$departamentos);
+        $departamentos = Departamento::with('pais')->paginate(10);
+        $paises = Pais::all();
+        
+        return view('DepartamentoMunicipio.departamento', compact('departamentos', 'paises'));
     }        
 }
