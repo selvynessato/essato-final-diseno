@@ -65,11 +65,8 @@
                                     <a class="dropdown-item" href="{{ url('/departamento') }}">
                                         Departamento
                                     </a>                                  
-                                    <a class="dropdown-item" href="{{ url('#') }}">
+                                    <a class="dropdown-item" href="{{ url('/minicipio') }}">
                                         Municipio
-                                    </a>
-                                    <a class="dropdown-item" href="{{ url('#') }}">
-                                        Pais
                                     </a>
                                 </div>
                             </li>    
@@ -101,5 +98,7 @@
             @include('componentes.footer-login')
         </footer>
     </div>
+<script src="{{ asset('js/paisdepto.js') }}"></script>
+<script src="{{ asset('js/mensaje-eliminar.js') }}"></script>
 </body>
 </html>

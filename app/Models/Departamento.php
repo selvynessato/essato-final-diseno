@@ -7,7 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Departamento extends Model
 {
-    protected $table = 'Departamento';
+    protected $table = 'departamento';
+    protected $primaryKey = 'id_departamento'; 
+
+    protected $fillable = [
+        'id_pais',
+        'nombre_departamento',
+        'id_departamento',
+    ];
 
     public function pais()
     {

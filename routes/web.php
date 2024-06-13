@@ -47,7 +47,11 @@ Route::get('/recursos-redes-sociales', function () {
 // Rutas autenticadas
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
-    Route::get('/departamento', [DepartamentoController::class, 'departamento'])->name('departamento');
+    Route::match(['get', 'post'], '/departamento', [DepartamentoController::class, 'departamento'])->name('departamento');
+    Route::post('/departamentos/crear', [DepartamentoController::class, 'store'])->name('crear-departamento');
+    Route::put('/departamentos/{id}', [DepartamentoController::class, 'update'])->name('actualizar-departamento');
+    Route::delete('/departamentos/{id}', [DepartamentoController::class, 'destroy'])->name('eliminar-departamento');
+    Route::match(['get', 'post'], '/municipio', [MunicipioController::class, 'municipio'])->name('municipio');
     Route::get('/recurso', [RecursoController::class, 'index'])->name('recurso.index');
     Route::get('/recurso/{recurso:slug_recurso}', [RecursoController::class, 'detallerecurso'])->name('recurso.detalle');
     Route::get('/{nombre_archivo}', [RecursoController::class, 'descargarRecurso'])->name('recurso.descargar');
