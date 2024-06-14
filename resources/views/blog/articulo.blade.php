@@ -7,10 +7,11 @@
     <!-- Otros scripts y estilos -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/mensaje-eliminar.js') }}"></script>
+    <link href="{{ asset('css/blog/blognew.css') }}" rel="stylesheet">
 </head>
 <body>
 <main>
-    <div class="container">
+    <div class="container-fluid">
         <!-- Modal Crear Blog -->
         <div class="modal fade" id="modalCrear" tabindex="-1" aria-labelledby="modalCrearLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -109,8 +110,8 @@
                         <th scope="col">Nombre</th>
                         <th scope="col">Imagen</th>
                         <th scope="col">Palabras Claves</th>
-                        <th scope="col">ID Usuario</th>
-                        <th scope="col">ID Categoría</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Categoría</th>
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
@@ -118,11 +119,13 @@
                     @foreach($blogs as $blog)
                     <tr>
                         <td>{{ $blog->id_blog }}</td>
-                        <td>{{ $blog->nombre_blog }}</td>
-                        <td>{{ $blog->img_blog }}</td>
+                        <td width="300">{{ $blog->nombre_blog }}</td>
+                        <td width="150">
+                            <img src="{{ asset($blog->img_blog) }}" class="card-img-top" alt="Blog imagen" width="100%" height="50px">
+                        </td>
                         <td>{{ $blog->recursos }}</td>
                         <td>{{ $blog->id_usuario }}</td>
-                        <td>{{ $blog->id_categoria }}</td>
+                        <td>{{ $blog->categoria->nombre_categoria }}</td>
                         <td>
                             <!-- Botón para abrir modal de edición -->
                             <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalEditar-{{ $blog->id_blog }}">
