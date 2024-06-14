@@ -14,10 +14,11 @@ class Categoria extends Model
     protected $primaryKey = 'id_categoria';
 
     protected $fillable = [
+        'id_categoria', // Asegúrate de incluir id_categoria si deseas asignarlo durante la creación
         'nombre_categoria',
-        'descripcion_categoria',
+        'descrip_categoria',
     ];
-
+    
     public function blogs()
     {
         return $this->hasMany(Blog::class, 'id_categoria', 'id_categoria');

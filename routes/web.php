@@ -8,6 +8,8 @@ use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\ODSController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\BlogcreateController;
+use App\Http\Controllers\BlognewController;
 use App\Http\Controllers\RecursoController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\WelcomeController;
@@ -52,6 +54,18 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/departamentos/{id}', [DepartamentoController::class, 'update'])->name('actualizar-departamento');
     Route::delete('/departamentos/{id}', [DepartamentoController::class, 'destroy'])->name('eliminar-departamento');
     Route::match(['get', 'post'], '/municipio', [MunicipioController::class, 'municipio'])->name('municipio');
+    
+    Route::get('/blogs/categoria', [BlogcreateController::class, 'index'])->name('categorias.index');
+    Route::post('/blogs/categoria', [BlogcreateController::class, 'store'])->name('categorias.store');
+    Route::put('/blogs/categoria/{id}', [BlogcreateController::class, 'update'])->name('categorias.update');
+    Route::delete('/blogs/categoria/{id}', [BlogcreateController::class, 'destroy'])->name('categorias.destroy');
+
+    Route::get('/blogs/nuevo', [BlognewController::class, 'index'])->name('blogs.index');
+    Route::post('/blogs/nuevo', [BlognewController::class, 'store'])->name('blogs.store');
+    Route::put('/blogs/nuevo/{id}', [BlognewController::class, 'update'])->name('blogs.update');
+    Route::delete('/blogs/nuevo/{id}', [BlognewController::class, 'destroy'])->name('blogs.destroy');
+
+
     Route::get('/recurso', [RecursoController::class, 'index'])->name('recurso.index');
     Route::get('/recurso/{recurso:slug_recurso}', [RecursoController::class, 'detallerecurso'])->name('recurso.detalle');
     Route::get('/{nombre_archivo}', [RecursoController::class, 'descargarRecurso'])->name('recurso.descargar');

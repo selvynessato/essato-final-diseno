@@ -9,6 +9,7 @@
     <meta property="og:description" content="{!! $blog->descripcion_blog !!}">
     <meta property="og:image" content="{{ asset($blog->img_blog) }}">
     <meta property="og:url" content="{{ url()->current() }}">
+    <meta name="keywords" content="{!! $blog->recursos !!}">
 
     <!-- Fonts -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
