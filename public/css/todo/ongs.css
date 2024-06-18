@@ -1,0 +1,118 @@
+main{
+    background: #000000;
+}
+
+.primera-parte{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/*.parte-blanca{
+    border: solid 1px red;
+}
+
+.parte-negra{
+    border: solid 1px blue;
+}*/
+
+.primera-parte .texto-derecha{
+    font-weight: bold;
+    color: #ffffff;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.primera-parte .ongs-texto{
+    text-align: center;
+    color: #000000;
+    letter-spacing: 10px;
+    text-shadow: -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px 1px 0px #ffffff;
+    font-weight: bold;
+    text-align: right;
+    margin-top: -20px;
+}
+
+/*.primera-parte .ong-soluciones{
+    color: #ffffff;
+    margin-top: -15px;
+}
+
+.segunda-parte{
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.segunda-parte-blanca{
+    border: solid 1px red;
+}
+
+.segunda-parte-negra{
+    border: solid 1px blue;
+}*/
+
+.segunda-parte-blanca{
+    background-image: url('/images/ongs/seccion-trabajos-recientes-essato.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto;
+    padding: 50px;
+    width: 100%;  
+    height: 85vh;
+}
+
+.inovadora-primera{
+    color: #ffffff;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.segunda-parte .texto-derecha{
+    color: #ffffff;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: -60px;
+}
+
+.segunda-parte-negra{
+    height: 85vh;
+}
+
+.centrar-mas{
+    text-align: center;
+    color: #ffffff;
+}
+
+.hr-blanca {
+    border: none;
+    border-top: 2px solid #ffffff; 
+    height: 0;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 100px; 
+    margin-right: 100px; 
+}
+
+.boton-wha{
+    margin-bottom: 100px;
+}
+
+.tercera-parte{
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.tercera-parte{
+    margin-top: 10px;
+}
+
+.tercera-parte .tercera-texto-izquierdo{
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 10px;    
+}
+
+.tercera-parte .tercera-texto-derecha{
+    text-align: right;
+    color: #000000;
+    text-shadow: -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px 1px 0px #ffffff;
+    font-weight: bold;
+}

@@ -44,6 +44,9 @@ Route::get('/contacto/create', [ContactoController::class, 'create'])->name('con
 Route::get('/recursos-redes-sociales', function () {
     return view('todo.recursosRedes');
 });
+Route::get('/ongs', function () {
+    return view('todo.ongs');
+});
 
 
 // Rutas autenticadas
@@ -54,7 +57,7 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/departamentos/{id}', [DepartamentoController::class, 'update'])->name('actualizar-departamento');
     Route::delete('/departamentos/{id}', [DepartamentoController::class, 'destroy'])->name('eliminar-departamento');
     Route::match(['get', 'post'], '/municipio', [MunicipioController::class, 'municipio'])->name('municipio');
-    
+
     Route::get('/blogs/categoria', [BlogcreateController::class, 'index'])->name('categorias.index');
     Route::post('/blogs/categoria', [BlogcreateController::class, 'store'])->name('categorias.store');
     Route::put('/blogs/categoria/{id}', [BlogcreateController::class, 'update'])->name('categorias.update');
