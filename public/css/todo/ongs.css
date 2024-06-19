@@ -33,15 +33,15 @@ main{
     margin-top: -20px;
 }
 
-/*.primera-parte .ong-soluciones{
+.primera-parte .ong-soluciones{
     color: #ffffff;
-    margin-top: -15px;
 }
+
 
 .segunda-parte{
     border: solid 1px rgb(255, 255, 255);
 }
-
+/*
 .segunda-parte-blanca{
     border: solid 1px red;
 }
@@ -97,17 +97,13 @@ main{
 }
 
 .tercera-parte{
-    border: solid 1px rgb(255, 255, 255);
-}
-
-.tercera-parte{
     margin-top: 10px;
 }
 
 .tercera-parte .tercera-texto-izquierdo{
     color: #ffffff;
     font-weight: bold;
-    letter-spacing: 10px;    
+    letter-spacing: 10px;
 }
 
 .tercera-parte .tercera-texto-derecha{
@@ -115,4 +111,156 @@ main{
     color: #000000;
     text-shadow: -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px 1px 0px #ffffff;
     font-weight: bold;
+    margin-top: -25px;    
+    padding-right: 15px;
+}
+
+.tercera-parte .tercera-texto-centro{
+    color: #ffffff;
+    letter-spacing: 5px;  
+    text-align: center;
+    margin-top: -15px;
+}
+
+.cuarta-parte{
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.cuarta-parte .parte-cuatro-img{
+    padding-top: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.cuarta-parte .parte-cuatro-imguno{
+    width: 100%;
+    height: 300px;
+}
+
+.cuarta-parte .parte-cuatro-imgdos{
+    padding-top: 30%;
+    width: 100%;
+    height: 300px;
+}
+
+.quinta-parte{
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.quinta-parte .quinta-texto-izquierdo{
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -40px;
+    font-size: 9em;
+}
+
+.quinta-parte .quinta-texto-anio{
+    color: #000000;
+    text-shadow: -1px -1px 0px #ffffff, 1px -1px 0px #ffffff, -1px 1px 0px #ffffff, 1px 1px 0px #ffffff;
+    font-weight: bold;
+    font-size: 6em;
+    margin-top: -55px;     
+}
+
+.quinta-parte .quinta-texto-experiencia{
+    color: #ffffff;
+    margin-top: -20px;
+    letter-spacing: 10px;
+}
+
+.sexta-parte{
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.sexta-parte .sexta-texto-titulo{
+    color:#ffffff
+}
+
+.sexta-parte .parrajo-sexta-parte{
+    padding-left: 25%;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.septima-parte{
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.septima-parte .septimo-parrafo-titulo{
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.septima-parte .parrafo-negrita{
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.septima-parte .boton-w{
+    margin-top: 10%;
+}
+
+.octava-parte{
+    border: solid 1px rgb(255, 255, 255);
+    padding-top: 50px;
+}
+
+.octava-parte .item{
+    padding-top: 10px;
+    background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
+}
+
+.octava-parte .card{
+    padding-top: 5px;
+    border: 2px solid red;
+    height: 300px;
+}
+
+.octava-parte #tercera-container{
+    padding-top: 20px;
+}
+
+.octava-parte h1{
+    color: red;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.octava-parte a{
+   margin-top: 50px; 
+}
+
+.octava-parte .card-header{
+    padding-top: 40px;
+}  
+.octava-parte .card-header h3{
+    font-weight: bold;
+}  
+
+.novena-parte{
+    border: solid 1px rgb(255, 255, 255);
+}
+
+.novena-parte .parte-novena-img{
+    padding-top: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.novena-parte .video-teresa{
+    padding-top: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.novena-parte .empresa-tituloUno{
+    text-align: center;
+    color: #ffffff;
+}
+
+.novena-parte .empresa-subtituloUno{
+    text-align: center;
+    color: #ffffff;
+    margin-top: -10px;
 }
