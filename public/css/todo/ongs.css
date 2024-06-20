@@ -5,7 +5,7 @@ main{
 .primera-parte{
     width: 100%;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 /*.parte-blanca{
@@ -38,9 +38,6 @@ main{
 }
 
 
-.segunda-parte{
-    border: solid 1px rgb(255, 255, 255);
-}
 /*
 .segunda-parte-blanca{
     border: solid 1px red;
@@ -122,29 +119,26 @@ main{
     margin-top: -15px;
 }
 
-.cuarta-parte{
-    border: solid 1px rgb(255, 255, 255);
-}
 
 .cuarta-parte .parte-cuatro-img{
     padding-top: 10px;
     width: 100%;
-    height: 250px;
+    height: 300px;
 }
 
 .cuarta-parte .parte-cuatro-imguno{
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 .cuarta-parte .parte-cuatro-imgdos{
     padding-top: 30%;
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 .quinta-parte{
-    border: solid 1px rgb(255, 255, 255);
+    margin-bottom: 75px;
 }
 
 .quinta-parte .quinta-texto-izquierdo{
@@ -169,8 +163,9 @@ main{
 }
 
 .sexta-parte{
-    border: solid 1px rgb(255, 255, 255);
+    margin-bottom: 75px;
 }
+
 
 .sexta-parte .sexta-texto-titulo{
     color:#ffffff
@@ -180,10 +175,6 @@ main{
     padding-left: 25%;
     color: #ffffff;
     margin-top: 20px;
-}
-
-.septima-parte{
-    border: solid 1px rgb(255, 255, 255);
 }
 
 .septima-parte .septimo-parrafo-titulo{
@@ -202,13 +193,16 @@ main{
 }
 
 .octava-parte{
-    border: solid 1px rgb(255, 255, 255);
     padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .octava-parte .item{
     padding-top: 10px;
     background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .octava-parte .card{
@@ -238,29 +232,81 @@ main{
     font-weight: bold;
 }  
 
-.novena-parte{
-    border: solid 1px rgb(255, 255, 255);
-}
 
 .novena-parte .parte-novena-img{
-    padding-top: 10px;
+    padding-top: 20px;
     width: 100%;
-    height: 300px;
+    height: 325px;
+    margin-right: 0px;
+}
+
+.novena-parte .parte-novena-img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.novena-parte .parte-novena-img:hover {
+    transform: scale(1.50);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .novena-parte .video-teresa{
-    padding-top: 10px;
     width: 100%;
     height: 400px;
+    margin-left: 0px;
 }
 
 .novena-parte .empresa-tituloUno{
-    text-align: center;
+    text-align: left;
     color: #ffffff;
 }
 
 .novena-parte .empresa-subtituloUno{
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     margin-top: -10px;
+}
+
+.decima-parte .parte-decima-img{
+    padding-top: 20px;
+    width: 100%;
+    height: 250px;
+    margin-right: 0px;
+}
+
+.decima-parte .parte-decima-img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.decima-parte .parte-decima-img:hover {
+    transform: scale(1.50);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.decima-parte .video-teresa{
+    width: 100%;
+    height: 400px;
+    margin-left: 0px;
+}
+
+.decima-parte .empresa-tituloUno{
+    text-align: left;
+    color: #ffffff;
+}
+
+.decima-parte .empresa-subtituloUno{
+    text-align: left;
+    color: #ffffff;
+    margin-top: -10px;
+}
+
+.decima-parte .parte-decima-imgUno{
+    padding-top: 20px;
+    width: 100%;
+    height: 400px;
+    margin-left: 0px;
+}
+
+.once-parte{
+    padding-top: 50px;
+    padding-bottom: 150px;
 }

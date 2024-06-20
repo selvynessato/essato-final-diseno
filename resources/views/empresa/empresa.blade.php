@@ -206,7 +206,9 @@
 
         <div class="octava-parte">
             <div class="container">
-                <img src="{{ asset('/images/empresa-images-multiples/portafolio.png') }}" class="img-fluid imagen-cliente-portafolio" alt="portafolio">        
+                <a href="https://www.behance.net/Damaochoa" target="_blank">
+                    <img src="{{ asset('/images/empresa-images-multiples/portafolio.png') }}" class="img-fluid imagen-cliente-portafolio" alt="portafolio">        
+                </a>
             </div>
         </div>
 

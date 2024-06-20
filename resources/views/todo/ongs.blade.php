@@ -174,6 +174,7 @@
     </div>
 </div>
 <div class="octava-parte">
+    <div class="container-fluid">
     <div class="owl-carousel owl-theme">
         <div class="item">                 
             <div class="card">
@@ -204,18 +205,18 @@
                 </div>
             </div>
         <div class="item">                 
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>
-                                Desarrollo web
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Diseñemos un espacio digital que cautiva a tus visitantes y los convierte en clientes fieles.
-                            </p>
-                        </div>
-                    </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3>
+                        Desarrollo web
+                    </h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                         Diseñemos un espacio digital que cautiva a tus visitantes y los convierte en clientes fieles.
+                    </p>
+                </div>
+            </div>
                 </div>
                 <div class="item">                 
                     <div class="card">
@@ -249,6 +250,7 @@
                     </div>
                 </div>
             </div>
+    </div>
 </div>
 <div class="novena-parte">
     <div class="container">
@@ -256,14 +258,47 @@
             <div class="col-md-2 col-12"></div>
             <div class="col-md-4 col-12">
                 <img src="{{asset('/images/ongs/teresa-branding.png')}}" class="img-fluid parte-novena-img" alt="branding">
-                <h2 class="empresa-tituloUno">Empresa</h2>
-                <p class="empresa-subtituloUno">que se trabajo</p>
+                <h2 class="empresa-tituloUno">Teresa</h2>
+                <p class="empresa-subtituloUno">Branding</p>
             </div>
             <div class="col-md-4 col-12">
-                <video src="{{asset('/images/ongs/teresa-video.mp4')}}" class="object-fit-contain video-teresa" autoplay muted playsinline></video>
+                <video src="{{asset('/images/ongs/teresa-video.mp4')}}" class="object-fit-contain video-teresa" autoplay muted playsinline loop></video>
+                <h2 class="empresa-tituloUno">Teresa</h2>
+                <p class="empresa-subtituloUno">Redes Sociales</p>
             </div>
             <div class="col-md-2 col-12"></div>
         </div>  
+    </div>
+</div>
+<div class="decima-parte">
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col-md-2 col-12"></div>
+            <div class="col-md-4 col-12">
+                <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-decima-imgUno" alt="branding">
+                <h2 class="empresa-tituloUno">Eco-Xela</h2>
+                <p class="empresa-subtituloUno">Redes Sociales</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <img src="{{asset('/images/ongs/ecoxelapagina.png')}}" class="img-fluid parte-decima-img" alt="branding">
+                <h2 class="empresa-tituloUno">Eco-Xela</h2>
+                <p class="empresa-subtituloUno">Pagina Web</p>
+            </div>
+            <div class="col-md-2 col-12"></div>
+        </div>  
+    </div>
+</div>
+<div class="once-parte">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-3"></div>
+            <div class="col-12 col-sm-6">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="{{ url('/ods') }}" class="btn btn-outline-danger organizaciones" role="button">Ver más organizaciones</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3"></div>
+        </div>
     </div>
 </div>
 </main>

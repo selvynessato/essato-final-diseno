@@ -99,6 +99,7 @@
     
 }
 
+
 .cuarta-parte .row > div {
     padding: 0;
 }
@@ -120,8 +121,20 @@
     margin: 0;
     padding: 0;
     width: 100%; 
-    height: 300px;
+    height: auto;
     transition: transform 0.3s ease;
+}
+
+.cuarta-parte .img-ods-dos{
+    height: 324px;
+}
+
+.cuarta-parte .img-ods-tres{
+    height: 278px;
+}
+
+.cuarta-parte .img-ods-cuatro{
+    height: 324px;
 }
 
 .cuarta-parte img:hover {
@@ -174,7 +187,7 @@
 
 
 .octava-parte{
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 .octava-parte .imagen-cliente-portafolio{
     width: 100%;
