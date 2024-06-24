@@ -39,7 +39,6 @@
             </div>
         </div>
     </div>
-
     <div class="segunda-parte">
         <div class="container">
             <div class="row justify-content-md-center">
@@ -62,8 +61,6 @@
             <hr>
         </div>
     </div>
-
-
     <div class="septima-parte">
         <div class="container-fluid">             
             <div class="d-flex justify-content-end">

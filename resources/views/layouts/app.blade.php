@@ -8,7 +8,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title> Essato | Administración </title>
-
+    
+    <link rel="icon" href="{{ asset('images/navbar/logo-rojo-tras.png') }}" type="image/x-icon">
     <!-- Fonts -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/logins.css') }}" rel="stylesheet">
@@ -57,7 +58,7 @@
                                 </li>
                             @endif
                         @else
-                        <!--<li class="nav-item dropdown">
+                        <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     Blog
                                 </a>
@@ -82,7 +83,7 @@
                                         Municipio
                                     </a>
                                 </div>
-                            </li>    -->
+                            </li>    
 
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

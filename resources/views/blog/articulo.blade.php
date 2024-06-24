@@ -120,8 +120,8 @@
                     <tr>
                         <td>{{ $blog->id_blog }}</td>
                         <td width="300">{{ $blog->nombre_blog }}</td>
-                        <td width="150">
-                            <img src="{{ asset($blog->img_blog) }}" class="card-img-top" alt="Blog imagen" width="100%" height="50px">
+                        <td width="200">
+                            <img src="{{ asset($blog->img_blog) }}" class="card-img-top hover-img" alt="Blog imagen" width="100%" height="100px">
                         </td>
                         <td>{{ $blog->recursos }}</td>
                         <td>{{ $blog->id_usuario }}</td>
