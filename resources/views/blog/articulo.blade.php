@@ -6,6 +6,7 @@
 <head>
     <!-- Otros scripts y estilos -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
     <script src="{{ asset('js/mensaje-eliminar.js') }}"></script>
     <link href="{{ asset('css/blog/blognew.css') }}" rel="stylesheet">
 </head>
@@ -14,7 +15,7 @@
     <div class="container-fluid">
         <!-- Modal Crear Blog -->
         <div class="modal fade" id="modalCrear" tabindex="-1" aria-labelledby="modalCrearLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-scrollable modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="modalCrearLabel">Agregar Blog</h5>
@@ -34,7 +35,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="contenido_blog" class="form-label">Contenido</label>
-                                <textarea class="form-control" name="contenido_blog" id="contenido_blog" rows="3" required></textarea>
+                                <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3" required></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="descripcion_blog" class="form-label">Descripción</label>
@@ -144,7 +145,7 @@
 
                     <!-- Modal Editar Blog -->
                     <div class="modal fade" id="modalEditar-{{ $blog->id_blog }}" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-scrollable modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="modalEditarLabel">Editar Blog</h5>
@@ -165,7 +166,7 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="contenido_blog" class="form-label">Contenido</label>
-                                            <textarea class="form-control" name="contenido_blog" id="contenido_blog" rows="3" required>{{ $blog->contenido_blog }}</textarea>
+                                            <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3" required>{{ $blog->contenido_blog }}</textarea>
                                         </div>
                                         <div class="mb-3">
                                             <label for="descripcion_blog" class="form-label">Descripción</label>
@@ -213,6 +214,17 @@
         </div>
     </div>
 </main>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('.editor').forEach(function(editorElement) {
+            ClassicEditor
+                .create(editorElement)
+                .catch(error => {
+                    console.error(error);
+                });
+        });
+    });
+</script>
 </body>
 </html>
 
