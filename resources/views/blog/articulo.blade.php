@@ -6,9 +6,7 @@
 <head>
     <!-- Otros scripts y estilos -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
     <script src="{{ asset('js/mensaje-eliminar.js') }}"></script>
-    <link href="{{ asset('css/blog/blognew.css') }}" rel="stylesheet">
 </head>
 <body>
 <main>
@@ -35,7 +33,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="contenido_blog" class="form-label">Contenido</label>
-                                <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3" required></textarea>
+                                <textarea class="form-control" name="contenido_blog" id="contenido_blog" rows="3" required></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="descripcion_blog" class="form-label">Descripción</label>
@@ -54,7 +52,7 @@
                                 <input type="text" class="form-control" name="slug_blog" id="slug_blog" required>
                             </div>
                             <div class="mb-3">
-                                <label for="recursos" class="form-label">Recursos</label>
+                                <label for="recursos" class="form-label">Palabras claves</label>
                                 <input type="text" class="form-control" name="recursos" id="recursos" required>
                             </div>
                             <div class="mb-3">
@@ -166,7 +164,7 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="contenido_blog" class="form-label">Contenido</label>
-                                            <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3" required>{{ $blog->contenido_blog }}</textarea>
+                                            <textarea class="form-control" name="contenido_blog" id="contenido_blog" rows="3" required>{{ $blog->contenido_blog }}</textarea>
                                         </div>
                                         <div class="mb-3">
                                             <label for="descripcion_blog" class="form-label">Descripción</label>
@@ -185,7 +183,7 @@
                                             <input type="text" class="form-control" name="slug_blog" id="slug_blog" value="{{ $blog->slug_blog }}" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="recursos" class="form-label">Recursos</label>
+                                            <label for="recursos" class="form-label">Palabras claves</label>
                                             <input type="text" class="form-control" name="recursos" id="recursos" value="{{ $blog->recursos }}" required>
                                         </div>
                                         <div class="mb-3">
@@ -215,17 +213,28 @@
     </div>
 </main>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelectorAll('.editor').forEach(function(editorElement) {
-            ClassicEditor
-                .create(editorElement)
-                .catch(error => {
-                    console.error(error);
-                });
-        });
-    });
+function confirmDeleteC(id) {
+  Swal.fire({
+      title: "¿Desea eliminar archivo?",
+      text: "No podrá revertir los cambios",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Eliminar"
+  }).then((result) => {
+      if (result.isConfirmed) {
+          // El usuario ha hecho clic en "Eliminar", proceder con la eliminación
+          document.getElementById('delete-form-' + id).submit();
+      } else {
+          // El usuario ha cancelado, no hacer nada
+          return false;
+      }
+  });
+}
 </script>
 </body>
 </html>
 
 @endsection
+

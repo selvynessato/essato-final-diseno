@@ -14,7 +14,7 @@ function confirmDelete(id) {
   });
 }
 
-function confirmDeleteC(id) {
+function confirmDeleteCa(id) {
   Swal.fire({
       title: "¿Desea eliminar archivo?",
       text: "No podrá revertir los cambios",

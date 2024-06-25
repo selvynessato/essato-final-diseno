@@ -17,8 +17,10 @@ class BlognewController extends Controller
         $blogs = Blog::paginate(10);
         $ultimoBlog = Blog::orderBy('id_blog', 'desc')->first();
         $nuevoIdBlog = $ultimoBlog ? $ultimoBlog->id_blog + 1 : 1;
+        $categorias = Categoria::all(); // Obtener todas las categorías
 
-        return view('blog.articulo', compact('blogs', 'nuevoIdBlog'));
+        return view('blog.articulo', compact('blogs', 'nuevoIdBlog', 'categorias'));
+
     }
 
     public function store(Request $request)

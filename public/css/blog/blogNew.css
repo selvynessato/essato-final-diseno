@@ -5,3 +5,11 @@
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
+
+main p{
+    color: #000000;
+}
+
+.form-control{
+    background-color: #e9ecef !important;
+}
