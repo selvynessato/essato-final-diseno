@@ -3,17 +3,18 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\PaisController;
-use App\Http\Controllers\DepartamentoController;
-use App\Http\Controllers\EmpresaController;
-use App\Http\Controllers\ODSController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogcreateController;
 use App\Http\Controllers\BlognewController;
-use App\Http\Controllers\RecursoController;
+use App\Http\Controllers\CKEditorController;
 use App\Http\Controllers\ContactoController;
-use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\DepartamentoController;
+use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ODSController;
+use App\Http\Controllers\PaisController;
+use App\Http\Controllers\RecursoController;
+use App\Http\Controllers\WelcomeController;
 
 
 /*
@@ -57,6 +58,8 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/departamentos/{id}', [DepartamentoController::class, 'update'])->name('actualizar-departamento');
     Route::delete('/departamentos/{id}', [DepartamentoController::class, 'destroy'])->name('eliminar-departamento');
     Route::match(['get', 'post'], '/municipio', [MunicipioController::class, 'municipio'])->name('municipio');
+
+    Route::post('/upload', [BlognewController::class, 'upload'])->name('upload');
 
     Route::get('/blogs/categoria', [BlogcreateController::class, 'index'])->name('categorias.index');
     Route::post('/blogs/categoria', [BlogcreateController::class, 'store'])->name('categorias.store');

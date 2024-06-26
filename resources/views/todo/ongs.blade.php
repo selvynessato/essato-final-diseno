@@ -111,14 +111,20 @@
 <div class="cuarta-parte">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6" div data-aos="fade-up" data-aos-duration="3000">
-                <img src="{{asset('/images/ongs/asokape.png')}}" class="img-fluid parte-cuatro-img" alt="empresa web">
+            <div class="col-sm-6">
+                <div data-aos="fade-up" data-aos-duration="3000">    
+                    <img src="{{asset('/images/ongs/asokape.png')}}" class="img-fluid parte-cuatro-img" alt="empresa web">
+                </div>
             </div>
-            <div class="col-sm-3" div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <img src="{{asset('/images/ongs/ods-15.png')}}" class="img-fluid parte-cuatro-imguno" alt="ods diseño">
+            <div class="col-sm-3">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">    
+                    <img src="{{asset('/images/ongs/ods-15.png')}}" class="img-fluid parte-cuatro-imguno" alt="ods diseño">
+                </div>
             </div>
-            <div class="col-sm-3" div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <img src="{{asset('/images/ongs/redes-sociales.png')}}" class="img-fluid parte-cuatro-imgdos" alt="red social">
+            <div class="col-sm-3">
+                <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">    
+                    <img src="{{asset('/images/ongs/redes-sociales.png')}}" class="img-fluid parte-cuatro-imgdos" alt="red social">
+                </div>
             </div>
         </div>
     </div>
@@ -126,12 +132,12 @@
 <div class="quinta-parte">
     <div class="container">
         <div class="row align-items-start">
-            <div class="col-md-3 col-12" data-aos="fade-right">
+            <div class="col-md-3 col-12">
                 <h1 class="display-1 quinta-texto-izquierdo">+10</h1>
             </div>
             <div class="col-md-3 col-12">
-                <h1 class="display-6 quinta-texto-anio" data-aos="fade-left">AÑOS</h1>
-                <h1 class="display-5 quinta-texto-experiencia" data-aos="fade-left">EXPERIENCIA</h1>
+                <h1 class="display-6 quinta-texto-anio">AÑOS</h1>
+                <h1 class="display-5 quinta-texto-experiencia">EXPERIENCIA</h1>
             </div>
         </div>  
     </div>
@@ -160,13 +166,13 @@
 <div class="septima-parte">
     <div class="container">
         <div class="row align-items-start">
-            <div class="col-md-6 col-12" div data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-md-6 col-12">
                 <p class="septimo-parrafo-titulo">
                     Potenciamos <span class="parrafo-negrita">la sostenibillidad y visibilidad </span>de sus acciones
                 </p>
             </div>
             <div class="col-md-6 col-12">
-                <div class="d-grid gap-2 col-6" div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="d-grid gap-2 col-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <a href="https://wa.link/a4qy4l" class="btn btn-light boton-w" role="button" target="_blank">Whatsapp</a>
                 </div>        
             </div>
@@ -293,7 +299,7 @@
         <div class="row">
             <div class="col-12 col-sm-3"></div>
             <div class="col-12 col-sm-6">
-                <div class="d-grid gap-2 col-6 mx-auto" div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="d-grid gap-2 col-6 mx-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <a href="{{ url('/ods') }}" class="btn btn-outline-danger organizaciones" role="button">Ver más organizaciones</a>
                 </div>
             </div>

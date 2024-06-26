@@ -14,7 +14,7 @@ function confirmDelete(id) {
   });
 }
 
-function confirmDeleteCa(id) {
+function confirmDeleteC(id) {
   Swal.fire({
       title: "¿Desea eliminar archivo?",
       text: "No podrá revertir los cambios",
@@ -31,17 +31,5 @@ function confirmDeleteCa(id) {
           // El usuario ha cancelado, no hacer nada
           return false;
       }
-  });
-}
-
-
-
-// Mostrar mensaje de éxito después de una acción
-function showSuccessMessage(message) {
-  Swal.fire({
-      title: "¡Eliminado!",
-      text: message,
-      icon: "success",
-      confirmButtonText: "OK"
   });
 }

@@ -102,4 +102,21 @@ class BlognewController extends Controller
         // Redirigir o devolver una respuesta
         return redirect()->back()->with('eliminacion-exitosa', 'Blog eliminado correctamente');
     }
+
+    public function upload(Request $request)
+    {
+        if($request->hasfile('upload')){
+    
+            $originName = $request->file('upload')->getClientOriginalName();
+            $fileName = pathinfo($originName, PATHINFO_FILENAME);
+            $extension = $request->file('upload')->getClientOriginalExtension();
+            $fileName = $fileName. '_' . time() . '.' . $extension;
+    
+            // Mueve el archivo a la ruta public/images/media/
+            $request->file('upload')->move(public_path('images/media'), $fileName);
+    
+            $url = asset('images/media/' . $fileName);
+            return response()->json(['fileName' => $fileName, 'uploaded' => 1, 'url' => $url]);
+        }
+    }   
 }
