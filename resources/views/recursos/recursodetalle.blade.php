@@ -43,7 +43,7 @@
                             <div class="row">
                                 <div class="col align-self-start"></div>
                                 <div class="col align-self-center p-2">
-                                    <a href="{{ route('recurso.descargar', $recurso->recurso_recurso) }}" class="btn btn-danger btn-sm">
+                                    <a href="{{ route('recurso.descargar', $recurso->recurso_recurso) }}" target="_blank" class="btn btn-danger btn-sm">
                                         Descargar Recurso
                                     </a>
                                 </div>

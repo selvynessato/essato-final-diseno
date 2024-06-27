@@ -65,12 +65,23 @@ class BlognewController extends Controller
             'contenido_blog' => 'required',
             'descripcion_blog' => 'required',
             'fechaPublic_blog' => 'required|date',
-            'img_blog' => 'required',
+            'img_blog' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'slug_blog' => 'required',
             'recursos' => 'required|string',
             'id_usuario' => 'nullable|integer',
             'id_categoria' => 'required|integer',
         ]);
+
+        // Manejar la subida de la imagen
+            if ($request->hasFile('img_blog')) {
+                $image = $request->file('img_blog');
+                $name = time().'.'.$image->getClientOriginalExtension();
+                $destinationPath = public_path('/images/blog');
+                $image->move($destinationPath, $name);
+                $img_blog = 'images/blog/'.$name;
+            } else {
+                $img_blog = null;
+            }
 
         // Buscar el blog por ID
         $blog = Blog::findOrFail($id);

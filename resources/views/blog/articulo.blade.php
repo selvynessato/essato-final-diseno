@@ -7,7 +7,7 @@
     <!-- Otros scripts y estilos -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
-    <script src="{{ asset('js/mensaje-eliminar.js') }}"></script>
+        <script src="{{ asset('js/mensaje-eliminar.js') }}"></script>
     <link href="{{ asset('css/blog/blognew.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -39,14 +39,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="contenido_blog" class="form-label">Contenido</label>
-                                <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="descripcion_blog" class="form-label">Descripción</label>
-                                <textarea class="form-control" name="descripcion_blog" id="descripcion_blog" rows="3" required></textarea>
-                            </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="mb-3">
@@ -57,7 +49,7 @@
                                 <div class="col-md-4">
                                     <div class="mb-3">
                                         <label for="img_blog" class="form-label">Imagen</label>
-                                        <input type="text" class="form-control" name="img_blog" id="img_blog" required>
+                                        <input type="file" class="form-control" name="img_blog" id="img_blog" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -90,6 +82,14 @@
                                         </select>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contenido_blog" class="form-label">Contenido</label>
+                                <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion_blog" class="form-label">Descripción</label>
+                                <textarea class="form-control" name="descripcion_blog" id="descripcion_blog" rows="3" required></textarea>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -182,14 +182,67 @@
                                     <form action="{{ route('blogs.update', $blog->id_blog) }}" method="POST">
                                         @csrf
                                         @method('PUT')
-                                        <div class="mb-3">
-                                            <label for="id_blog" class="form-label">ID</label>
-                                            <input type="text" class="form-control" name="id_blog" id="id_blog" value="{{ $blog->id_blog }}" readonly>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="id_blog" class="form-label">ID</label>
+                                                    <input type="text" class="form-control" name="id_blog" id="id_blog" value="{{ $blog->id_blog }}" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="nombre_blog" class="form-label">Nombre</label>
+                                                    <input type="text" class="form-control" name="nombre_blog" id="nombre_blog" value="{{ $blog->nombre_blog }}" required>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="nombre_blog" class="form-label">Nombre</label>
-                                            <input type="text" class="form-control" name="nombre_blog" id="nombre_blog" value="{{ $blog->nombre_blog }}" required>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="fechaPublic_blog" class="form-label">Fecha de Publicación</label>
+                                                    <input type="date" class="form-control" name="fechaPublic_blog" id="fechaPublic_blog" value="{{ $blog->fechaPublic_blog }}" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="img_blog" class="form-label">Imagen</label>
+                                                    <input type="text" class="form-control" name="img_blog" id="img_blog" value="{{ $blog->img_blog }}" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="slug_blog" class="form-label">Slug</label>
+                                                    <input type="text" class="form-control" name="slug_blog" id="slug_blog" value="{{ $blog->slug_blog }}" required>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="recursos" class="form-label">Palabras claves</label>
+                                                    <input type="text" class="form-control" name="recursos" id="recursos" value="{{ $blog->recursos }}" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="id_usuario" class="form-label">Usuario</label>
+                                                    <input type="text" class="form-control" name="id_usuario" id="id_usuario" value="{{ $blog->id_usuario }}">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="id_categoria" class="form-label">Categoría</label>
+                                                    <select class="form-control" name="id_categoria" id="id_categoria" required>
+                                                        @foreach($categorias as $categoria)
+                                                            <option value="{{ $categoria->id_categoria }}" @if($categoria->id_categoria == $blog->id_categoria) selected @endif>
+                                                                {{ $categoria->nombre_categoria }}
+                                                            </option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="mb-3">
                                             <label for="contenido_blog" class="form-label">Contenido</label>
                                             <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3" required>{{ $blog->contenido_blog }}</textarea>
@@ -197,30 +250,6 @@
                                         <div class="mb-3">
                                             <label for="descripcion_blog" class="form-label">Descripción</label>
                                             <textarea class="form-control" name="descripcion_blog" id="descripcion_blog" rows="3" required>{{ $blog->descripcion_blog }}</textarea>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="fechaPublic_blog" class="form-label">Fecha de Publicación</label>
-                                            <input type="date" class="form-control" name="fechaPublic_blog" id="fechaPublic_blog" value="{{ $blog->fechaPublic_blog }}" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="img_blog" class="form-label">Imagen</label>
-                                            <input type="text" class="form-control" name="img_blog" id="img_blog" value="{{ $blog->img_blog }}" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="slug_blog" class="form-label">Slug</label>
-                                            <input type="text" class="form-control" name="slug_blog" id="slug_blog" value="{{ $blog->slug_blog }}" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="recursos" class="form-label">Palabras claves</label>
-                                            <input type="text" class="form-control" name="recursos" id="recursos" value="{{ $blog->recursos }}" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="id_usuario" class="form-label">ID Usuario</label>
-                                            <input type="text" class="form-control" name="id_usuario" id="id_usuario" value="{{ $blog->id_usuario }}">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="id_categoria" class="form-label">ID Categoría</label>
-                                            <input type="text" class="form-control" name="id_categoria" id="id_categoria" value="{{ $blog->id_categoria }}" required>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -241,24 +270,45 @@
     </div>
 </main>
 <script>
-   document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll('.editor').forEach(function(editorElement) {
-        ClassicEditor
-            .create(editorElement, {
-                ckfinder: {
-                    uploadUrl: "{{ route('upload', ['_token' => csrf_token()]) }}"
-                }
-            })
-            .then(editor => {
-                console.log(editor);
-            })
-            .catch(error => {
-                console.error(error);
-            });
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('.editor').forEach(function(editorElement) {
+            ClassicEditor
+                .create(editorElement, {
+                    ckfinder: {
+                        uploadUrl: "{{ route('upload', ['_token' => csrf_token()]) }}"
+                    },
+                    mediaEmbed: {
+                        previewsInData: true,
+                        providers: [
+                            {
+                                name: 'YouTube',
+                                url: /^https?:\/\/(?:www\.)?youtube\.com\/watch\?v=(.+)$/,
+                                html: match => {
+                                    return `
+                                        <div style="position: relative; width: 100%; height: 350px; overflow: hidden; max-width: 100%;">
+                                            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/${match[1]}" allowfullscreen></iframe>
+                                            <p style="text-align: center; margin-top: 10px;">Tu texto descriptivo aquí</p>
+                                        </div>`;                                }
+                            },
+                            {
+                                name: 'Vimeo',
+                                url: /^https?:\/\/(?:www\.)?vimeo\.com\/(\d+)$/,
+                                html: match => {
+                                    return `<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;"><iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://player.vimeo.com/video/${match[1]}" allowfullscreen></iframe></div>`;
+                                }
+                            }
+                        ]
+                    }
+                })
+                .then(editor => {
+                    console.log(editor);
+                })
+                .catch(error => {
+                    console.error(error);
+                });
         });
     });
 </script>
 </body>
 </html>
 @endsection
-

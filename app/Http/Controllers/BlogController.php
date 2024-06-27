@@ -41,4 +41,12 @@ class BlogController extends Controller
         return view('blog.blog', ['blogs' => $blogs, 'categorias' => $categorias]);
     }
 
+    private function formatContent($content)
+    {
+        // Remover los atributos width y height de las imágenes y añadir width: 100%; height: auto;
+        $content = preg_replace('/<img[^>]*width="[^"]*"[^>]*>/', '<img style="width: 100%; height: auto;"', $content);
+        $content = preg_replace('/<img[^>]*height="[^"]*"[^>]*>/', '<img style="width: 100%; height: auto;"', $content);
+
+        return $content;
+    }
 }
