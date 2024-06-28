@@ -32,12 +32,23 @@ class BlognewController extends Controller
             'contenido_blog' => 'required',
             'descripcion_blog' => 'required',
             'fechaPublic_blog' => 'required|date',
-            'img_blog' => 'required',
+            'img_blog' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'slug_blog' => 'required',
             'recursos' => 'required|string',
             'id_usuario' => 'nullable|integer',
             'id_categoria' => 'required|integer',
         ]);
+
+        // Manejar la subida de la imagen
+        if ($request->hasFile('img_blog')) {
+            $image = $request->file('img_blog');
+            $name = time() . '.' . $image->getClientOriginalExtension();
+            $destinationPath = public_path('/images/blog');
+            $image->move($destinationPath, $name);
+            $imgUrl = '/images/blog/' . $name;
+        } else {
+            return redirect()->back()->with('error-noexitoso', 'No se puede dejar el campo de imagen vacío.');
+        }
 
         // Crear un nuevo blog
         Blog::create([
@@ -46,7 +57,7 @@ class BlognewController extends Controller
             'contenido_blog' => $request->input('contenido_blog'),
             'descripcion_blog' => $request->input('descripcion_blog'),
             'fechaPublic_blog' => $request->input('fechaPublic_blog'),
-            'img_blog' => $request->input('img_blog'),
+            'img_blog' => $imgUrl,
             'slug_blog' => $request->input('slug_blog'),
             'recursos' => $request->input('recursos'),
             'id_usuario' => $request->input('id_usuario'),
@@ -58,52 +69,57 @@ class BlognewController extends Controller
     }
 
     public function update(Request $request, $id)
-    {
-        // Validación de datos
-        $request->validate([
-            'nombre_blog' => 'required',
-            'contenido_blog' => 'required',
-            'descripcion_blog' => 'required',
-            'fechaPublic_blog' => 'required|date',
-            'img_blog' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'slug_blog' => 'required',
-            'recursos' => 'required|string',
-            'id_usuario' => 'nullable|integer',
-            'id_categoria' => 'required|integer',
-        ]);
+{
+    // Validación de datos
+    $request->validate([
+        'nombre_blog' => 'required',
+        'contenido_blog' => 'required',
+        'descripcion_blog' => 'required',
+        'fechaPublic_blog' => 'required|date',
+        'img_blog' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'slug_blog' => 'required',
+        'recursos' => 'required|string',
+        'id_usuario' => 'nullable|integer',
+        'id_categoria' => 'required|integer',
+    ]);
 
-        // Manejar la subida de la imagen
-            if ($request->hasFile('img_blog')) {
-                $image = $request->file('img_blog');
-                $name = time().'.'.$image->getClientOriginalExtension();
-                $destinationPath = public_path('/images/blog');
-                $image->move($destinationPath, $name);
-                $img_blog = 'images/blog/'.$name;
-            } else {
-                $img_blog = null;
-            }
+    // Buscar el blog por ID
+    $blog = Blog::findOrFail($id);
 
-        // Buscar el blog por ID
-        $blog = Blog::findOrFail($id);
+    // Manejar la subida de la imagen si hay una nueva o mantener la existente
+    if ($request->hasFile('img_blog')) {
+        // Subir y mantener el nombre original de la imagen nueva
+        $imagen = $request->file('img_blog');
+        $nombreOriginal = $imagen->getClientOriginalName();
+        $imagen->move(public_path('images/blog/'), $nombreOriginal);
+        $blog->img_blog = 'images/blog/' . $nombreOriginal;
 
-        // Actualizar los campos del blog
-        $blog->nombre_blog = $request->input('nombre_blog');
-        $blog->contenido_blog = $request->input('contenido_blog');
-        $blog->descripcion_blog = $request->input('descripcion_blog');
-        $blog->fechaPublic_blog = $request->input('fechaPublic_blog');
-        $blog->img_blog = $request->input('img_blog');
-        $blog->slug_blog = $request->input('slug_blog');
-        $blog->recursos = $request->input('recursos');
-        $blog->id_usuario = $request->input('id_usuario');
-        $blog->id_categoria = $request->input('id_categoria');
-
-        // Guardar los cambios
-        $blog->save();
-
-        // Redirigir o devolver una respuesta
-        return redirect()->back()->with('actualizacion-exitosa', 'Blog actualizado correctamente');
+        // Eliminar la imagen anterior si existe y no es la misma que la nueva
+        if ($blog->img_blog != $blog->img_blog_original && file_exists(public_path($blog->img_blog_original))) {
+            unlink(public_path($blog->img_blog_original));
+        }
     }
 
+    // Actualizar los campos del blog
+    $blog->nombre_blog = $request->input('nombre_blog');
+    $blog->contenido_blog = $request->input('contenido_blog');
+    $blog->descripcion_blog = $request->input('descripcion_blog');
+    $blog->fechaPublic_blog = $request->input('fechaPublic_blog');
+    $blog->slug_blog = $request->input('slug_blog');
+    $blog->recursos = $request->input('recursos');
+    $blog->id_usuario = $request->input('id_usuario');
+    $blog->id_categoria = $request->input('id_categoria');
+
+    // Guardar los cambios
+    $blog->save();
+
+    // Redirigir o devolver una respuesta
+    return redirect()->back()->with('actualizacion-exitosa', 'Blog actualizado correctamente');
+}
+
+
+
+    
     public function destroy($id)
     {
         // Buscar el blog por ID y eliminarlo
