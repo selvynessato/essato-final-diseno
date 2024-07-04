@@ -156,7 +156,7 @@
                         <td width="200">
                             <img src="{{ asset($blog->img_blog) }}" class="card-img-top hover-img" alt="Blog imagen" width="100%" height="100px">
                         </td>
-                        <td>{{ $blog->recursos }}</td>
+                        <td width="300">{{ $blog->recursos }}</td>
                         <td>{{ $blog->id_usuario }}</td>
                         <td>{{ $blog->categoria->nombre_categoria }}</td>
                         <td>
@@ -175,102 +175,101 @@
                         </td>
                     </tr>
 
-<!-- Modal Editar Blog -->
-<div class="modal fade" id="modalEditar-{{ $blog->id_blog }}" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalEditarLabel">Editar Blog</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Formulario para editar blog -->
-                <form action="{{ route('blogs.update', $blog->id_blog) }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    @method('PUT')
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="id_blog" class="form-label">ID</label>
-                                <input type="text" class="form-control" name="id_blog" id="id_blog" value="{{ $blog->id_blog }}" readonly>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label for="nombre_blog" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" name="nombre_blog" id="nombre_blog" value="{{ $blog->nombre_blog }}" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label for="fechaPublic_blog" class="form-label">Fecha de Publicación</label>
-                                <input type="date" class="form-control" name="fechaPublic_blog" id="fechaPublic_blog" value="{{ $blog->fechaPublic_blog }}" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label for="img_blog_actual" class="form-label">Imagen Actual</label>
-                                <input type="file" class="form-control" name="img_blog_nueva" id="img_blog_nueva">
-                                <input type="text" class="form-control" name="img_blog_actual" id="img_blog_actual" value="{{ $blog->img_blog }}" readonly>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label for="slug_blog" class="form-label">Slug</label>
-                                <input type="text" class="form-control" name="slug_blog" id="slug_blog" value="{{ $blog->slug_blog }}" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label for="recursos" class="form-label">Palabras claves</label>
-                                <input type="text" class="form-control" name="recursos" id="recursos" value="{{ $blog->recursos }}" required>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label for="id_usuario" class="form-label">Usuario</label>
-                                <input type="text" class="form-control" name="id_usuario" id="id_usuario" value="{{ $blog->id_usuario }}">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-3">
-                                <label for="id_categoria" class="form-label">Categoría</label>
-                                <select class="form-control" name="id_categoria" id="id_categoria" required>
-                                    @foreach($categorias as $categoria)
-                                        <option value="{{ $categoria->id_categoria }}" @if($categoria->id_categoria == $blog->id_categoria) selected @endif>
-                                            {{ $categoria->nombre_categoria }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Modal Editar Blog -->
+                    <div class="modal fade" id="modalEditar-{{ $blog->id_blog }}" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalEditarLabel">Editar Blog</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Formulario para editar blog -->
+                                    <form action="{{ route('blogs.update', $blog->id_blog) }}" method="POST" enctype="multipart/form-data">
+                                        @csrf
+                                        @method('PUT')
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="id_blog" class="form-label">ID</label>
+                                                    <input type="text" class="form-control" name="id_blog" id="id_blog" value="{{ $blog->id_blog }}" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="nombre_blog" class="form-label">Nombre</label>
+                                                    <input type="text" class="form-control" name="nombre_blog" id="nombre_blog" value="{{ $blog->nombre_blog }}" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="fechaPublic_blog" class="form-label">Fecha de Publicación</label>
+                                                    <input type="date" class="form-control" name="fechaPublic_blog" id="fechaPublic_blog" value="{{ $blog->fechaPublic_blog }}" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="img_blog_actual" class="form-label">Imagen Actual</label>
+                                                    <input type="file" class="form-control" name="img_blog_nueva" id="img_blog_nueva">
+                                                    <input type="text" class="form-control" name="img_blog_actual" id="img_blog_actual" value="{{ $blog->img_blog }}" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="slug_blog" class="form-label">Slug</label>
+                                                    <input type="text" class="form-control" name="slug_blog" id="slug_blog" value="{{ $blog->slug_blog }}" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="recursos" class="form-label">Palabras claves</label>
+                                                    <input type="text" class="form-control" name="recursos" id="recursos" value="{{ $blog->recursos }}" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="id_usuario" class="form-label">Usuario</label>
+                                                    <input type="text" class="form-control" name="id_usuario" id="id_usuario" value="{{ $blog->id_usuario }}">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="id_categoria" class="form-label">Categoría</label>
+                                                    <select class="form-control" name="id_categoria" id="id_categoria" required>
+                                                        @foreach($categorias as $categoria)
+                                                            <option value="{{ $categoria->id_categoria }}" @if($categoria->id_categoria == $blog->id_categoria) selected @endif>
+                                                                {{ $categoria->nombre_categoria }}
+                                                            </option>
+                                                        @endforeach
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                    <div class="mb-3">
-                        <label for="contenido_blog" class="form-label">Contenido</label>
-                        <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3" required>{{ $blog->contenido_blog }}</textarea>
+                                        <div class="mb-3">
+                                            <label for="contenido_blog" class="form-label">Contenido</label>
+                                            <textarea class="form-control editor" name="contenido_blog" id="contenido_blog" rows="3" required>{{ $blog->contenido_blog }}</textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="descripcion_blog" class="form-label">Descripción</label>
+                                            <textarea class="form-control" name="descripcion_blog" id="descripcion_blog" rows="3" required>{{ $blog->descripcion_blog }}</textarea>
+                                        </div>
+                                        <div class="row">
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                            <button type="submit" class="btn btn-primary">Guardar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="descripcion_blog" class="form-label">Descripción</label>
-                        <textarea class="form-control" name="descripcion_blog" id="descripcion_blog" rows="3" required>{{ $blog->descripcion_blog }}</textarea>
-                    </div>
-                    <div class="row">
-                        
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
                     @endforeach
                 </tbody>
             </table>
