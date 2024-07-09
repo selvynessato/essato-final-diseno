@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ActividadController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogcreateController;
@@ -10,10 +11,12 @@ use App\Http\Controllers\CKEditorController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\EmpresaController;
+use App\Http\Controllers\EmpresaNegocioController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ODSController;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\RecursoController;
+use App\Http\Controllers\Tipo_EmpresaController;
 use App\Http\Controllers\WelcomeController;
 
 
@@ -75,4 +78,21 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/recurso', [RecursoController::class, 'index'])->name('recurso.index');
     Route::get('/recurso/{recurso:slug_recurso}', [RecursoController::class, 'detallerecurso'])->name('recurso.detalle');
     Route::get('/{nombre_archivo}', [RecursoController::class, 'descargarRecurso'])->name('recurso.descargar');
+
+
+    Route::get('/empresa/tipo_empresa', [Tipo_EmpresaController::class, 'index'])->name('tipo_empresa.index');
+    Route::post('/empresa/tipo_empresa', [Tipo_EmpresaController::class, 'store'])->name('tipo_empresa.store');
+    Route::put('/empresa/tipo_empresa/{tipo_empresa}', [Tipo_EmpresaController::class, 'update'])->name('tipo_empresa.update');
+    Route::delete('/empresa/tipo_empresa/{tipo_empresa}', [Tipo_EmpresaController::class, 'destroy'])->name('tipo_empresa.destroy');
+
+    Route::get('/empresa/actividad', [ActividadController::class, 'index'])->name('actividad.index');
+    Route::post('/empresa/actividad', [ActividadController::class, 'store'])->name('actividad.store');
+    Route::put('/empresa/actividad/{actividad}', [ActividadController::class, 'update'])->name('actividad.update');
+    Route::delete('/empresa/actividad/{actividad}', [ActividadController::class, 'destroy'])->name('actividad.destroy');
+
+    Route::get('/empresa/empresa_negocio', [EmpresaNegocioController::class, 'index'])->name('empresa.index');
+    Route::post('/empresa/empresa_negocio', [EmpresaNegocioController::class, 'store'])->name('empresa.store');
+    Route::put('/empresa//empresa_negocio/{empresa}', [EmpresaNegocioController::class, 'update'])->name('empresa.update');
+    Route::delete('/empresa/empresa_negocio/{empresa}', [EmpresaNegocioController::class, 'destroy'])->name('empresa.destroy');
+
 });
