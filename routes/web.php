@@ -9,8 +9,10 @@ use App\Http\Controllers\BlogcreateController;
 use App\Http\Controllers\BlognewController;
 use App\Http\Controllers\CKEditorController;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\ContactoMensajeController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\EmpresaController;
+use App\Http\Controllers\EncontraressatoController;
 use App\Http\Controllers\EmpresaNegocioController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ODSController;
@@ -92,7 +94,22 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/empresa/empresa_negocio', [EmpresaNegocioController::class, 'index'])->name('empresa.index');
     Route::post('/empresa/empresa_negocio', [EmpresaNegocioController::class, 'store'])->name('empresa.store');
-    Route::put('/empresa//empresa_negocio/{empresa}', [EmpresaNegocioController::class, 'update'])->name('empresa.update');
+    Route::put('/empresa/empresa_negocio/{empresa}', [EmpresaNegocioController::class, 'update'])->name('empresa.update');
     Route::delete('/empresa/empresa_negocio/{empresa}', [EmpresaNegocioController::class, 'destroy'])->name('empresa.destroy');
 
+    Route::get('/contacto/encontrar-essato', [EncontraressatoController::class, 'index'])->name('encontraressato.index');
+    Route::post('/contacto/encontrar-essato', [EncontraressatoController::class, 'store'])->name('encontraressato.store');
+    Route::put('/contacto/encontrar-essato/{encontraressato}', [EncontraressatoController::class, 'update'])->name('encontraressato.update');
+    Route::delete('/contacto/encontrar-essato/{encontraressato}', [EncontraressatoController::class, 'destroy'])->name('encontraressato.destroy');
+
+    Route::get('/contacto/encontrar-essato', [EncontraressatoController::class, 'index'])->name('encontraressato.index');
+    Route::post('/contacto/encontrar-essato', [EncontraressatoController::class, 'store'])->name('encontraressato.store');
+    Route::put('/contacto/encontrar-essato/{encontraressato}', [EncontraressatoController::class, 'update'])->name('encontraressato.update');
+    Route::delete('/contacto/encontrar-essato/{encontraressato}', [EncontraressatoController::class, 'destroy'])->name('encontraressato.destroy');
+
+    Route::get('/contacto/mensaje-essato', [ContactoMensajeController::class, 'index'])->name('contacto.index');
+    Route::post('/contacto/mensaje-essato', [ContactoMensajeController::class, 'store'])->name('contacto.store');
+    Route::put('/contacto/mensaje-essato/{id}', [ContactoMensajeController::class, 'update'])->name('contacto.update');
+    Route::delete('/contacto/mensaje-essato/{id}', [ContactoMensajeController::class, 'destroy'])->name('contacto.destroy');
+   
 });

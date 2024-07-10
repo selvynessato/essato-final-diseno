@@ -12,6 +12,7 @@ class Encontraressato extends Model
     protected $primaryKey = 'id_encontraressato';
 
     protected $fillable = [
+        'id_encontraressato',
         'nombre_encontraressato',
         'descripcion_encontraressato',
     ];

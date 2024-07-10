@@ -26,19 +26,29 @@
                     <!-- Formulario para crear nueva empresa -->
                     <form action="{{ route('empresa.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <div class="row">
+                        <!-- ID Empresa -->
+                        <div class="row">     
                             <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="id_empresa" class="form-label">ID Empresa</label>
+                                    <input type="text" class="form-control" name="id_empresa" id="id_empresa" value="{{ $nuevoIdEmpresa }}" readonly>
+                                </div>
                                 <div class="mb-3">
                                     <label for="nombre_empresa" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" name="nombre_empresa" id="nombre_empresa" required>
                                 </div>
+                            </div>
+                            <div class="col-md-6">    
                                 <div class="mb-3">
                                     <label for="img_empresa" class="form-label">Imagen</label>
                                     <input type="file" class="form-control" name="img_empresa" id="img_empresa" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="estado_empresa" class="form-label">Estado</label>
-                                    <input type="text" class="form-control" name="estado_empresa" id="estado_empresa" required>
+                                    <select class="form-control" name="estado_empresa" id="estado_empresa" required>
+                                        <option value="1">Activo</option>
+                                        <option value="0">Inactivo</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -54,6 +64,8 @@
                                         @endforeach
                                     </select>
                                 </div>
+                            </div>
+                            <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="id_actividad" class="form-label">Actividad</label>
                                     <select class="form-control" name="id_actividad" id="id_actividad" required>
@@ -63,7 +75,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                        </div>                        
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                             <button type="submit" class="btn btn-primary">Guardar</button>
@@ -143,7 +155,6 @@
                         </form>
                     </td>
                 </tr>
-
                 <!-- Modal Editar Empresa -->
                 <div class="modal fade" id="modalEditar-{{ $empresa->id_empresa }}" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-xl">
@@ -160,17 +171,26 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="mb-3">
+                                                <label for="id_empresa" class="form-label">ID Empresa</label>
+                                                <input type="text" class="form-control" name="id_empresa" id="id_empresa" value="{{ $empresa->id_empresa }}" readonly>
+                                            </div>
+                                            <div class="mb-3">
                                                 <label for="nombre_empresa" class="form-label">Nombre</label>
                                                 <input type="text" class="form-control" name="nombre_empresa" id="nombre_empresa" value="{{ $empresa->nombre_empresa }}" required>
                                             </div>
+                                        </div>
+                                        <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="img_empresa_actual" class="form-label">Imagen Actual</label>
                                                 <input type="file" class="form-control" name="img_empresa_nueva" id="img_empresa_nueva">
-                                                <input type="text" class="form-control" name="img_empresa_actual" id="img_empresa_actual" value="{{ $empresa->img_empresa }}" readonly>
+                                                <input type="hidden" class="form-control" name="img_empresa_actual" id="img_empresa_actual" value="{{ $empresa->img_empresa }}" readonly>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="estado_empresa" class="form-label">Estado</label>
-                                                <input type="text" class="form-control" name="estado_empresa" id="estado_empresa" value="{{ $empresa->estado_empresa }}" required>
+                                                <select class="form-control" name="estado_empresa" id="estado_empresa" required>
+                                                    <option value="1" {{ $empresa->estado_empresa ? 'selected' : '' }}>Activo</option>
+                                                    <option value="0" {{ !$empresa->estado_empresa ? 'selected' : '' }}>Inactivo</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -186,6 +206,8 @@
                                                     @endforeach
                                                 </select>
                                             </div>
+                                        </div>
+                                        <div class="col-md-6">
                                             <div class="mb-3">
                                                 <label for="id_actividad" class="form-label">Actividad</label>
                                                 <select class="form-control" name="id_actividad" id="id_actividad" required>
@@ -198,7 +220,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                                        <button type="submit" class="btn btn-primary">Guardar</button>
                                     </div>
                                 </form>
                             </div>

@@ -36,30 +36,32 @@ class EmpresaNegocioController extends Controller
             'id_tipoEmpresa' => 'required|integer|exists:tipo_empresa,id_tipoEmpresa',
             'id_actividad' => 'required|integer|exists:actividad,id_actividad',
         ]);
-
-        // Manejar la subida de la imagen
-        if ($request->hasFile('img_empresa')) {
-            $image = $request->file('img_empresa');
-            $name = $image->getClientOriginalName(); // Utilizar el nombre original de la imagen
-            $destinationPath = public_path('/images/empresa');
-            $image->move($destinationPath, $name);
-            $imgUrl = 'images/empresa/' . $name;
-        } else {
-            return redirect()->back()->with('error-noexitoso', 'Debe subir una imagen para la empresa.');
+    
+        try {
+            if ($request->hasFile('img_empresa')) {
+                $image = $request->file('img_empresa');
+                $name = $image->getClientOriginalName(); 
+                $destinationPath = public_path('/images/empresa');
+                $image->move($destinationPath, $name);
+                $imgUrl = 'images/empresa/' . $name;
+            } else {
+                return redirect()->back()->with('error-noexitoso', 'Debe subir una imagen para la empresa.');
+            }
+    
+            Empresa::create([
+                'id_empresa' => $request->input('id_empresa'),
+                'nombre_empresa' => $request->input('nombre_empresa'),
+                'img_empresa' => $imgUrl,
+                'estado_empresa' => $request->input('estado_empresa'),
+                'fechainicio_empresa' => $request->input('fechainicio_empresa'),
+                'id_tipoEmpresa' => $request->input('id_tipoEmpresa'),
+                'id_actividad' => $request->input('id_actividad'),
+            ]);
+    
+            return redirect()->back()->with('creacion-exitosa', 'Empresa creada correctamente');
+        } catch (\Exception $e) {
+            return redirect()->back()->with('error-noexitoso', 'Error al crear la empresa: ' . $e->getMessage());
         }
-
-        // Crear la empresa
-        Empresa::create([
-            'id_empresa' => $request->input('id_empresa'),
-            'nombre_empresa' => $request->input('nombre_empresa'),
-            'img_empresa' => $imgUrl,
-            'estado_empresa' => $request->input('estado_empresa'),
-            'fechainicio_empresa' => $request->input('fechainicio_empresa'),
-            'id_tipoEmpresa' => $request->input('id_tipoEmpresa'),
-            'id_actividad' => $request->input('id_actividad'),
-        ]);
-
-        return redirect()->back()->with('creacion-exitosa', 'Empresa creada correctamente');
     }
 
     public function update(Request $request, $id)

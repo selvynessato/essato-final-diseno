@@ -213,7 +213,7 @@
                                                 <div class="mb-3">
                                                     <label for="img_blog_actual" class="form-label">Imagen Actual</label>
                                                     <input type="file" class="form-control" name="img_blog_nueva" id="img_blog_nueva">
-                                                    <input type="text" class="form-control" name="img_blog_actual" id="img_blog_actual" value="{{ $blog->img_blog }}" readonly>
+                                                    <input type="hidden" class="form-control" name="img_blog_actual" id="img_blog_actual" value="{{ $blog->img_blog }}" readonly>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
