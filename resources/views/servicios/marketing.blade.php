@@ -173,7 +173,7 @@
 </div>
 
 <div class="septima-parte">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-5"></div>            
             <div class="col-md-3">
@@ -187,28 +187,56 @@
                 <hr>
             </div>    
         </div>  
-        <div class="row">
-            <div class="col-md-4">
-                <div class="mix illustration motion" data-ix="hover-port">
-                    <h4 class="text-port" data-ix="move-up" style="opacity: 0.08; transform: translateX(0px) translateY(20px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;">
-                        SAPHIR - La plantilla de próximamente
-                    </h4>
-                    <div class="sub-text" data-ix="move-up-2" style="opacity: 0; transform: translateX(0px) translateY(20px); transition: opacity 500ms ease 0s, transform 500ms ease 0s;">
-                        <i class="fa fa-plus-circle fa-2x"></i>
+    </div>
+    <div class="container">
+        <div class="row quitar-espacio">
+            <div class="col-md-3 testminoTarjetas">
+                <div class="card">
+                    <div class="card-body titulo-empresa">
+                        <p class="card-text">
+                            Me gustó mucho lo profesionales que son, el servicio al cliente es bueno, cumplen con los tiempos de entrega y el resultado de mi logo me gustó mucho. Los recomiendo al 100%.
+                        </p>
+                        <p class="card-text"><small class="text-muted"><strong>Juan Marroquin - Delicarnitas</strong></small></p>
                     </div>
-                    <div class="img-wrapper" style="transition: transform 400ms ease 0s; transform: translateX(0px) translateY(0px);">
-                        <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" alt="Logotipo de SAPHIR">
-                    </div>
+                    <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
                 </div>
             </div>
-
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
+            <div class="col-md-3 testminoTarjetas">
+                <div class="card">
+                    <div class="card-body titulo-empresa">
+                        <p class="card-text">
+                            Un equipo muy profesional, con experiencia en el campo y con excelente atención al cliente y precios accesibles. Los recomiendo.
+                        </p>
+                        <p class="card-text"><small class="text-muted"><strong>Juan Marroquin - Delicarnitas</strong></small></p>
+                    </div>
+                    <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 testminoTarjetas">
+                <div class="card">
+                    <div class="card-body titulo-empresa">
+                        <p class="card-text">
+                            Me gustó mucho lo profesionales que son, el servicio al cliente es bueno, cumplen con los tiempos de entrega y el resultado de mi logo me gustó mucho. Los recomiendo al 100%.
+                        </p>
+                        <p class="card-text"><small class="text-muted"><strong>Juan Marroquin - Delicarnitas</strong></small></p>
+                    </div>
+                    <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 testminoTarjetas">
+                <div class="card">
+                    <div class="card-body titulo-empresa">
+                        <p class="card-text">
+                            La calidad y el diseño que manejan son muy buenos súper recomendados !!!
+                        </p>
+                        <p class="card-text"><small class="text-muted"><strong>Duglas Juarez - Dental Libano</strong></small></p>
+                    </div>
+                    <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
+                </div>
+            </div>
         </div>
-
     </div>
-</div>
+
 
 <!--
 <div class="octava-parte">
@@ -350,7 +378,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/carrousel.js') }}"></script> 
-<script src="{{ asset('js/tarjeta.js') }}"></script> 
 <script>
   AOS.init();
 </script>

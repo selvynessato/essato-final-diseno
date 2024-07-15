@@ -111,6 +111,7 @@ main{
 
 .septima-parte{
     padding-top: 50px;
+    border: solid 1px red;
 }
 
 .septima-parte .testimonio {
@@ -126,20 +127,54 @@ main{
     width: 70%;  
 }
 
-.mix {
-    position: relative;
+.septima-parte .quitar-espacio {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.mix:hover .text-port, 
-.mix:hover .sub-text {
-    opacity: 1;
-    transform: translateX(0) translateY(0);
+.septima-parte .testminoTarjetas {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
-.mix .img-wrapper img {
+.septima-parte .card {
+    margin: 0;         /* Elimina márgenes externos */
+    padding: 0;        /* Elimina padding externo */
+    width: 100%;       /* Asegura que la tarjeta ocupe todo el ancho disponible */
+    border: none;      /* Opcional: Elimina bordes si es necesario */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.septima-parte .card-body {
+    margin: 0;
+    padding: 0;
+    flex: 1;           /* Permite que el cuerpo de la tarjeta ocupe el espacio disponible */
+}
+
+
+.septima-parte .card-img-top {
+    display: block;
     width: 100%;
-    height: auto;
+    height: 250px;     /* Ajusta esta altura según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+    transition: transform 0.3s ease;
 }
+
+.septima-parte .card-img-top:hover {
+    transform: translateY(-60%);
+}
+
+.septima-parte .titulo-empresa {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    font-size: 12px;
+}
+
 
 
 
