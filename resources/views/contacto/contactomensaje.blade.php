@@ -64,10 +64,10 @@
                             </a>
                         </td>
                     </tr>
-
+                    
                     <!-- Modal Editar Mensaje de Contacto -->
                     <div class="modal fade" id="modalEditar-{{ $mensaje->id_contacto }}" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
-                        <div class="modal-dialog">
+                        <div class="modal-dialog modal-dialog-scrollable modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="modalEditarLabel">Editar Mensaje de Contacto</h5>
@@ -88,42 +88,63 @@
                                             <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="nombre_contacto" class="form-label">Nombre</label>
-                                                    <input type="text" class="form-control" name="nombre_contacto" id="nombre_contacto" value="{{ $mensaje->nombre_contacto }}" required>
+                                                    <input type="text" class="form-control" name="nombre_contacto" id="nombre_contacto" value="{{ $mensaje->nombre_contacto }}" readonly>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="correo_contacto" class="form-label">Correo</label>
-                                                    <input type="email" class="form-control" name="correo_contacto" id="correo_contacto" value="{{ $mensaje->correo_contacto }}" required>
+                                                    <input type="email" class="form-control" name="correo_contacto" id="correo_contacto" value="{{ $mensaje->correo_contacto }}" readonly>
                                                 </div>
+                                            </div>
+                                            <div class="col-md-6">    
                                                 <div class="mb-3">
                                                     <label for="telefono_contacto" class="form-label">Teléfono</label>
-                                                    <input type="text" class="form-control" name="telefono_contacto" id="telefono_contacto" value="{{ $mensaje->telefono_contacto }}" required>
+                                                    <input type="text" class="form-control" name="telefono_contacto" id="telefono_contacto" value="{{ $mensaje->telefono_contacto }}" readonly>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="trabajoen_contacto" class="form-label">Lugar de Trabajo</label>
-                                                    <input type="text" class="form-control" name="trabajoen_contacto" id="trabajoen_contacto" value="{{ $mensaje->trabajoen_contacto }}" required>
+                                                    <input type="text" class="form-control" name="trabajoen_contacto" id="trabajoen_contacto" value="{{ $mensaje->trabajoen_contacto }}" readonly>
                                                 </div>
+                                            </div>
+                                            <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="asunto_contacto" class="form-label">Asunto</label>
-                                                    <input type="text" class="form-control" name="asunto_contacto" id="asunto_contacto" value="{{ $mensaje->asunto_contacto }}" required>
+                                                    <input type="text" class="form-control" name="asunto_contacto" id="asunto_contacto" value="{{ $mensaje->asunto_contacto }}" readonly>
                                                 </div>
+                                            </div>    
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="pais_contacto" class="form-label">País</label>
-                                                    <input type="text" class="form-control" name="pais_contacto" id="pais_contacto" value="{{ $mensaje->pais_contacto }}" required>
+                                                    <input type="text" class="form-control" name="pais_contacto" id="pais_contacto" value="{{ $mensaje->pais_contacto }}" readonly>
                                                 </div>
+                                            </div>
+                                            <div class="col-md-6">
                                                 <div class="mb-3">
                                                     <label for="departamento_contacto" class="form-label">Departamento</label>
-                                                    <input type="text" class="form-control" name="departamento_contacto" id="departamento_contacto" value="{{ $mensaje->departamento_contacto }}" required>
+                                                    <input type="text" class="form-control" name="departamento_contacto" id="departamento_contacto" value="{{ $mensaje->departamento_contacto }}" readonly>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
                                                 <div class="mb-3">
                                                     <label for="mensaje_contacto" class="form-label">Mensaje</label>
-                                                    <textarea class="form-control" name="mensaje_contacto" id="mensaje_contacto" rows="3" required>{{ $mensaje->mensaje_contacto }}</textarea>
+                                                    <textarea class="form-control" name="mensaje_contacto" id="mensaje_contacto" rows="3" readonly>{{ $mensaje->mensaje_contacto }}</textarea>
                                                 </div>
-                                        
+                                            </div>
+                                        </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                            <button type="submit" class="btn btn-primary">Responder</button>
+                                            <!--button type="submit" class="btn btn-primary">Responder</button-->
                                         </div>
                                     </form>
                                 </div>

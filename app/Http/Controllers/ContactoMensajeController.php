@@ -82,7 +82,7 @@ class ContactoMensajeController extends Controller
         $mensaje->save();
 
         return redirect()->back()->with('actualizacion-exitosa', 'Mensaje de contacto actualizado correctamente');
-    }
+    } 
 
     public function destroy($id)
     {

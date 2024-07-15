@@ -53,6 +53,9 @@ Route::get('/recursos-redes-sociales', function () {
 Route::get('/ongs', function () {
     return view('todo.ongs');
 });
+Route::get('/servicios/marketing', function () {
+    return view('servicios.marketing');
+});
 
 
 // Rutas autenticadas

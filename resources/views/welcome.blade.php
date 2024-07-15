@@ -388,7 +388,7 @@
                             <div class="col-1">
                             </div>
                             <div class="col-md-10">
-                                <div  id ="cardcolor" class="card">
+                                <div  id ="cardcolor" sclass="card">
                                     <div class="card-body">
                                         @if(session('success'))
                                             <script src="{{ asset('js/mensaje.js') }}"></script>
@@ -460,7 +460,7 @@
                             <div class="col-1">
                             </div>
                         </div>
-                    </div>                  
+                    </div>    
                 </div>
                 <div id="footer-parte-negro" class="col-md-4 col-12 position-relative align-self-stretch">
                     <ul>
