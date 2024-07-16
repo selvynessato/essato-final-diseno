@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'JarBinks-Regular';
+    src: url('/fonts/JarBinks-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 main{
     background: #F8F8F8;
 }
@@ -111,7 +118,6 @@ main{
 
 .septima-parte{
     padding-top: 50px;
-    border: solid 1px red;
 }
 
 .septima-parte .testimonio {
@@ -126,6 +132,7 @@ main{
     margin-bottom: 10px;
     width: 70%;  
 }
+
 
 .septima-parte .quitar-espacio {
     margin: 0;
@@ -159,7 +166,7 @@ main{
 .septima-parte .card-img-top {
     display: block;
     width: 100%;
-    height: 250px;     /* Ajusta esta altura según tus necesidades */
+    height: 300px;     /* Ajusta esta altura según tus necesidades */
     object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
     transition: transform 0.3s ease;
 }
@@ -171,12 +178,73 @@ main{
 .septima-parte .titulo-empresa {
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 15px;
     text-align: justify;
     font-size: 12px;
 }
 
+.septima-parte .text-muted{
+    color: #f02c2d !important;
+    font-weight: bold;
+    font-size: 12px;
+}
 
 
+.octava-parte{
+    padding-top: 50px;   
+}
+
+.octava-parte .container-fluid{
+    background: #231F20;
+    height: 50vh;   
+}
+
+
+.octava-parte .font-uno{
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.octava-parte .octava-con{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: left;
+}
+
+.octava-parte .font-dos {
+    font-family: 'JarBinks-Regular', sans-serif;
+    font-size: 150px;
+    margin-top: -140px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.novena-parte{
+    padding-top: 50px;   
+}
+
+.novena-parte .testimonio{
+    font-weight: bold;
+}
+
+.novena-parte .hr-testimonio{
+    background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
+    border: none;
+    height: 12px; 
+    margin-top: 1px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.novena-parte .accordion-button{
+    font-weight: bold;
+}
 
 /*
 .centrar-mas{

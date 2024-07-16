@@ -171,7 +171,6 @@
         </div>
     </div>  
 </div>
-
 <div class="septima-parte">
     <div class="container-fluid">
         <div class="row">
@@ -193,21 +192,23 @@
             <div class="col-md-3 testminoTarjetas">
                 <div class="card">
                     <div class="card-body titulo-empresa">
+                        <p class="card-text"><small class="text-muted">Juan Marroquin - Delicarnitas</small></p>
                         <p class="card-text">
                             Me gustó mucho lo profesionales que son, el servicio al cliente es bueno, cumplen con los tiempos de entrega y el resultado de mi logo me gustó mucho. Los recomiendo al 100%.
                         </p>
-                        <p class="card-text"><small class="text-muted"><strong>Juan Marroquin - Delicarnitas</strong></small></p>
                     </div>
-                    <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
+                    <div class="img-container">
+                        <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="cuaderno">
+                    </div>
                 </div>
             </div>
             <div class="col-md-3 testminoTarjetas">
                 <div class="card">
                     <div class="card-body titulo-empresa">
+                        <p class="card-text"><small class="text-muted">Juan Marroquin - Delicarnitas</small></p>                        
                         <p class="card-text">
                             Un equipo muy profesional, con experiencia en el campo y con excelente atención al cliente y precios accesibles. Los recomiendo.
                         </p>
-                        <p class="card-text"><small class="text-muted"><strong>Juan Marroquin - Delicarnitas</strong></small></p>
                     </div>
                     <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
                 </div>
@@ -215,10 +216,10 @@
             <div class="col-md-3 testminoTarjetas">
                 <div class="card">
                     <div class="card-body titulo-empresa">
+                        <p class="card-text"><small class="text-muted">Juan Marroquin - Delicarnitas</small></p>
                         <p class="card-text">
                             Me gustó mucho lo profesionales que son, el servicio al cliente es bueno, cumplen con los tiempos de entrega y el resultado de mi logo me gustó mucho. Los recomiendo al 100%.
                         </p>
-                        <p class="card-text"><small class="text-muted"><strong>Juan Marroquin - Delicarnitas</strong></small></p>
                     </div>
                     <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
                 </div>
@@ -226,116 +227,76 @@
             <div class="col-md-3 testminoTarjetas">
                 <div class="card">
                     <div class="card-body titulo-empresa">
+                        <p class="card-text"><small class="text-muted">Duglas Juarez - Dental Libano</small></p>
                         <p class="card-text">
                             La calidad y el diseño que manejan son muy buenos súper recomendados !!!
                         </p>
-                        <p class="card-text"><small class="text-muted"><strong>Duglas Juarez - Dental Libano</strong></small></p>
                     </div>
                     <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
                 </div>
             </div>
         </div>
     </div>
-
-
-<!--
+</div>
 <div class="octava-parte">
     <div class="container-fluid">
-    <div class="owl-carousel owl-theme">
-        <div class="item">                 
-            <div class="card">
-                <div class="card-header">
-                    <h3>
-                        Marketing
-                    </h3>
+        <div class="row w-100">
+            <div class="col-md-12">
+                <h1 class="display-1 font-uno">Vive la experiencia digital</h1>
+            </div>                    
+        </div>                    
+        <div class="row w-100">
+            <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p class="octava-con">con</p>
                 </div>
-                <div class="card-body">
-                    <p class="card-text">
-                        llevemos a tu cliente potencial justo donde quieres que esté: a las puertas de tu negocio.  
-                    </p>
-                </div>
-            </div>
+            <div class="col-md-4"></div>
         </div>
-        <div class="item">                 
-            <div class="card">
-                <div class="card-header">
-                    <h3>
-                        Redes Sociales
-                    </h3>
+        <div class="row w-100">
+            <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h1 class="display-1 font-dos">Essato</h1>
                 </div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Creemos conexiones sólidas con tu audiencia y elevemo la percepción de tu marca.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        <div class="item">                 
-            <div class="card">
-                <div class="card-header">
-                    <h3>
-                        Desarrollo web
-                    </h3>
-                </div>
-                <div class="card-body">
-                    <p class="card-text">
-                         Diseñemos un espacio digital que cautiva a tus visitantes y los convierte en clientes fieles.
-                    </p>
-                </div>
-            </div>
-                </div>
-                <div class="item">                 
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>
-                                Branding
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Construyamos una imagen sólida definiendo el valor de tu marca.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">                 
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>
-                                Asesoría financiera
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Ordenemos tus números, gestionando ingresos, salidas y gastos para garantizar la estabilidad y el crecimiento continuo de tu negocio.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="col-md-4"></div>
+        </div>
     </div>
 </div>
+
 <div class="novena-parte">
     <div class="container">
-        <div class="row align-items-start">
-            <div class="col-md-2 col-12"></div>
+        <div class="row">
             <div class="col-md-4 col-12">
-                <img src="{{asset('/images/ongs/teresa-branding.png')}}" class="img-fluid parte-novena-img" alt="branding">
-                <h2 class="empresa-tituloUno">Teresa</h2>
-                <p class="empresa-subtituloUno">Branding</p>
+                <h5 class="testimonio">¿Preguntas frecuentes?</h5>
+                <div class="hr-testimonio"></div>
             </div>
-            <div class="col-md-4 col-12">
-                <video src="{{asset('/images/ongs/teresa-video.mp4')}}" class="object-fit-contain video-teresa" autoplay muted playsinline loop></video>
-                <h2 class="empresa-tituloUno">Teresa</h2>
-                <p class="empresa-subtituloUno">Redes Sociales</p>
-            </div>
-            <div class="col-md-2 col-12"></div>
+            <div class="col-md-4 col-12"></div>
+            <div class="col-md-4 col-12"></div>
+        </div>  
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    @foreach ($preguntasFrecuentes as $index => $preguntaFrecuente)
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading{{ $index }}">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{ $index }}" aria-expanded="false" aria-controls="flush-collapse{{ $index }}">
+                                    {{ $preguntaFrecuente->titulo_preguntafrecuente }}
+                                </button>
+                            </h2>
+                            <div id="flush-collapse{{ $index }}" class="accordion-collapse collapse" aria-labelledby="flush-heading{{ $index }}" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    {{ $preguntaFrecuente->descrip_preguntafrecuente }}
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>  
         </div>  
     </div>
 </div>
+
+
+<!--
 <div class="decima-parte">
     <div class="container">
         <div class="row align-items-start">

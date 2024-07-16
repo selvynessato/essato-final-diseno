@@ -18,6 +18,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ODSController;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\RecursoController;
+use App\Http\Controllers\ServicioController;
 use App\Http\Controllers\Tipo_EmpresaController;
 use App\Http\Controllers\WelcomeController;
 
@@ -47,14 +48,12 @@ Route::get('/filtrar-blogs', [BlogController::class, 'filtrarBlogs'])->name('fil
 Route::get('/obtener-departamentos', [WelcomeController::class, 'indexDepartamento'])->name('obtener-departamentos');
 Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 Route::get('/contacto/create', [ContactoController::class, 'create'])->name('contacto.create');
+Route::get('/servicio/marketing', [ServicioController::class, 'index'])->name('servicio.index');
 Route::get('/recursos-redes-sociales', function () {
     return view('todo.recursosRedes');
 });
 Route::get('/ongs', function () {
     return view('todo.ongs');
-});
-Route::get('/servicios/marketing', function () {
-    return view('servicios.marketing');
 });
 
 
