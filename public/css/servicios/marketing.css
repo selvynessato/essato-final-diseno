@@ -22,7 +22,7 @@ main{
 }
 
 .segunda-parte{
-    border: solid 1px red;
+    
 }
 
 .segunda-parte{
@@ -33,6 +33,10 @@ main{
     padding-bottom: 50px;
     width: 100%;  
     height: 95vh;
+}
+
+.segunda-parte .maketing-partesegunda{
+    padding-top: 150px;
 }
 
 .display-2{
@@ -113,7 +117,21 @@ main{
 
 .sexta-parte .centrar-negrita{
     font-weight: bold;
+    font-size: 20px;
     text-align: center;
+}
+
+.sexta-parte .boton-w
+{
+    background-color: #25CC64;
+    border-color: #25CC64;
+    color: #ffffff;
+}
+
+.sexta-parte .boton-w:hover{
+    background-color: #079e41;
+    border-color: #079e41;
+    color: #ffffff;
 }
 
 .septima-parte{
@@ -233,7 +251,8 @@ main{
     font-weight: bold;
 }
 
-.novena-parte .hr-testimonio{
+.novena-parte .hr-testimonio
+{
     background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
     border: none;
     height: 12px; 
@@ -245,6 +264,74 @@ main{
 .novena-parte .accordion-button{
     font-weight: bold;
 }
+
+
+.decima-parte{
+    margin-bottom: 40px;
+}
+
+.decima-parte .container-fluid{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.decima-parte{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.decima-parte .titulo{
+    text-align: center;
+}
+
+
+
+.decima-parte .hr-testimonio
+{
+    background-image: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
+    border: none;
+    height: 12px; 
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 20%;
+}
+
+.decima-parte .card:hover{
+    border: solid 2px #686868;
+}
+
+.decima-parte .card:hover .card-body .card-title{
+    transition: 200ms all;
+}
+
+
+.card .card-header{
+    border: none;
+}
+
+.card .card-body{
+    border: none;
+}
+
+.card .card-footer{
+    border: none;
+}
+
+.card-header img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.truncated{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
 
 /*
 .centrar-mas{

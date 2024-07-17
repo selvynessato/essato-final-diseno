@@ -41,10 +41,10 @@
     </div>
 </div>
 <div class="segunda-parte">
-    <div class="container d-flex flex-column justify-content-end h-100">
+    <div class="container d-flex flex-column justify-content-center h-100">
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6">
+            <div class="col-md-6 maketing-partesegunda">
                 <h1 class="display-2">Marketing 360</h1>
             </div>                
             <div class="col-md-3"></div>
@@ -157,17 +157,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3"></div>            
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <p class="centrar-negrita">
                     ¡Potencia tu marca con una estrategia de marketing 360!
                 </p>
             </div>        
             <div class="col-md-3">
                 <div class="d-grid gap-2 col-12 mx-auto">
-                    <a href="https://wa.link/a4qy4l" class="btn btn-dark boton-w" role="button" target="_blank">Whatsapp</a>
+                    <a href="https://wa.link/a4qy4l" class="btn boton-w" role="button" target="_blank">Whatsapp</a>
                 </div>  
             </div>        
-            <div class="col-md-3"></div>                        
+            <div class="col-md-2"></div>                        
         </div>
     </div>  
 </div>
@@ -198,7 +198,7 @@
                         </p>
                     </div>
                     <div class="img-container">
-                        <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="cuaderno">
+                        <img src="{{asset('/images/empresa/25Logo-delicarnitas.png')}}" class="card-img-top imangenTestimonio" alt="cuaderno">
                     </div>
                 </div>
             </div>
@@ -210,7 +210,7 @@
                             Un equipo muy profesional, con experiencia en el campo y con excelente atención al cliente y precios accesibles. Los recomiendo.
                         </p>
                     </div>
-                    <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
+                    <img src="{{asset('/images/empresa/43cafeTeresa.png')}}" class="card-img-top imangenTestimonio" alt="">
                 </div>
             </div>
             <div class="col-md-3 testminoTarjetas">
@@ -232,7 +232,7 @@
                             La calidad y el diseño que manejan son muy buenos súper recomendados !!!
                         </p>
                     </div>
-                    <img src="{{asset('/images/servicios/marketing/VR-LENTES.png')}}" class="card-img-top imangenTestimonio" alt="">
+                    <img src="{{asset('/images/empresa/12punto-rojo.png')}}" class="card-img-top imangenTestimonio" alt="">
                 </div>
             </div>
         </div>
@@ -261,7 +261,6 @@
         </div>
     </div>
 </div>
-
 <div class="novena-parte">
     <div class="container">
         <div class="row">
@@ -294,27 +293,34 @@
         </div>  
     </div>
 </div>
-
-
-<!--
 <div class="decima-parte">
-    <div class="container">
-        <div class="row align-items-start">
-            <div class="col-md-2 col-12"></div>
-            <div class="col-md-4 col-12">
-                <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-decima-imgUno" alt="branding">
-                <h2 class="empresa-tituloUno">Eco-Xela</h2>
-                <p class="empresa-subtituloUno">Redes Sociales</p>
-            </div>
-            <div class="col-md-4 col-12">
-                <img src="{{asset('/images/ongs/ecoxelapagina.png')}}" class="img-fluid parte-decima-img" alt="branding">
-                <h2 class="empresa-tituloUno">Eco-Xela</h2>
-                <p class="empresa-subtituloUno">Pagina Web</p>
-            </div>
-            <div class="col-md-2 col-12"></div>
-        </div>  
+    <div class="container-fluid">
+        <a href="{{ url('/blog') }}" class="nav-link">
+            <h1 class="titulo"> Blog</h1>
+        </a>
+        <div class="hr-testimonio"></div>
+        <div class="row justify-content-center">
+            @foreach($blogsAleatorios as $blog)
+                <div class="col-md-4 col-12">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <img src="{{asset($blog->img_blog)}}" class="card-img-top" alt="Blog imagen">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">{!! $blog->nombre_blog !!}</h5>
+                            <p class="card-text text-justify truncated">{!! $blog->descripcion_blog !!}</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="{{ route('blog.detalle', $blog->slug_blog) }}" class="btn btn-info btn-sm">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
     </div>
 </div>
+
+<!--
 <div class="once-parte">
     <div class="container">
         <div class="row">
