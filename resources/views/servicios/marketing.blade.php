@@ -320,20 +320,6 @@
     </div>
 </div>
 
-<!--
-<div class="once-parte">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-sm-3"></div>
-            <div class="col-12 col-sm-6">
-                <div class="d-grid gap-2 col-6 mx-auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <a href="{{ url('/ods') }}" class="btn btn-outline-danger organizaciones" role="button">Ver más organizaciones</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-3"></div>
-        </div>
-    </div>
-</div>  -->
 </main>
 <footer style="background:black;">
     @include('componentes.footer')
