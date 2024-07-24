@@ -8,7 +8,7 @@
 
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/servicios/marketing.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/servicios/redesSociales.css') }}" rel="stylesheet">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -33,42 +33,76 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <p class="texto-derecha">
-                    Desarrollamos y ejecutamos estrategias integrales de marketing con un enfoque centrado en resultados. Nuestro sistema de gestión optimiza continuamente cada proceso, garantizando la eficacia y eficiencia de nuestras campañas
+                    Desarrollamos Estrategias de contenido diseñadas para captar la atención de tu audiencia y generar engagement a través de  logs, videos, infografías, y más. Creamos contenido relevante y atractivo que impulsa tu presencia en línea y fortalece tu marca.
                 </p>
             </div>                
             <div class="col-md-2"></div>
         </div>
     </div>
 </div>
+
 <div class="segunda-parte">
-    <div class="container d-flex flex-column justify-content-center h-100">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 maketing-partesegunda">
-                <h1 class="display-2">Marketing 360</h1>
-            </div>                
-            <div class="col-md-3"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-3"></div>
+            <div class="col-md-6">        
+                <div class="container">            
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                            <h1 class="display-3 redes-contenido">Marketing de contenido</h1>
+                            <hr>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="row g-2 justify-content-center">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control busqueda-falsa" placeholder="Con enfoque a resultados" readonly>
+                                </div>
+                                <div class="col-md-2">
+                                    <button type="button" class="btn btn-light whats">Whatsapp</button>
+                                </div>   
+                                <div class="col-md-2"></div>
+                            </form>                                       
+                        </div>                
+                    </div>           
+                    <div class="row espacio-row">
+                        <div class="col-md-6"></div>                
+                        <div class="col-md-4">
+                            <div class="d-grid gap-1">
+                                <button class="btn btn-primary behance" type="button">Portafolio en Behance</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>            
+                </div>               
+            </div>
             <div class="col-md-6">
-                <div class="hr-blanca"></div>
-            </div>                
-            <div class="col-md-3"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 ver-linea">
-                <form class="row g-3 justify-content-center">
-                    <div class="col-auto">
-                        <input type="text" class="form-control" placeholder="Con enfoque a resultados" readonly>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-segunda-imgUno" alt="Redes sociales">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-segunda-imgDos" alt="Redes sociales">
+                        </div>
+                        <div class="col-md-3"></div>
                     </div>
-                    <div class="col-auto">
-                        <button type="button" class="btn btn-light">Whatsapp</button>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-segunda-imgTres" alt="Redes sociales">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-segunda-imgCuatro" alt="Redes sociales">
+                        </div>
+                        <div class="col-md-3"></div>
                     </div>
-                </form>               
-            </div>                
-            <div class="col-md-3"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

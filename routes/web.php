@@ -18,6 +18,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ODSController;
 use App\Http\Controllers\PaisController;
 use App\Http\Controllers\RecursoController;
+use App\Http\Controllers\RedesSocialesController;
 use App\Http\Controllers\ServicioController;
 use App\Http\Controllers\Tipo_EmpresaController;
 use App\Http\Controllers\WelcomeController;
@@ -49,6 +50,9 @@ Route::get('/obtener-departamentos', [WelcomeController::class, 'indexDepartamen
 Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 Route::get('/contacto/create', [ContactoController::class, 'create'])->name('contacto.create');
 Route::get('/servicio/marketing', [ServicioController::class, 'index'])->name('servicio.index');
+Route::get('/servicio/redes', [RedesSocialesController::class, 'index'])->name('redesSociales.index');
+
+
 Route::get('/recursos-redes-sociales', function () {
     return view('todo.recursosRedes');
 });
