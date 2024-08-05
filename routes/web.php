@@ -4,13 +4,16 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ActividadController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AsesoriaFinancieraController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BlogcreateController;
 use App\Http\Controllers\BlognewController;
+use App\Http\Controllers\BrandingController;
 use App\Http\Controllers\CKEditorController;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ContactoMensajeController;
 use App\Http\Controllers\DepartamentoController;
+use App\Http\Controllers\DesarrolloController;
 use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\EncontraressatoController;
 use App\Http\Controllers\EmpresaNegocioController;
@@ -51,6 +54,9 @@ Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.s
 Route::get('/contacto/create', [ContactoController::class, 'create'])->name('contacto.create');
 Route::get('/servicio/marketing', [ServicioController::class, 'index'])->name('servicio.index');
 Route::get('/servicio/redes', [RedesSocialesController::class, 'index'])->name('redesSociales.index');
+Route::get('/servicio/desarrollo', [DesarrolloController::class, 'index'])->name('desarrollo.index');
+Route::get('/servicio/branding', [BrandingController::class, 'index'])->name('branding.index');
+Route::get('/servicio/asesoria-financiera', [AsesoriaFinancieraController::class, 'index'])->name('asesoriaFinanciera.index');
 
 
 Route::get('/recursos-redes-sociales', function () {

@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="primera-video">
-                <iframe width="100%" height="600" src="https://www.youtube.com/embed/9vQPUpFCTI8?si=sCLVe_4IuzYwvMzn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <video width="100%" height="600" src="{{ asset('/video/welcome/Somos-essato.mp4') }}" controls autoplay loop muted> </video>
             </div>
         </div>
 
@@ -59,13 +59,13 @@
             <div class="container-fluid">
                 <div class="row align-items-start">
                     <div class="col-md-6 col-12">
-                        <div class="segunda-parte-container"></div>
-                        <p id="segunda-parte-titulouno">Exploramos</p>
-                        <p id="segunda-parte-titulodos">Nuevas tecnologías</p>
-                        <p id="segunda-parte-titulotres">para ayudarte a avanzar </p>
-                        <p id="essato-segunda-parte">
-                            Ya sea porque necesites aumentar tu facturación, mejorar el posicionamiento de tu marca o definir los mejores procesos para llegar a tus objetivos.
-                        </p>	
+                        <div class="segunda-parte-container "></div>
+                            <p id="segunda-parte-titulouno">Exploramos</p>
+                            <p id="segunda-parte-titulodos">Nuevas tecnologías</p>
+                            <p id="segunda-parte-titulotres">para ayudarte a avanzar </p>
+                            <p id="essato-segunda-parte">
+                                Ya sea porque necesites aumentar tu facturación, mejorar el posicionamiento de tu marca o definir los mejores procesos para llegar a tus objetivos.
+                            </p>	
                     </div>
                     <div class="col-md-6 col-12 position-relative">
                         <img src="{{asset('/images/inicio/chica.jpeg')}}" alt="logo chica" class="img-fluid">
@@ -229,7 +229,14 @@
                     
                     </div>
                     <div class="col align-self-end">
-                    
+                        <div data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1700">
+                            <img src="{{asset('/images/desarrollo_web.png')}}" class="img-fluid" alt="desarrollo_web">
+                            <h3 class="tituloservicios">
+                                DESARROLLO WEB
+                            </h3>                    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -260,31 +267,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
-                        
+                        <div data-aos="fade-right"
+                            data-aos-offset="500"
+                            data-aos-easing="ease-in-sine">
+                            <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" alt="asesoria_financiera">
+                            <h3 class="tituloservicios">
+                                ASESORÍA FINANCIERA
+                            </h3>
+                        </div>                                           
                     </div>
                     <div class="col align-self-center">
                 
                     </div>
                     <div class="col align-self-end">
-                        <div data-aos="fade-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1700">
-                            <img src="{{asset('/images/desarrollo_web.png')}}" class="img-fluid" alt="desarrollo_web">
-                            <h3 class="tituloservicios">
-                                DESARROLLO WEB
-                            </h3>                    
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="container">
-                <div class="row">
-                    <div class="col align-self-start">
-                        
-                    </div>
-                    <div class="col align-self-center">
                         <div data-aos="fade-left"
                             data-aos-offset="600"
                             data-aos-easing="ease-in-sine">
@@ -292,7 +287,19 @@
                             <h3 class="tituloservicios">
                                 BRANDING
                             </h3>                        
-                        </div>                                 
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-start">
+                        
+                    </div>
+                    <div class="col align-self-center">
+             
                     </div>
                     <div class="col align-self-end">
                         
@@ -304,14 +311,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-left"
-                            data-aos-offset="500"
-                            data-aos-easing="ease-in-sine">
-                            <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" alt="asesoria_financiera">
-                            <h3 class="tituloservicios">
-                                ASESORÍA FINANCIERA
-                            </h3>
-                        </div>                                                                          
+                                                       
                     </div>
                     <div class="col align-self-center">
 
@@ -346,6 +346,7 @@
                 <a href="{{ url('/blog') }}" class="nav-link">
                     <h1 class="titulo"> Blog</h1>
                 </a>
+                <br>
                 <div class="row justify-content-center">
                     @foreach($blogsAleatorios as $blog)
                         <div class="col-md-4 col-12">

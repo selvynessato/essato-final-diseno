@@ -36,6 +36,26 @@ header .dropdown-item {
     font-weight: bold;
 }
 
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none;
+    position: absolute;
+}
+
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+    left: -110%;
+    right: auto;    
+}
+
+
 .bg-dark {
     --bs-bg-opacity: 0 !important;
     background-color: #000000 !important;
@@ -73,7 +93,7 @@ main{
     font-size: 22px;
 }
 
-.primera-video iframe{
+.primera-video video{
     margin-top: 25px;
 }
 
@@ -89,7 +109,7 @@ main{
     }
 }
 
-.primera-video iframe{
+.primera-video video{
     view-timeline-name: --video;
     view-timeline-axis: block;
 
@@ -111,7 +131,7 @@ main{
     position: absolute;
     width: 25%;
     height: 55%;
-    border: 2px solid red; 
+    border: 2px solid #680101; 
     margin-left: 5%; 
     z-index: -1;
 }
@@ -303,9 +323,11 @@ main{
     
 }
 
+
 .septima-parte .titulo{
     text-align: center;
 }
+
 
 .septima-parte .card:hover{
     border: solid 2px #686868;
