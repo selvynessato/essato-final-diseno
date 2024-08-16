@@ -50,6 +50,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="primera-parte">
             <div class="primera-video">
                 <video width="100%" height="600" src="{{ asset('/video/welcome/Somos-essato.mp4') }}" controls autoplay loop muted> </video>
             </div>
@@ -206,7 +208,9 @@
                         </p>	
                     </div>
                     <div class="col-md-6 col-12">
-                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="segundo-video">
+                            <video width="100%" height="650" src="{{ asset('/video/welcome/video1.mp4') }}" controls autoplay loop muted> </video>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -327,7 +331,9 @@
             <div class="container-fluid">
                 <div class="row align-items-start">
                     <div id="sexta-parte-gris" class="col-md-4 col-12 position-relative">
-                        <iframe width="100%" height="600" src="https://www.youtube.com/embed/XBaVaoGIEbc?si=hmi2R4HLKE1jAw0i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <div class="tercer-video">
+                            <video width="100%" height="550" src="{{ asset('/video/welcome/video2.mp4') }}" controls autoplay loop muted> </video>
+                        </div>
                     </div>
                     <div id="sexta-parte-negro"class="col-md-8 col-12">
                         <h1 class="titulo">Construyamos una marca increíble para tu negocio</h1>
@@ -522,5 +528,6 @@
 <script src="{{ asset('js/carrousel.js') }}"></script>
 <script>AOS.init();</script>
 <script src="{{ asset('js/paisdepto.js') }}"></script>
+<script src="{{ asset('js/scroll-inicio.js') }}"></script>
 </body>
 </html>

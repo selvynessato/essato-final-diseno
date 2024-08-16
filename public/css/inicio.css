@@ -97,28 +97,35 @@ main{
     margin-top: 25px;
 }
 
-@keyframes show{
-    from {
-        opacity: 0;
+@keyframes scrollScale {
+     0% {
         scale: 20%;
     }
-
-    to {
-        opacity: 1;
-        scale: 100%;
+    25% {
+        scale: 30%;
+    }
+    50% {
+        scale: 120%; /* Pantalla completa en el 50% del scroll */
+    }
+    75% {
+        scale: 30%;
+    }
+    100% {
+        scale: 20%; /* Regresa al 5% al final del scroll */
     }
 }
 
-.primera-video video{
+.primera-video video {
     view-timeline-name: --video;
     view-timeline-axis: block;
 
-    animation-timeline:  --video;
-    animation-name: show;
-
-    animation-range: entry 25% cover 70%;
+    animation-timeline: --video;
+    animation-name: scrollScale;
+    animation-duration: 40s; /* Duración de 20 segundos para 10 scrolls */
+    animation-range: entry 0% cover 100%;
     animation-fill-mode: both;
 }
+
 
 .segunda-parte{
     width: 80%;
