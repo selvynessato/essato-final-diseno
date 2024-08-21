@@ -123,5 +123,4 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/contacto/mensaje-essato', [ContactoMensajeController::class, 'store'])->name('contacto.store');
     Route::put('/contacto/mensaje-essato/{id}', [ContactoMensajeController::class, 'update'])->name('contacto.update');
     Route::delete('/contacto/mensaje-essato/{id}', [ContactoMensajeController::class, 'destroy'])->name('contacto.destroy');
-   
 });

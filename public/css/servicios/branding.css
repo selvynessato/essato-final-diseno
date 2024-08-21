@@ -45,6 +45,14 @@ main{
         
 }
 
+.segunda-parte .lados-derechos{
+    
+}
+
+.segunda-parte .lados-derechos .negrita{
+    font-weight: bold;
+}
+
 .tercera-parte{
     padding-top: 50px;
 }

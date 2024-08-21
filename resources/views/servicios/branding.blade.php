@@ -40,9 +40,21 @@
         </div>
     </div>
 </div>
+
 <div class="segunda-parte">
-    <h1>Branding</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 lados-izquierdos">
+                <h2>esto 1</h2>
+            </div>
+            <div class="col-md-6 lados-derechos">
+                <h1 class="display-2 negrita">Branding</h1>
+                <p>Con enfoque a resultados</p>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="tercera-parte">
     <div class="container">
         <div class="row">

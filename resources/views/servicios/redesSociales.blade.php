@@ -84,20 +84,20 @@
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-4">
-                            <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-segunda-imgUno" alt="Redes sociales">
+                            <img src="{{asset('/images/servicios/redes/redes-3.jpg')}}" class="img-fluid parte-segunda-imgUno" alt="Redes sociales">
                         </div>
                         <div class="col-md-4">
-                            <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-segunda-imgDos" alt="Redes sociales">
+                            <img src="{{asset('/images/servicios/redes/redes-1.jpg')}}" class="img-fluid parte-segunda-imgDos" alt="Redes sociales">
                         </div>
                         <div class="col-md-3"></div>
                     </div>
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-4">
-                            <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-segunda-imgTres" alt="Redes sociales">
+                            <img src="{{asset('/images/servicios/redes/redes-2.jpg')}}" class="img-fluid parte-segunda-imgTres" alt="Redes sociales">
                         </div>
                         <div class="col-md-4">
-                            <img src="{{asset('/images/ongs/campania-essato-ecoxela-redes.png')}}" class="img-fluid parte-segunda-imgCuatro" alt="Redes sociales">
+                            <img src="{{asset('/images/servicios/redes/redes-4.jpg')}}" class="img-fluid parte-segunda-imgCuatro" alt="Redes sociales">
                         </div>
                         <div class="col-md-3"></div>
                     </div>
