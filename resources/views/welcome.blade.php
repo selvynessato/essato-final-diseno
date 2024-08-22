@@ -56,7 +56,6 @@
                 <video width="100%" height="600" src="{{ asset('/video/welcome/Somos-essato.mp4') }}" controls autoplay loop muted> </video>
             </div>
         </div>
-
         <div class="segunda-parte">
             <div class="container-fluid">
                 <div class="row align-items-start">

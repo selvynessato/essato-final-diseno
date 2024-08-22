@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Essato | Marketing</title>
+    <title>Essato | desarrollo</title>
 
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
@@ -41,7 +41,21 @@
     </div>
 </div>
 <div class="segunda-parte">
-    <h1>Desarrollo</h1>
+    <div class="container-fluid">
+        <div class="row align-items-start">
+            <div class="col-md-10 col-12">
+                <div class="container-fluid segunda-parte-negra d-flex flex-column align-items-end justify-content-center">
+                    <h1 class="display-1 negrita">Desarrollo</h1>
+                    <p class="parrafos">Con enfoque a resultados</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-12">
+                <div class="container-fluid">
+
+                </div>
+            </div>
+        </div>    
+    </div>
 </div>
 <div class="tercera-parte">
     <div class="container">

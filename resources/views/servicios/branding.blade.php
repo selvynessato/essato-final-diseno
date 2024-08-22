@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Essato | Marketing</title>
+    <title>Essato | Branding</title>
 
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
@@ -40,21 +40,57 @@
         </div>
     </div>
 </div>
-
 <div class="segunda-parte">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 lados-izquierdos">
-                <h2>esto 1</h2>
+        <div class="row align-items-start">
+            <div class="col-md-6 col-12 segunda-parte-blanca">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col align-self-start">
+                            <img src="{{asset('/images/servicios/branding/branding-01.jpg')}}" class="img-fluid cuadrados-portada" alt="cuadrado">
+                        </div>
+                        <div class="col align-self-center">
+                        
+                        </div>
+                        <div class="col align-self-end">
+                        
+                        </div>                      
+                    </div>
+                    <div class="row">
+                        <div class="col align-self-start">
+                            
+                        </div>
+                        <div class="col align-self-center">
+                            <img src="{{asset('/images/servicios/branding/branding-02.jpg')}}" class="img-fluid cuadrados-portada-dos" alt="cuadrado">
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col align-self-start">
+                            <img src="{{asset('/images/servicios/branding/branding-03.jpg')}}" class="img-fluid cuadrados-portada" alt="cuadrado">
+                        </div>
+                        <div class="col align-self-center">
+                            <img src="{{asset('/images/servicios/branding/branding-03.jpg')}}" class="img-fluid cuadrados-portada-logo" alt="cuadrado">                            
+                        </div>
+                        <div class="col align-self-end">
+                        
+                        </div>                      
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 lados-derechos">
-                <h1 class="display-2 negrita">Branding</h1>
-                <p>Con enfoque a resultados</p>
+            <div class="col-md-6 col-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 segunda-parte-negra">
+                            <h1 class="display-1 negrita">Branding</h1>
+                            <p class="parrafos">Con enfoque a resultados</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>    
     </div>
 </div>
-
 <div class="tercera-parte">
     <div class="container">
         <div class="row">

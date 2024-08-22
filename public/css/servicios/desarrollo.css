@@ -45,6 +45,32 @@ main{
         
 }
 
+.segunda-parte .segunda-parte-negra{
+    background-image: url('/images/servicios/desarrollo/desarrollo-portada.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding: 50px;
+    width: 100%;  
+    height: 80vh;
+}
+
+.segunda-parte .segunda-desarrollo{
+    width: 100%;  
+    height: 80vh;
+}
+
+.segunda-parte .negrita{
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 30vh;
+}
+
+.segunda-parte .parrafos{
+    margin-top: -2vh;
+    color: #ffffff;
+}
+
 
 .tercera-parte{
     padding-top: 50px;
