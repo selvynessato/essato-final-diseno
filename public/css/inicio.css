@@ -126,6 +126,19 @@ main{
     animation-fill-mode: both;
 }
 
+.primera-parte .boton-w
+{
+    background-color: #25CC64;
+    border-color: #25CC64;
+    color: #ffffff;
+}
+
+.primera-parte .boton-w:hover{
+    background-color: #079e41;
+    border-color: #079e41;
+    color: #ffffff;
+}
+
 
 .segunda-parte{
     width: 80%;
@@ -233,6 +246,19 @@ main{
     font-weight: bold;
 }  
 
+.tercera-parte .boton-w
+{
+    background-color: #25CC64;
+    border-color: #25CC64;
+    color: #ffffff;
+}
+
+.tercera-parte .boton-w:hover{
+    background-color: #079e41;
+    border-color: #079e41;
+    color: #ffffff;
+}
+
 
 #cuarta-parte .col-md-6.col-12 {
     background: #000000; 
@@ -282,6 +308,27 @@ main{
     text-align: center;
 }
 
+.quinta-parte .link-marketing {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+.quinta-parte .link-marketing::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #f02c2d, #bf3b79, #754ee6);
+    transition: width 0.5s ease-in-out;
+    border-radius: 2px;
+  }
+  
+  .quinta-parte .link-marketing:hover::after {
+    width: 100%;
+  }
 
 .sexta-parte{
     margin-top: 50px;

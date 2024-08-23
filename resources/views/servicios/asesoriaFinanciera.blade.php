@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Essato | Marketing</title>
+    <title>Essato | Asesoria financiera</title>
 
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/header.css') }}" rel="stylesheet">
@@ -41,7 +41,44 @@
     </div>
 </div>
 <div class="segunda-parte">
-    <h1>Asesoria Financiera</h1>
+    <div class="container-fluid">
+        <div class="row align-items-start">
+            <div class="col-md-2 col-12">
+                <div class="container-fluid">
+
+                </div>
+            </div>
+            <div class="col-md-7 col-12">
+                <div class="container-fluid segunda-parte-negra d-flex flex-column align-items-stard justify-content-center">
+                    <h1 class="display-1 negrita">Asesoría</h1>
+                    <h1 class="display-1 parrafos">Financiera</h1>
+                </div>
+            </div>
+            <div class="col-md-3 col-12">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col align-self-start">
+                            <img src="{{asset('/images/servicios/branding/branding-03.jpg')}}" class="img-fluid cuadrados-portada-logo" alt="cuadrado">
+                        </div>
+
+                        <div class="col align-self-end">
+                         
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col align-self-start">
+                             
+                        </div>
+                        <div class="col align-self-center">
+                            <img src="{{asset('/images/servicios/branding/branding-03.jpg')}}" class="img-fluid cuadrados-portada-logo-dos" alt="cuadrado">
+                        </div>
+                       
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
 </div>
 <div class="tercera-parte">
     <div class="container">

@@ -44,9 +44,8 @@
                         <div class="col-md-auto">
                         </div>
                     <div class="col col-lg-2">
-                        <a href="#servicios" class="btn btn-outline-light btn-lg fw-bold border-3">
-                            Servicios
-                        </a>
+                        <a href="https://wa.link/a4qy4l" class="btn boton-w btn-lg" role="button" target="_blank">Whatsapp</a>
+                    </div>  
                     </div>
                 </div>
             </div>
@@ -99,9 +98,7 @@
                         <div class="col-md-auto">
                         </div>
                     <div class="col col-lg-2">
-                        <a href="#servicios" class="btn btn-outline-danger btn-lg fw-bold border-3">
-                            Servicios
-                        </a>
+                        <a href="https://wa.link/a4qy4l" class="btn boton-w btn-lg" role="button" target="_blank">Whatsapp</a>
                     </div>
                 </div>
             </div>
@@ -224,7 +221,7 @@
                             data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/marketing.png')}}" class="img-fluid" alt="marketing">
                             <h3 class="tituloservicios">
-                                MARKETING
+                                <a href="{{ url('/servicio/marketing') }}" class="link-marketing">Marketing</a>
                             </h3>
                         </div>
                     </div>
@@ -237,14 +234,12 @@
                             data-aos-duration="1700">
                             <img src="{{asset('/images/desarrollo_web.png')}}" class="img-fluid" alt="desarrollo_web">
                             <h3 class="tituloservicios">
-                                DESARROLLO WEB
+                                <a href="{{ url('/servicio/desarrollo') }}" class="link-marketing">Desarrollo</a>
                             </h3>                    
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
@@ -256,7 +251,7 @@
                             data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/social_media.png')}}" class="img-fluid" alt="social_media">
                             <h3 class="tituloservicios">
-                                SOCIAL MEDIA
+                                <a href="{{ url('/servicio/redes') }}" class="link-marketing">Social Media</a>
                             </h3>
                         </div>                  
                     </div>
@@ -265,8 +260,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
@@ -275,7 +268,7 @@
                             data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" alt="asesoria_financiera">
                             <h3 class="tituloservicios">
-                                ASESORÍA FINANCIERA
+                                <a href="{{ url('/servicio/asesoria-financiera') }}" class="link-marketing">Asesoria financiera</a>
                             </h3>
                         </div>                                           
                     </div>
@@ -288,7 +281,7 @@
                             data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/branding.png')}}" class="img-fluid" alt="branding">
                             <h3 class="tituloservicios">
-                                BRANDING
+                                <a href="{{ url('/servicio/branding') }}" class="link-marketing">Branding</a>
                             </h3>                        
                         </div>                   
                     </div>

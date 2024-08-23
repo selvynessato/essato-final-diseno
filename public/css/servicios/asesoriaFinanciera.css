@@ -44,7 +44,47 @@ main{
 }
 
 
+.segunda-parte .segunda-parte-negra{
+    background-image: url('/images/servicios/asesoria_financiera/financiera01.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    padding: 50px;
+    width: 100%;  
+    height: 80vh;
+}
 
+.segunda-parte .segunda-desarrollo{
+    width: 100%;  
+    height: 80vh;
+}
+
+.segunda-parte .negrita{
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10vh;
+}
+
+.segunda-parte .parrafos{
+    font-weight: bold;
+    margin-top: -3vh;
+    color: #ffffff;
+}
+
+.segunda-parte .cuadrados-portada-logo{
+    margin-top: 50px;
+    margin-left: -100px;
+    width: 100%;
+    height: 125px;
+    border-radius: 100%;
+}
+
+.segunda-parte .cuadrados-portada-logo-dos{
+    margin-left: -150px;
+    width: 100%;
+    height: 125px;
+    border-radius: 100%;
+}
 
 .tercera-parte{
     padding-top: 50px;
