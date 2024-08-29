@@ -44,7 +44,9 @@
                         <div class="col-md-auto">
                         </div>
                     <div class="col col-lg-2">
-                        <a href="https://wa.link/a4qy4l" class="btn boton-w btn-lg" role="button" target="_blank">Whatsapp</a>
+                        <button><span></span>
+                            Contactanos
+                        </button>
                     </div>  
                     </div>
                 </div>
@@ -55,6 +57,119 @@
                 <video width="100%" height="600" src="{{ asset('/video/welcome/Somos-essato.mp4') }}" controls autoplay loop muted> </video>
             </div>
         </div>
+        <div class="tercera-parte">
+            <div id="tercera-container" class="container">
+                <div class="row justify-content-md-left">
+                    <div class="col">
+                        <h1 class="tercera-parte-titulo">
+                            Explorando tu negocio y hagamoslo crecer
+                        </h1>
+                    </div>
+                        <div class="col-md-auto">
+                        </div>
+                    <div class="col col-lg-2">
+                  
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <a href="{{url('/servicio/marketing')}}" class="card-link">
+                    <div class="item">                 
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    Marketing
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    llevemos a tu cliente potencial justo donde quieres que esté: a las puertas de tu negocio.  
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-solid fa-circle-arrow-right icono-fecha"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="{{url('/servicio/redes')}}" class="card-link">
+                    <div class="item">                 
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    Redes Sociales
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Creemos conexiones sólidas con tu audiencia y elevemo la percepción de tu marca.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-solid fa-circle-arrow-right icono-fecha"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="{{url('/servicio/desarrollo')}}" class="card-link">
+                    <div class="item">                 
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    Desarrollo web
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Diseñemos un espacio digital que cautiva a tus visitantes y los convierte en clientes fieles.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-solid fa-circle-arrow-right icono-fecha"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="{{url('/servicio/branding')}}" class="card-link">
+                    <div class="item">                 
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    Branding
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Construyamos una imagen sólida definiendo el valor de tu marca.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-solid fa-circle-arrow-right icono-fecha"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="{{url('/servicio/asesoria-financiera')}}" class="card-link">
+                    <div class="item">                 
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>
+                                    Asesoría financiera
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    Ordenemos tus números, gestionando ingresos, salidas y gastos para garantizar la estabilidad y el crecimiento continuo de tu negocio.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-solid fa-circle-arrow-right icono-fecha"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>        
         <div class="segunda-parte">
             <div class="container-fluid">
                 <div class="row align-items-start">
@@ -70,8 +185,11 @@
                     <div class="col-md-6 col-12 position-relative">
                         <img src="{{asset('/images/inicio/chica.jpeg')}}" alt="logo chica" class="img-fluid">
                         <a href="{{ url('/empresa') }}" class="btn btn-outline-light btn-lg fw-bold border-3 position-absolute top-50 start-50 translate-middle">
-                            Clientes
-                        </a>
+                            <button class="button">
+                                Clientes
+                            </button>
+                        </a>                       
+                        
                     </div>
                 </div>
             </div> <!-- Cierre del contenedor externo -->
@@ -84,101 +202,7 @@
                     </div>          
                 </div>
             </div>
-        </div>
-
-      
-        <div class="tercera-parte">
-            <div id="tercera-container" class="container">
-                <div class="row justify-content-md-left">
-                    <div class="col">
-                        <h1 class="tercera-parte-titulo">
-                            Explorando tu negocio y hagamoslo crecer
-                        </h1>
-                    </div>
-                        <div class="col-md-auto">
-                        </div>
-                    <div class="col col-lg-2">
-                        <a href="https://wa.link/a4qy4l" class="btn boton-w btn-lg" role="button" target="_blank">Whatsapp</a>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel owl-theme">
-                <div class="item">                 
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>
-                                Marketing
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                llevemos a tu cliente potencial justo donde quieres que esté: a las puertas de tu negocio.  
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">                 
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>
-                                Redes Sociales
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Creemos conexiones sólidas con tu audiencia y elevemo la percepción de tu marca.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">                 
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>
-                                Desarrollo web
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Diseñemos un espacio digital que cautiva a tus visitantes y los convierte en clientes fieles.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">                 
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>
-                                Branding
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Construyamos una imagen sólida definiendo el valor de tu marca.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">                 
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>
-                                Asesoría financiera
-                            </h3>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">
-                                Ordenemos tus números, gestionando ingresos, salidas y gastos para garantizar la estabilidad y el crecimiento continuo de tu negocio.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        </div> 
         <div id="cuarta-parte" class="cuarta-parte">
             <div class="container-fluid">
                 <div class="row align-items-start">
@@ -211,7 +235,6 @@
                 </div>
             </div>
         </div>
-
         <div class="quinta-parte">
             <div class="container">
                 <div class="row">
@@ -516,6 +539,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://kit.fontawesome.com/6ecb3f0ad6.js" crossorigin="anonymous"></script>
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/carrousel.js') }}"></script>
 <script>AOS.init();</script>

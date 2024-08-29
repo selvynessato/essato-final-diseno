@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="{{asset('/images/navbar/logo-essato-blanco.svg')}}" alt="Logo" width="32" height="32" class="d-inline-block align-text-top"> 
+            <img src="{{asset('/images/navbar/logo-essato-blanco.svg')}}" alt="Logo" width="70" height="70" class="d-inline-block align-text-top"> 
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
