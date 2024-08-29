@@ -8,7 +8,7 @@ use App\Models\Blog;
 use App\Models\Pais; 
 use App\Models\Departamento; 
 use App\Models\Encontraressato;
-
+use App\Models\Empresa; 
 
 class WelcomeController extends Controller
 {
@@ -18,12 +18,14 @@ class WelcomeController extends Controller
         $departamentos = Departamento::all();
         $blogsAleatorios = Blog::inRandomOrder()->limit(3)->get();
         $encontraressatos = Encontraressato::all();
+        $empresas = Empresa::all();
 
         return view('welcome')->with([
             'paises' => $paises,
             'departamentos' => $departamentos,
             'blogsAleatorios' => $blogsAleatorios,
-            'encontraressatos' => $encontraressatos
+            'encontraressatos' => $encontraressatos,
+            'empresas' => $empresas
         ]);
     }
 

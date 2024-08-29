@@ -182,14 +182,13 @@
                                 Ya sea porque necesites aumentar tu facturación, mejorar el posicionamiento de tu marca o definir los mejores procesos para llegar a tus objetivos.
                             </p>	
                     </div>
-                    <div class="col-md-6 col-12 position-relative">
+                    <div class="col-md-6 col-12 position-relative imagen-segunda-s">
                         <img src="{{asset('/images/inicio/chica.jpeg')}}" alt="logo chica" class="img-fluid">
-                        <a href="{{ url('/empresa') }}" class="btn btn-outline-light btn-lg fw-bold border-3 position-absolute top-50 start-50 translate-middle">
-                            <button class="button">
+                        <a href="{{ url('/empresa') }}" class="button position-absolute top-50 start-50 translate-middle">
+                            <button class="button ">
                                 Clientes
                             </button>
-                        </a>                       
-                        
+                        </a>                                              
                     </div>
                 </div>
             </div> <!-- Cierre del contenedor externo -->
@@ -203,6 +202,27 @@
                 </div>
             </div>
         </div> 
+
+        <div class="octava-parte">
+            <div class="container">
+                <div class="row justify-content-star">
+                    <div class="col-md-12">
+                        <div class="texto-inicio-empresa">     
+                            <h1 id="essato-titulo-empresa">Empresas</h1>
+                        </div>
+                    </div>
+                    @foreach($empresas as $empresa)
+                        @if($empresa->tipoEmpresa->id_tipoEmpresa == 2)
+                            <div class="col-md-2 col-12 text-right mb-2 imagen-redonda">
+                                <img src="{{ asset($empresa->img_empresa) }}" class="img-fluid imagen-empresas" alt="Empresa">
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+            </div> 
+            <a href="{{ url('/empresa') }}" class="btn-octava"> Más empresas...</a>
+        </div>
+
         <div id="cuarta-parte" class="cuarta-parte">
             <div class="container-fluid">
                 <div class="row align-items-start">
