@@ -11,6 +11,7 @@
     <!-- Fonts -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
     <link href="{{ asset('css/inicio.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu-flotante.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -27,6 +28,7 @@
         @include('componentes.header')
     </header>
     <main>
+        @include('componentes.menu-flotante')
         <div class="primera-parte">
             <div class="container">
                 <div class="row justify-content-md-left">
@@ -255,34 +257,32 @@
                 </div>
             </div>
         </div>
+
         <div class="quinta-parte">
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-right"
-                            data-aos-offset="500"
-                            data-aos-easing="ease-in-sine">
-                            <img src="{{asset('/images/marketing.png')}}" class="img-fluid" alt="marketing">
-                            <h3 class="tituloservicios">
-                                <a href="{{ url('/servicio/marketing') }}" class="link-marketing">Marketing</a>
-                            </h3>
-                        </div>
+                        <a href="{{ url('/servicio/marketing') }}" class="link-marketing">
+                            <div data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">
+                                <img src="{{asset('/images/marketing.png')}}" class="img-fluid" alt="marketing">
+                                <h3 class="tituloservicios">Marketing</h3>
+                            </div>
+                        </a>
                     </div>
                     <div class="col align-self-center">
-                    
+
                     </div>
                     <div class="col align-self-end">
-                        <div data-aos="fade-down"
-                            data-aos-easing="linear"
-                            data-aos-duration="1700">
-                            <img src="{{asset('/images/desarrollo_web.png')}}" class="img-fluid" alt="desarrollo_web">
-                            <h3 class="tituloservicios">
-                                <a href="{{ url('/servicio/desarrollo') }}" class="link-marketing">Desarrollo</a>
-                            </h3>                    
-                        </div>
+                        <a href="{{ url('/servicio/desarrollo') }}" class="link-marketing">
+                            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1700">
+                                <img src="{{asset('/images/desarrollo_web.png')}}" class="img-fluid" alt="desarrollo_web">
+                                <h3 class="tituloservicios">Desarrollo</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
+
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
@@ -358,6 +358,42 @@
                     <div class="col align-self-end">
                         
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="novena-parte">
+            <h1 class="display-4 essato-titulo-empresa">Algunos de nuestros trabajos</h1>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-1.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-2.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-3.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-4.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-5.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-6.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-7.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-8.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-9.png')}}" class="img-fluid" alt="Cliente">
+                </div>
+                <div class="item">
+                    <img src="{{asset('/images/empresa-carousel/cliente-10.png')}}" class="img-fluid" alt="Cliente">
                 </div>
             </div>
         </div>

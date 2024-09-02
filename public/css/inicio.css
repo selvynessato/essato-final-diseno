@@ -447,7 +447,7 @@ main{
 }
 
 .quinta-parte{
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 .quinta-parte .tituloservicios{
@@ -473,9 +473,9 @@ main{
     border-radius: 2px;
   }
   
-  .quinta-parte .link-marketing:hover::after {
+.quinta-parte .link-marketing:hover::after {
     width: 100%;
-  }
+}
 
 .sexta-parte{
     margin-top: 50px;
@@ -563,8 +563,18 @@ main{
 
 .octava-parte .imagen-empresas:hover, .septima-parte .imagen-empresas:hover {
     width: 100%;
-    
     filter: grayscale(0%);
+}
+
+
+.novena-parte{
+    padding-top: 100px;
+}
+
+.novena-parte .essato-titulo-empresa{
+    color: red;
+    padding-bottom: 50px;
+    font-weight: bold;
 }
 
 /*inicio empresa*/
