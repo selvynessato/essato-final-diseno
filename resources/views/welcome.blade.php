@@ -64,7 +64,7 @@
                 <div class="row justify-content-md-left">
                     <div class="col">
                         <h1 class="tercera-parte-titulo">
-                            Explorando tu negocio y hagamoslo crecer
+                            Explorando tu negocio y hagámoslo crecer
                         </h1>
                     </div>
                         <div class="col-md-auto">
@@ -270,7 +270,6 @@
                         </a>
                     </div>
                     <div class="col align-self-center">
-
                     </div>
                     <div class="col align-self-end">
                         <a href="{{ url('/servicio/desarrollo') }}" class="link-marketing">
