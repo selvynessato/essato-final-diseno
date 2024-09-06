@@ -70,7 +70,7 @@
                             <img src="{{asset('/images/servicios/branding/branding-03.jpg')}}" class="img-fluid cuadrados-portada" alt="cuadrado">
                         </div>
                         <div class="col align-self-center">
-                            <img src="{{asset('/images/servicios/branding/branding-03.jpg')}}" class="img-fluid cuadrados-portada-logo" alt="cuadrado">                            
+                            <img src="{{asset('/images/servicios/branding/branding-logo.jpg')}}" class="img-fluid cuadrados-portada-logo" alt="cuadrado">                            
                         </div>
                         <div class="col align-self-end">
                         
@@ -95,7 +95,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="{{asset('/images/servicios/marketing/cuaderno.png')}}" class="img-fluid cuaderno-tercera" alt="cuaderno">
+                <img src="{{asset('/images/servicios/branding/branding-largo.jpg')}}" class="img-fluid cuaderno-tercera" alt="cuaderno">
             </div>    
             <div class="col-md-6 derecha-espacio">
                 <ul>

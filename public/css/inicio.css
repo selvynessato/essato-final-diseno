@@ -529,6 +529,11 @@ main{
     text-align: center;
 }
 
+.septima-parte .link-blog {
+    text-decoration: none; 
+    color: inherit; 
+}
+
 
 .septima-parte .card:hover{
     border: solid 2px #686868;

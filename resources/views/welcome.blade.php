@@ -10,6 +10,7 @@
 
     <!-- Fonts -->
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/header.css') }}" rel="stylesheet">
     <link href="{{ asset('css/inicio.css') }}" rel="stylesheet">
     <link href="{{ asset('css/menu-flotante.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -46,9 +47,11 @@
                         <div class="col-md-auto">
                         </div>
                     <div class="col col-lg-2">
-                        <button><span></span>
-                            Contactanos
-                        </button>
+                        <a href="#footer-welcome" class="btn-link">
+                            <button><span></span>
+                                Contactanos
+                            </button>
+                        </a>
                     </div>  
                     </div>
                 </div>
@@ -288,14 +291,14 @@
                         
                     </div>
                     <div class="col align-self-center">
+                    <a href="{{ url('/servicio/redes') }}" class="link-marketing">
                         <div data-aos="fade-right"
                             data-aos-offset="600"
                             data-aos-easing="ease-in-sine">
                             <img src="{{asset('/images/social_media.png')}}" class="img-fluid" alt="social_media">
-                            <h3 class="tituloservicios">
-                                <a href="{{ url('/servicio/redes') }}" class="link-marketing">Social Media</a>
-                            </h3>
-                        </div>                  
+                            <h3 class="tituloservicios">Social Media</h3>
+                        </div>
+                    </a>
                     </div>
                     <div class="col align-self-end">
                     
@@ -305,27 +308,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col align-self-start">
-                        <div data-aos="fade-right"
-                            data-aos-offset="500"
-                            data-aos-easing="ease-in-sine">
-                            <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" alt="asesoria_financiera">
-                            <h3 class="tituloservicios">
-                                <a href="{{ url('/servicio/asesoria-financiera') }}" class="link-marketing">Asesoria financiera</a>
-                            </h3>
-                        </div>                                           
+                        <a href="{{ url('/servicio/asesoria-financiera') }}" class="link-marketing">
+                            <div data-aos="fade-right"
+                                data-aos-offset="500"
+                                data-aos-easing="ease-in-sine">
+                                <img src="{{asset('/images/asesoria_financiera.png')}}" class="img-fluid" alt="asesoria_financiera">
+                                <h3 class="tituloservicios">Asesoría financiera</h3>
+                            </div>
+                        </a>                      
                     </div>
                     <div class="col align-self-center">
                 
                     </div>
                     <div class="col align-self-end">
-                        <div data-aos="fade-left"
-                            data-aos-offset="600"
-                            data-aos-easing="ease-in-sine">
-                            <img src="{{asset('/images/branding.png')}}" class="img-fluid" alt="branding">
-                            <h3 class="tituloservicios">
-                                <a href="{{ url('/servicio/branding') }}" class="link-marketing">Branding</a>
-                            </h3>                        
-                        </div>                   
+                        <a href="{{ url('/servicio/branding') }}" class="link-marketing">
+                            <div data-aos="fade-left"
+                                data-aos-offset="600"
+                                data-aos-easing="ease-in-sine">
+                                <img src="{{asset('/images/branding.png')}}" class="img-fluid" alt="branding">
+                                <h3 class="tituloservicios">Branding</h3>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -420,32 +423,37 @@
         <div class="septima-parte">
             <div class="container-fluid">
                 <a href="{{ url('/blog') }}" class="nav-link">
-                    <h1 class="titulo"> Blog</h1>
+                    <h1 class="titulo">Blog</h1>
                 </a>
                 <br>
                 <div class="row justify-content-center">
                     @foreach($blogsAleatorios as $blog)
                         <div class="col-md-4 col-12">
-                            <div class="card text-center">
-                                <div class="card-header">
-                                    <img src="{{asset($blog->img_blog)}}" class="card-img-top" alt="Blog imagen">
+                            <a href="{{ route('blog.detalle', $blog->slug_blog) }}" class="link-blog">
+                                <div class="card text-center">
+                                    <div class="card-header">
+                                        <img src="{{asset($blog->img_blog)}}" class="card-img-top" alt="Blog imagen">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">{!! $blog->nombre_blog !!}</h5>
+                                        <p class="card-text text-justify truncated">{!! $blog->descripcion_blog !!}</p>
+                                    </div>
+                                    <div class="card-footer text-muted">
+                                        <span class="btn btn-info btn-sm">Leer Más</span>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">{!! $blog->nombre_blog !!}</h5>
-                                    <p class="card-text text-justify truncated">{!! $blog->descripcion_blog !!}</p>
-                                </div>
-                                <div class="card-footer text-muted">
-                                    <a href="{{ route('blog.detalle', $blog->slug_blog) }}" class="btn btn-info btn-sm">Leer Más</a>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     @endforeach
                 </div>
             </div>
+            <div class="text-center mt-4">
+                <a href="{{ url('/blog') }}" class="btn-octava">Más Artículos...</a>
+            </div>
         </div>       
     </main>
 <footer>
-    <div class="footer-parte">
+    <div class="footer-parte" id="footer-welcome">
         <div class="container-fluid">
             <div class="row align-items-start">
                 <div id="footer-parte-gris" class="col-md-8 col-12 align-self-stretch">

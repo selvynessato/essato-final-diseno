@@ -43,38 +43,10 @@
 <div class="segunda-parte">
     <div class="container-fluid">
         <div class="row align-items-start">
-            <div class="col-md-2 col-12">
-                <div class="container-fluid">
-
-                </div>
-            </div>
-            <div class="col-md-7 col-12">
+            <div class="col-md-12 col-12">
                 <div class="container-fluid segunda-parte-negra d-flex flex-column align-items-stard justify-content-center">
                     <h1 class="display-1 negrita">Asesoría</h1>
                     <h1 class="display-1 parrafos">Financiera</h1>
-                </div>
-            </div>
-            <div class="col-md-3 col-12">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col align-self-start">
-                            <img src="{{asset('/images/servicios/branding/branding-03.jpg')}}" class="img-fluid cuadrados-portada-logo" alt="cuadrado">
-                        </div>
-
-                        <div class="col align-self-end">
-                         
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col align-self-start">
-                             
-                        </div>
-                        <div class="col align-self-center">
-                            <img src="{{asset('/images/servicios/branding/branding-03.jpg')}}" class="img-fluid cuadrados-portada-logo-dos" alt="cuadrado">
-                        </div>
-                       
-                    </div>
-                    </div>
                 </div>
             </div>
         </div>    
@@ -84,7 +56,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="{{asset('/images/servicios/marketing/cuaderno.png')}}" class="img-fluid cuaderno-tercera" alt="cuaderno">
+                <img src="{{asset('/images/servicios/asesoria_financiera/financiera-largo.jpg')}}" class="img-fluid cuaderno-tercera" alt="cuaderno">
             </div>    
             <div class="col-md-6 derecha-espacio">
                 <ul>
@@ -172,7 +144,7 @@
             </div>        
             <div class="col-md-3">
                 <div class="d-grid gap-2 col-12 mx-auto">
-                    <a href="https://wa.link/a4qy4l" class="btn boton-w" role="button" target="_blank">Whatsapp</a>
+                    <a href="{{ url('/') }}#footer-welcome" class="btn boton-w" role="button" target="_blank">CONTACTANOS</a>
                 </div>  
             </div>        
             <div class="col-md-2"></div>                        
